@@ -1,23 +1,5 @@
 .block-wrapper {
 	padding: 29px 35px;
-
-	&:hover {
-		.block-navigation {
-			&__chevron {
-				img{
-					transform: rotate(180deg);
-					transition: ease-out 0.1s;
-				}
-			}
-
-			&__tabs {
-				height: auto;
-				padding: 19px 35px;
-				border: 2px solid $color-3;	
-				background-color: $color-2; 
-			}
-		}
-	}
 }
 
 .block-navigation {
@@ -34,10 +16,10 @@
 
 	&__tabs {
 		display: block;
-		position: absolute;
-		height: 0;
-		overflow: hidden;
+		height: auto;
 		padding: 19px 35px;
+		border: 2px solid $color-3;	
+		background-color: $color-2; 
 	}
 
 	&__list {

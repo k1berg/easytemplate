@@ -6,7 +6,7 @@ html {
 }
 body {
 	color: $text-main;
-	letter-spacing: 2.3px;
+    letter-spacing: 0.1px;
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 400;
 	font-size: 100%;
@@ -14,15 +14,17 @@ body {
 
 h1 {
 	font-family: 'Montserrat', sans-serif;
-	font-size: 44px;
+	letter-spacing: 3px;
+	font-size: 36px;
 	font-weight: 600;
 	line-height: 1.3;
 }
 
 h2 {
 	font-family: 'Montserrat', sans-serif;
-	font-size: 22px;
+	font-size: 18px;
 	font-weight: 500;
+	letter-spacing: 1.3px;
 }
 
 h3 {
