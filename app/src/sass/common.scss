@@ -1,5 +1,9 @@
 .block-wrapper {
 	padding: 0 35px;
+
+	&__countries {
+		padding: 31px 185px;
+	}
 }
 
 .block-navigation {
@@ -18,7 +22,7 @@
 	&__tabs {
 		display: block;
 		height: auto;
-		padding: 74px 35px 81px;
+		padding: 74px 35px 87px;
 		border: 3px solid $color-3;	
 		background-color: $color-2; 
 		text-align: center;
@@ -74,52 +78,97 @@
 	}
 }
 
-.sprite__icon {
-	display: inline-block;
-	width: 75px;
-    height: 68px;
-	background-image: url(../img/icons.png);
-	margin: 30px 89px;
+.sprite {
+	&__icon {
+		display: inline-block;
+		width: 75px;
+	    height: 68px;
+		background-image: url(../img/icons.png);
+		margin: 30px 89px;
 
-	&--booking {
-		background-position-y: -66px
+		&--schedule {
+			background-position-y: -17px;
+		}
+
+		&--booking {
+			background-position-y: -94px
+		}
+
+		&--ring {
+			background-position-y: -180px
+		}
+
+		&--tracking {
+			background-position-y: -266px
+		}
+
+		&--tag {
+			background-position-y: -346px
+		}
+
+		&--apple {
+			background-position-y: -432px
+		}
+
+		&--features {
+			background-position-y: -509px
+		}
+
+		&--dialog{
+			background-position-y: -589px
+		}
+
+		&--wand{
+			background-position-y: -671px
+		}
+
+		&--diagram {
+			background-position-y: -749px
+		} 
 	}
 
-	&--ring {
-		background-position-y: -132px
-	}
+	&__countries {
+		display: inline-block;
+		width: 160px;
+	    height: 107px;
+		background-image: url(../img/flags.png);
+		margin: 42px 15px;
 
-	&--tracking {
-		background-position-y: -199px;
-    	height: 62px;
-	}
+		&--UK {
+			background-position-y: -109px;
+		}
 
-	&--tag {
-		background-position-y: -258px;
-    	height: 74px;
-	}
+		&--NZ {
+			background-position-y: -218px;
+		}
 
-	&--apple {
-		background-position-y: -334px;
-    	height: 70px;
-	}
+		&--Mexico {
+			background-position-y: -327px;			
+		}
 
-	&--features {
-		background-position-y: -602px;
-    	height: 55px;
-	}
+		&--Australia {
+			background-position-y: -436px;
+		}
 
-	&--dialog{
-		background-position-y: -402px;
-	}
+		&--Argentina {
+			background-position-y: -545px;
+		}
 
-	&--wand{
-		background-position-y: -469px;
-    	height: 62px;
-	}
+		&--India {
+			background-position-y: -654px;
+		}
 
-	&--diagram {
-		background-position-y: -531px;
+		&--Canada {
+			background-position-y: -763px;
+		}
+
+		&--SA {
+			background-position-y: -872px;
+		}
+
+		&--Spain {
+			background-position-y: -981px;
+		}
 	}
 }
 
@@ -180,7 +229,7 @@
 
 	&__how {
 
-		&--macbook {
+		&-macbook {
 		padding-top: 111px;
 
 			img {
@@ -190,7 +239,7 @@
 			}
 		}
 
-		&--tablet {
+		&-tablet {
 			padding-top: 54px;
 
 			img {
@@ -200,7 +249,7 @@
 			}
 		}
 
-		&--iPhone {
+		&-iPhone {
 			padding-top: 5px;
 			padding-bottom: 85px;
 
@@ -241,7 +290,7 @@
 
 	&__features-list {
 		background-color: $color-2;
-		padding-top: 192px;
+		padding: 192px 0 72px;
 
 		h2 {
 			margin-bottom: 22px;
@@ -250,6 +299,54 @@
 		p {
 			line-height: 26px;
 		}
+	}
+
+	&__global-software {
+		padding-top: 134px;
+		text-align: center;
+
+		span {
+			color: $color-1;
+		}
+
+		img {
+			margin: 7px 0;
+		}
+		p {
+			margin: 8px 0;
+		    text-transform: uppercase;
+		    font-size: 14px;
+		    font-weight: 500;
+		}
+	}
+}
+
+.picture-background {
+	background-repeat: no-repeat;
+    width: 100%;
+	
+	&__macbook {
+		background-image: url(../img/macbook.png);
+    	height: 639px;
+	}
+
+	&__tablet {
+		background-image: url(../img/iPad-tablet.png);
+		height: 598px;
+	}
+
+	&__iPhone {
+		background-image: url(../img/iPhone-diagramm.png);
+		height: 694px;
+
+	}
+
+	&--left {
+	    background-position: right bottom;
+	}
+
+	&--right {
+		background-position: left bottom;
 	}
 }
 
@@ -315,22 +412,41 @@
 
 .features-list {
 
-	&__tabs {
+	&__blocks {
+		padding-top: 72px;
+		text-align: center;
+	}
+
+	&__block {
+		margin-bottom: 70px;
+		padding: 0 25px;
+		
+		h4 {
+			margin: 18px 0;
+		}
+
 		a {
 			text-decoration: none;
 			text-transform: uppercase;
 			color: $text-main;
 		}
+
+		p {
+			line-height: 2;
+		}
 	}
+}
+
+.countries {
 
 	&__list {
 		padding: 0;
 	}
 
 	&__item {
+		text-transform: uppercase;
 		list-style-type: none;
 		display: inline-block;
-		margin: 18px 75px;
-
+		font-weight: 500;
 	}
 }

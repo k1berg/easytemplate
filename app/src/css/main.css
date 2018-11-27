@@ -134,6 +134,8 @@ h4 {
 
 .block-wrapper {
   padding: 0 35px; }
+  .block-wrapper__countries {
+    padding: 31px 185px; }
 
 .block-navigation {
   padding: 46px 0 58px; }
@@ -146,7 +148,7 @@ h4 {
   .block-navigation__tabs {
     display: block;
     height: auto;
-    padding: 74px 35px 81px;
+    padding: 74px 35px 87px;
     border: 3px solid #dbf5ee;
     background-color: #f3fcf9;
     text-align: center; }
@@ -187,29 +189,51 @@ h4 {
   height: 68px;
   background-image: url(../img/icons.png);
   margin: 30px 89px; }
+  .sprite__icon--schedule {
+    background-position-y: -17px; }
   .sprite__icon--booking {
-    background-position-y: -66px; }
+    background-position-y: -94px; }
   .sprite__icon--ring {
-    background-position-y: -132px; }
+    background-position-y: -180px; }
   .sprite__icon--tracking {
-    background-position-y: -199px;
-    height: 62px; }
+    background-position-y: -266px; }
   .sprite__icon--tag {
-    background-position-y: -258px;
-    height: 74px; }
+    background-position-y: -346px; }
   .sprite__icon--apple {
-    background-position-y: -334px;
-    height: 70px; }
+    background-position-y: -432px; }
   .sprite__icon--features {
-    background-position-y: -602px;
-    height: 55px; }
+    background-position-y: -509px; }
   .sprite__icon--dialog {
-    background-position-y: -402px; }
+    background-position-y: -589px; }
   .sprite__icon--wand {
-    background-position-y: -469px;
-    height: 62px; }
+    background-position-y: -671px; }
   .sprite__icon--diagram {
-    background-position-y: -531px; }
+    background-position-y: -749px; }
+
+.sprite__countries {
+  display: inline-block;
+  width: 160px;
+  height: 107px;
+  background-image: url(../img/flags.png);
+  margin: 42px 15px; }
+  .sprite__countries--UK {
+    background-position-y: -109px; }
+  .sprite__countries--NZ {
+    background-position-y: -218px; }
+  .sprite__countries--Mexico {
+    background-position-y: -327px; }
+  .sprite__countries--Australia {
+    background-position-y: -436px; }
+  .sprite__countries--Argentina {
+    background-position-y: -545px; }
+  .sprite__countries--India {
+    background-position-y: -654px; }
+  .sprite__countries--Canada {
+    background-position-y: -763px; }
+  .sprite__countries--SA {
+    background-position-y: -872px; }
+  .sprite__countries--Spain {
+    background-position-y: -981px; }
 
 .color-text--blue {
   color: #37a6c1; }
@@ -242,24 +266,24 @@ h4 {
       margin-top: 56px;
       margin-right: -59px; }
 
-.section__how--macbook {
+.section__how-macbook {
   padding-top: 111px; }
-  .section__how--macbook img {
+  .section__how-macbook img {
     float: right;
     margin-top: 64px;
     margin-right: -138px; }
 
-.section__how--tablet {
+.section__how-tablet {
   padding-top: 54px; }
-  .section__how--tablet img {
+  .section__how-tablet img {
     float: left;
     margin-top: 51px;
     margin-left: -4px; }
 
-.section__how--iPhone {
+.section__how-iPhone {
   padding-top: 5px;
   padding-bottom: 85px; }
-  .section__how--iPhone img {
+  .section__how-iPhone img {
     float: right;
     margin-top: 33px;
     margin-right: 222px; }
@@ -285,11 +309,41 @@ h4 {
 
 .section__features-list {
   background-color: #f3fcf9;
-  padding-top: 192px; }
+  padding: 192px 0 72px; }
   .section__features-list h2 {
     margin-bottom: 22px; }
   .section__features-list p {
     line-height: 26px; }
+
+.section__global-software {
+  padding-top: 134px;
+  text-align: center; }
+  .section__global-software span {
+    color: #56d2ae; }
+  .section__global-software img {
+    margin: 7px 0; }
+  .section__global-software p {
+    margin: 8px 0;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 500; }
+
+.picture-background {
+  background-repeat: no-repeat;
+  width: 100%; }
+  .picture-background__macbook {
+    background-image: url(../img/macbook.png);
+    height: 639px; }
+  .picture-background__tablet {
+    background-image: url(../img/iPad-tablet.png);
+    height: 598px; }
+  .picture-background__iPhone {
+    background-image: url(../img/iPhone-diagramm.png);
+    height: 694px; }
+  .picture-background--left {
+    background-position: right bottom; }
+  .picture-background--right {
+    background-position: left bottom; }
 
 .text-from-tabs {
   margin: 173px 0;
@@ -330,18 +384,30 @@ h4 {
     position: static;
     margin: 21px auto; }
 
-.features-list__tabs a {
-  text-decoration: none;
-  text-transform: uppercase;
-  color: #000; }
+.features-list__blocks {
+  padding-top: 72px;
+  text-align: center; }
 
-.features-list__list {
+.features-list__block {
+  margin-bottom: 70px;
+  padding: 0 25px; }
+  .features-list__block h4 {
+    margin: 18px 0; }
+  .features-list__block a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000; }
+  .features-list__block p {
+    line-height: 2; }
+
+.countries__list {
   padding: 0; }
 
-.features-list__item {
+.countries__item {
+  text-transform: uppercase;
   list-style-type: none;
   display: inline-block;
-  margin: 18px 75px; }
+  font-weight: 500; }
 
 header {
   background-color: #37a6c1;
