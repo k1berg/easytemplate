@@ -1,7 +1,7 @@
 header {
 	background-color: $bg-blue;
 	color: $text-white;
-    background-image: url(../img/background-image.png);
+    background-image: url(../img/background-img-header.png);
     background-repeat: no-repeat;
     background-position: bottom;
     background-size: contain;
@@ -9,12 +9,13 @@ header {
 
 .top-bar {
 	text-transform: uppercase;
-    padding-top: 54px;
+    padding-top: 49px;
     font-size: 15px;
     font-weight: 400;
 
     &__logo {
-        margin: 6px 7px;
+        margin-top: 10px;
+        padding-left: 42px;
 
         img{
             width: 141px;
@@ -22,13 +23,8 @@ header {
     }
 
     &__menu {
-    	margin-top: 19px;
-        margin-left: 18px;
-    }
-
-    &__list {
-    	padding: 0;
-
+    	margin-top: 23px;
+        margin-left: -7px;
     }
 
     &__item {
@@ -38,7 +34,7 @@ header {
 
         &:last-child {
             float: right;
-            margin-right: 42px;
+            margin-right: 10px;
         }
     }
 
@@ -48,84 +44,94 @@ header {
     }
 
     &__schedule {
-        margin-left: -19px;
+        float: right;
     }
 }
 
-.btn__create-schedule {
-	display: inline-block;
-    letter-spacing: 1.2px;
-    padding: 16px;
-    text-transform: uppercase;
-    color: $text-white;
-    border-radius: 3px;
-    border: 3px solid #FFF;
-    text-align: center;
-    text-decoration: none;
+.btn {
+    &__create {
+    	display: inline-block;
+        letter-spacing: 1.2px;
+        padding: 16px;
+        text-transform: uppercase;
+        color: $text-white;
+        border-radius: 3px;
+        border: 3px solid #FFF;
+        text-align: center;
+        text-decoration: none;
+        margin-top: 5px;
+        margin-right: 26px;
 
-    &--green{
-        background-color: #56d2ae;
+        &--green{
+            background-color: #56d2ae;
+            margin-bottom: 5px;
+        }
+
+        &--transparent {
+            padding: 16px 29px;
+        }
     }
 
-    &--transparent {
-        margin-left: 23px;
-        padding: 16px 29px;
+    &__play {
+        width: 86px;
+        height: 86px;
+        border: 3px solid #fff;
+        border-radius: 50%;
+        display: inline-block;
+        margin: 5px;
+        position: relative;
+        margin-left: 48px;
+        
+        &::after {
+            content: ' ';
+            position: absolute;
+            top: 34px;
+            right: 28px;
+            border: 8px solid transparent;
+            border-left: 12px solid #fff;
+        }
     }
 }
 
 .heading-block {
-	padding-top: 115px;
+	padding-top: 160px;
 	
 	h1 {
-        margin: 53px 6px 0;
+        margin: 2px 40px;
 	}
 
 	h2 {
-		margin: 22px 8px;
+		margin-top: 23px;
+        margin-left: 45px;
 	}
 
 	&__button {
-        padding: 72px 8px 0;
+        padding-top: 90px;
 
-		&-1 {
-			font-size: 18px;
-            line-height: 24px;
-            padding: 19px 13px 23px;
+        a {
+            font-size: 18px;
+            line-height: 26px; 
             float: left;
-		}
+            font-weight: 400;
+        }
 
-		&-2 {
-			width: 86px;
-            height: 86px;
-            border: 3px solid #fff;
-            border-radius: 50%;
-            display: inline-block;
-            margin-left: 12%;
-            position: relative;
-			
-			&::after {
-				content: ' ';
-    			position: absolute;
-    			top: 36px;
-    			right: 28px;
-    			border: 8px solid transparent;
-    			border-left: 12px solid #fff;
-
-			}
-		}
+        &--ident {
+            margin-left: 43px;
+            padding: 17px 12px 20px 14px;
+        }
 	}
 
 	p {
-		margin: 34px 7px;
+        display: inline-block;
+        margin: 27px 41px;
 	}
     
     &__phone {
-        padding: 50px 25px 20px;
-        overflow: hidden;
+        float: right;
 
         img {
             width: 345px;
-            float: right
+            margin-right: -9px;
         }
     }
 }

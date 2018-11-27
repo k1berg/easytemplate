@@ -5,3 +5,63 @@
     padding-right: 0;
     padding-left: 0;
 }
+
+
+.grid-container-fluid {
+	*zoom: 1;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 100%;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+.grid-container-fluid:after, .grid-35-fluid:after, .grid-65-fluid:after, .grid-50-fluid:after, .grid-50-fluid:before, .grid-container-fluid:before, .grid-35-fluid:before, .grid-65-fluid:before  {
+	content: ".";
+	display: block;
+	overflow: hidden;
+	visibility: hidden;
+	font-size: 0;
+	line-height: 0;
+	width: 0;
+	height: 0;
+	clear: both;
+}
+
+.grid-35-fluid {
+	float: left;
+    width: 35%;
+    /* <IE7> */
+    *width: expression(Math.floor(0.35 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + 'px');
+    /* </IE7> */
+}
+
+.push-35-fluid {
+    left: 35%;
+    /* <IE7> */
+    *left: expression(Math.floor(0.35 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + 'px');
+    /* </IE7> */
+}
+
+.grid-65-fluid {
+    float: left;
+    width: 65%;
+    /* <IE7> */
+    *width: expression(Math.floor(0.65 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + 'px');
+    /* </IE7> */
+}
+
+.push-65-fluid {
+left: 65%;
+/* <IE7> */
+*left: expression(Math.floor(0.65 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + 'px');
+/* </IE7> */
+}
+
+.grid-50-fluid {
+float: left;
+width: 50%;
+/* <IE7> */
+*width: expression(Math.floor(0.5 * (this.parentNode.offsetWidth - parseFloat(this.parentNode.currentStyle.paddingLeft) - parseFloat(this.parentNode.currentStyle.paddingRight))) + 'px');
+/* </IE7> */
+}
