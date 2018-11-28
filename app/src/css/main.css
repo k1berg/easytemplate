@@ -135,7 +135,7 @@ h4 {
 .block-wrapper {
   padding: 0 35px; }
   .block-wrapper__countries {
-    padding: 31px 185px; }
+    padding: 7px 185px; }
 
 .block-navigation {
   padding: 46px 0 58px; }
@@ -174,7 +174,8 @@ h4 {
   .block-title--center {
     text-align: center;
     margin-bottom: 52px;
-    font-weight: 500; }
+    font-weight: 500;
+    letter-spacing: 1px; }
   .block-title--headline {
     font-weight: 600;
     font-size: 32px; }
@@ -215,7 +216,7 @@ h4 {
   width: 160px;
   height: 107px;
   background-image: url(../img/flags.png);
-  margin: 42px 15px; }
+  margin: 68px 15px 16px; }
   .sprite__countries--UK {
     background-position-y: -109px; }
   .sprite__countries--NZ {
@@ -305,18 +306,19 @@ h4 {
     margin: 14px 0; }
 
 .section__what-we-believe-in {
-  padding-top: 130px; }
+  padding-top: 130px;
+  padding-bottom: 28px; }
 
 .section__features-list {
   background-color: #f3fcf9;
-  padding: 192px 0 72px; }
+  padding: 164px 0 72px; }
   .section__features-list h2 {
     margin-bottom: 22px; }
   .section__features-list p {
     line-height: 26px; }
 
 .section__global-software {
-  padding-top: 134px;
+  padding: 134px 0;
   text-align: center; }
   .section__global-software span {
     color: #56d2ae; }
@@ -327,6 +329,23 @@ h4 {
     text-transform: uppercase;
     font-size: 14px;
     font-weight: 500; }
+
+.section__our-story {
+  padding-top: 82px;
+  padding-bottom: 147px; }
+  .section__our-story h2 {
+    margin-bottom: 21px; }
+  .section__our-story span {
+    color: #37a6c1; }
+
+.section__salon-owners {
+  padding-top: 87px;
+  padding-bottom: 84px;
+  background-color: #37a6c1;
+  color: #fff;
+  text-align: center; }
+  .section__salon-owners img {
+    margin: 9px 0 -9px; }
 
 .picture-background {
   background-repeat: no-repeat;
@@ -340,10 +359,18 @@ h4 {
   .picture-background__iPhone {
     background-image: url(../img/iPhone-diagramm.png);
     height: 694px; }
+  .picture-background__London {
+    background-image: url(../img/label-london.png);
+    background-position: bottom;
+    height: 578px;
+    padding: 19px 50px; }
   .picture-background--left {
     background-position: right bottom; }
   .picture-background--right {
     background-position: left bottom; }
+
+.picture-from-headline {
+  display: inline-block; }
 
 .text-from-tabs {
   margin: 173px 0;
@@ -408,6 +435,39 @@ h4 {
   list-style-type: none;
   display: inline-block;
   font-weight: 500; }
+
+.our-story__text {
+  padding-right: 55px;
+  padding-top: 47px; }
+  .our-story__text p {
+    margin-left: 37px;
+    margin-bottom: 24px;
+    line-height: 24px;
+    letter-spacing: 0; }
+
+.owners__offset {
+  padding-top: 71px; }
+  .owners__offset h3 {
+    margin: 26px 0; }
+  .owners__offset p {
+    line-height: 1.5;
+    padding: 0 13px; }
+
+.owners__photo {
+  width: 134px;
+  height: 134px;
+  border: 3px solid #FFF;
+  border-radius: 50%;
+  display: inline-block;
+  background-position: center;
+  background-size: 100%;
+  margin-bottom: 21px; }
+  .owners__photo--Marcus {
+    background-image: url(../img/marcus.png); }
+  .owners__photo--Hellen {
+    background-image: url(../img/hellen.png); }
+  .owners__photo--Jason {
+    background-image: url(../img/jason.png); }
 
 header {
   background-color: #37a6c1;

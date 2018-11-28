@@ -2,7 +2,7 @@
 	padding: 0 35px;
 
 	&__countries {
-		padding: 31px 185px;
+		padding: 7px 185px;
 	}
 }
 
@@ -62,6 +62,7 @@
 		text-align: center;
 		margin-bottom: 52px;
 		font-weight: 500;
+		letter-spacing: 1px;
 	}
 
 	&--headline {
@@ -132,7 +133,7 @@
 		width: 160px;
 	    height: 107px;
 		background-image: url(../img/flags.png);
-		margin: 42px 15px;
+		margin: 68px 15px 16px;
 
 		&--UK {
 			background-position-y: -109px;
@@ -286,11 +287,12 @@
 
 	&__what-we-believe-in {
 		padding-top: 130px;
+		padding-bottom: 28px;
 	}
 
 	&__features-list {
 		background-color: $color-2;
-		padding: 192px 0 72px;
+		padding: 164px 0 72px;
 
 		h2 {
 			margin-bottom: 22px;
@@ -302,7 +304,7 @@
 	}
 
 	&__global-software {
-		padding-top: 134px;
+		padding: 134px 0;
 		text-align: center;
 
 		span {
@@ -319,34 +321,71 @@
 		    font-weight: 500;
 		}
 	}
+
+	&__our-story {
+		padding-top: 82px;
+		padding-bottom: 147px;
+
+		h2 {
+			margin-bottom: 21px;
+		}
+
+		span {
+			color: $color-4;
+		}
+	}
+
+	&__salon-owners {
+		padding-top: 87px;
+		padding-bottom: 84px;
+		background-color: $color-4;
+		color: $text-white;
+		text-align: center;
+
+		img {
+			margin: 9px 0 -9px;
+		}
+	}
 }
 
-.picture-background {
-	background-repeat: no-repeat;
-    width: 100%;
-	
-	&__macbook {
-		background-image: url(../img/macbook.png);
-    	height: 639px;
+.picture {
+	&-background {
+		background-repeat: no-repeat;
+	    width: 100%;
+		
+		&__macbook {
+			background-image: url(../img/macbook.png);
+	    	height: 639px;
+		}
+
+		&__tablet {
+			background-image: url(../img/iPad-tablet.png);
+			height: 598px;
+		}
+
+		&__iPhone {
+			background-image: url(../img/iPhone-diagramm.png);
+			height: 694px;
+		}
+
+		&__London {
+			background-image: url(../img/label-london.png);
+		    background-position: bottom;
+		    height: 578px;
+		    padding: 19px 50px;
+		}
+
+		&--left {
+		    background-position: right bottom;
+		}
+
+		&--right {
+			background-position: left bottom;
+		}
 	}
 
-	&__tablet {
-		background-image: url(../img/iPad-tablet.png);
-		height: 598px;
-	}
-
-	&__iPhone {
-		background-image: url(../img/iPhone-diagramm.png);
-		height: 694px;
-
-	}
-
-	&--left {
-	    background-position: right bottom;
-	}
-
-	&--right {
-		background-position: left bottom;
+	&-from-headline {
+		display: inline-block;
 	}
 }
 
@@ -448,5 +487,57 @@
 		list-style-type: none;
 		display: inline-block;
 		font-weight: 500;
+	}
+}
+
+.our-story {
+
+	&__text {
+		padding-right: 55px;
+    	padding-top: 47px;
+		p {
+			margin-left: 37px;
+		    margin-bottom: 24px;
+		    line-height: 24px;
+		    letter-spacing: 0;
+		}
+	}
+}
+
+.owners {
+	&__offset {
+		padding-top: 71px;
+
+		h3 {
+			margin: 26px 0;
+		}
+
+		p {
+			line-height: 1.5;
+			padding: 0 13px;
+		}
+	}
+
+	&__photo {
+		width: 134px;
+		height: 134px;
+		border: 3px solid #FFF;
+		border-radius: 50%;
+		display: inline-block;
+		background-position: center;
+    	background-size: 100%;
+    	margin-bottom: 21px;
+
+		&--Marcus {
+			background-image: url(../img/marcus.png);
+		}
+
+		&--Hellen {
+			background-image: url(../img/hellen.png);
+		}
+
+		&--Jason {
+			background-image: url(../img/jason.png);
+		}
 	}
 }
