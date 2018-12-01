@@ -1,17 +1,15 @@
 .block-wrapper {
-	padding: 0 35px;
 
 	&__countries {
-		padding: 7px 50px;
+		padding: 0 50px;
 	}
 
 	&__forms {
-		padding: 43px 0;
 	}
 }
 
 .block-navigation {
-	padding: 46px 0 58px;
+	padding-top: 50px;
 
 	&__chevron {
 		text-align: center;
@@ -26,10 +24,11 @@
 	&__tabs {
 		display: block;
 		height: auto;
-		padding: 74px 35px 87px;
+		padding: 80px 10px;
 		border: 3px solid $color-3;	
 		background-color: $color-2; 
 		text-align: center;
+		margin: 0 35px;
 	}
 
 	&__list {
@@ -58,14 +57,12 @@
 }
 
 .block-title {
-		text-transform: uppercase;
-		font-size: 18px;
+	text-transform: uppercase;
+	font-size: 18px;
 
 	&--center {
 		text-align: center;
-		margin-bottom: 52px;
 		font-weight: 500;
-		letter-spacing: 1px;
 	}
 
 	&--headline {
@@ -176,13 +173,21 @@
 	}
 }
 
-.color-text {
+.highlite {
 	&--blue{
 		color: $color-4;
 	}
+
+	&--green {
+		color: $color-1;
+	}
+
+	&--white {
+		color: $text-white;
+	}
 }
 
-.text-info {
+.format {
 	font-family: 'Montserrat', sans-serif;
 	color: $text-main;
 	line-height: 30px;
@@ -209,7 +214,8 @@
 }
 
 .section {
-	padding: 95px 0;
+	padding-top: 95px;
+	padding-bottom: 75px;
 
 	&__trusted {
 
@@ -264,19 +270,14 @@
 
 	&__partnership {
 		background-color: $color-1;
-		color: $text-white;
 		text-align: center;
 		background-image: url(../img/backgroung-img-partnership.png);
 		background-repeat: no-repeat;
 		background-position: bottom;
 		background-size: cover;
 
-		p {
-			margin-bottom: 18px;
-		}
-
 		&--center {
-			padding-top: 63px;
+			margin-top: 63px;
 		}
 
 		img {
@@ -284,53 +285,28 @@
 		}
 	}
 
-	&__what-we-believe-in {
-	}
-
 	&__features-list {
 		background-color: $color-2;
-
-		h2 {
-			margin-bottom: 22px;
-		}
-
-		p {
-			line-height: 26px;
-		}
 	}
 
 	&__global-software {
 		text-align: center;
 
-		span {
-			color: $color-1;
-		}
-
 		img {
 			margin: 7px 0;
-		}
-		p {
-			margin: 8px 0;
-		    text-transform: uppercase;
-		    font-size: 14px;
-		    font-weight: 500;
 		}
 	}
 
 	&__our-story {
 
-		h2 {
-			margin-bottom: 21px;
-		}
-
-		span {
-			color: $color-4;
+		img {
+			margin-top: 50px;
+			max-width: 100%;
 		}
 	}
 
 	&__salon-owners {
 		background-color: $color-4;
-		color: $text-white;
 		text-align: center;
 
 		img {
@@ -340,43 +316,33 @@
 
 	&__our-partners {
 		background-color: $color-2;
-
-		h2 {
-			margin-bottom: 21px;
-		}
-
-		h3 {
-			line-height: 26px;
-			margin-bottom: 95px;
-		}
-
-		span {
-			color: $color-1;
-		}
-	}
-
-	&__software-free {
-
-		h2 {
-			margin-bottom: 28px;
-		}
-
-		h3 {
-			line-height: 26px;
-			margin-bottom: 105px;
-		}
+		text-align: center;
 	}
 
 	&__product {
 
 		h2 {
-			font-size: 28px;
-			margin-bottom: 23px;
+			font-size: 28px
 		}
+	}
 
-		h3 {
-			line-height: 26px;
+	&__create-schedule {
+		background-color: $color-1; 
+		text-align: center;
+	}
+
+	&__questions-about-salon {
+		background-color: $color-2;
+
+		span {
+			text-transform: uppercase;
+			font-weight: 500;
+			font-size: 14px;
 		}
+	}
+
+	&-header {
+		margin-bottom: 80px;
 	}
 }
 
@@ -400,12 +366,6 @@
 			height: 694px;
 		}
 
-		&__London {
-			background-image: url(../img/label-london.png);
-		    background-position: bottom right;
-		    padding-left: 45px;
-		    height: 616px;
-		}
 
 		&--left {
 		    background-position: right bottom;
@@ -462,8 +422,7 @@
 
 .what-we-believe-in {
 	&__list {
-		padding-top: 44px;
-		padding-bottom: 91px;
+		padding: 20px 0;
 		text-align: center;
 		letter-spacing: 1.2px;
 
@@ -484,7 +443,6 @@
 .features-list {
 
 	&__blocks {
-		padding-top: 72px;
 		text-align: center;
 	}
 
@@ -502,6 +460,7 @@
 		}
 
 		p {
+			margin-top: 20px;
 			line-height: 2;
 		}
 	}
@@ -519,15 +478,22 @@
 		display: inline-block;
 		font-weight: 500;
 	}
+
+	&__headline {
+		margin: 8px 0;
+	    text-transform: uppercase;
+	    font-size: 14px;
+	    font-weight: 500;
+	}
 }
 
 .our-story {
 
 	&__text {
 		padding-right: 55px;
-    	padding-top: 47px;
+    	padding-left: 37px;
+
 		p {
-			margin-left: 37px;
 		    margin-bottom: 24px;
 		    line-height: 24px;
 		    letter-spacing: 0;
@@ -537,16 +503,7 @@
 
 .owners {
 	&__offset {
-		padding-top: 71px;
-
-		h3 {
-			margin: 26px 0;
-		}
-
-		p {
-			line-height: 1.5;
-			padding: 0 13px;
-		}
+		padding: 0 13px;
 	}
 
 	&__photo {
@@ -557,7 +514,7 @@
 		display: inline-block;
 		background-position: center;
     	background-size: 100%;
-    	margin-bottom: 21px;
+    	margin-bottom: 47px;
 
 		&--Marcus {
 			background-image: url(../img/marcus.png);
@@ -574,9 +531,10 @@
 }
 
 .software-free {
+
 	&__text {
 		line-height: 30px;
-		margin-bottom: 35px;
+		margin-bottom: 15px;
 	}
 
 	&__list {
@@ -602,26 +560,30 @@
 }
 
 .price-form {
+	padding-top: 20px;
 	&__header {
 		position: relative;
 	    width: 347px;
-	    height: 149px;
-	    padding: 57px 16px 0;
+	    height: 153px;
+	    padding: 52px 16px 0;
 	    background-color: $color-1;
 
 		h3 {
 			margin-bottom: 85px;
 			font-size: 24px;
 			font-weight: 600;
-			color: $text-white;
 		}
 
 		&--left {
-			float: left;
+			position: absolute;
+			left: 16px;
+			bottom: 13px;
 		}
 
 		&--right {
-			float: right;
+			position: absolute;
+			right: 17px;
+			bottom: 13px;
 		}
 	}
 
@@ -650,22 +612,22 @@
 	&__information {
 		position: relative;
 	    width: 347px;
-	    height: 379px;
+	    height: 308px;
 	    padding: 116px 16px 30px;
 	    background-color: $color-2;
 	    text-align: center;
 	    font-size: 14px;
 
 		p {
-			margin-bottom: 22px;
+			margin-bottom: 13px;
 		}
 	}
 
 	&__button {
 		display: inline-block;
 		position: absolute;
-	    bottom: 104px;
-	    left: 79px;
+	    bottom: 33px;
+	    left: 77px;
 	    text-transform: uppercase;
 	    text-decoration: none;
 	    color: #fff;
@@ -679,7 +641,7 @@
 		text-transform: uppercase;
 		position: relative;
 		list-style-type: none;
-		padding-top: 11px;
+		padding-top: 18px;
 
 	}
 
@@ -697,7 +659,7 @@
 			color: #fff;
 			background-color: $color-4;
 			padding: 18px 24px 15px;
-		    left: 63px;
+		    left: 61px;
 		    position: absolute;
 		}
 
@@ -707,13 +669,13 @@
 			background-color: #FFF;
 			padding: 23px 17px 20px;
 		    position: absolute;
-		    right: 64px;
+		    right: 66px;
 			border: 2px solid $color-4;
 		}
 	}
 
 	&__label {
-		margin-top: 43px;
+		margin-top: 38px;
 	    font-size: 16px;
 	    text-transform: uppercase;
 	    font-weight: 500;
@@ -733,5 +695,41 @@
 		display: block;
 		font-size: 48px;
 		font-weight: 600;
+	}
+}
+
+.recent-post {
+	&__img {
+		margin: 0 15px;
+		height: 240px;
+    	width: 350px;
+    	background-size: cover;
+
+		&--1 {
+			background-image: url(../img/recent-1.png);
+		}
+
+		&--2 {
+			background-image: url(../img/recent-2.png);
+		}
+
+		&--3 {
+			background-image: url(../img/recent-3.png);
+		}
+	}
+
+	&__header {
+		text-transform: uppercase;
+		color: $color-4;
+		font-size: 14px;
+		margin: 28px 15px 17px;
+	    font-weight: 500;
+	    line-height: 24px;
+	}
+
+	&__text {
+		font-size: 14px;
+		margin: 0 15px;
+		line-height: 2;
 	}
 }

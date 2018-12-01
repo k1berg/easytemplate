@@ -1,5 +1,5 @@
 header {
-	background-color: $bg-blue;
+	background-color: $color-4;
 	color: $text-white;
     background-image: url(../img/background-img-header.png);
     background-repeat: no-repeat;
@@ -67,6 +67,11 @@ header {
             margin-bottom: 5px;
         }
 
+        &--blue {
+            background-color: $color-4;
+            padding: 22px;
+        }
+
         &--transparent {
             padding: 16px 29px;
         }
@@ -101,12 +106,12 @@ header {
 	}
 
 	h2 {
-		margin-top: 23px;
+		margin-top: 19px;
         margin-left: 45px;
 	}
 
 	&__button {
-        padding-top: 90px;
+        padding-top: 62px;
 
         a {
             font-size: 18px;
@@ -123,7 +128,9 @@ header {
 
 	p {
         display: inline-block;
-        margin: 27px 41px;
+        letter-spacing: 0;
+        margin-top: 24px;
+        margin-left: 43px;
 	}
     
     &__phone {
