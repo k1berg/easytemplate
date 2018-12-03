@@ -43,167 +43,6 @@
 	}
 }
 
-.block-title {
-	text-transform: uppercase;
-	font-size: 18px;
-
-	&--center {
-		text-align: center;
-		font-weight: 500;
-	}
-
-	&--headline {
-		font-weight: 600;
-		font-size: 32px;
-	}
-
-	&--left {
-		text-align: left;
-	}
-
-	&--lineheight {
-		line-height: 26px;
-	}
-}
-
-.sprite {
-	&__icon {
-		display: inline-block;
-		width: 75px;
-	    height: 68px;
-		background-image: url(../img/icons.png);
-		margin: 30px 89px;
-
-		&--schedule {
-			background-position-y: -17px;
-		}
-
-		&--booking {
-			background-position-y: -94px
-		}
-
-		&--ring {
-			background-position-y: -180px
-		}
-
-		&--tracking {
-			background-position-y: -266px
-		}
-
-		&--tag {
-			background-position-y: -348px
-		}
-
-		&--apple {
-			background-position-y: -434px
-		}
-
-		&--features {
-			background-position-y: -509px
-		}
-
-		&--dialog{
-			background-position-y: -589px
-		}
-
-		&--wand{
-			background-position-y: -671px
-		}
-
-		&--diagram {
-			background-position-y: -749px
-		} 
-	}
-
-	&__countries {
-		display: inline-block;
-		width: 160px;
-	    height: 107px;
-		background-image: url(../img/flags.png);
-		margin: 68px 15px 16px;
-
-		&--UK {
-			background-position-y: -109px;
-		}
-
-		&--NZ {
-			background-position-y: -218px;
-		}
-
-		&--Mexico {
-			background-position-y: -327px;			
-		}
-
-		&--Australia {
-			background-position-y: -436px;
-		}
-
-		&--Argentina {
-			background-position-y: -545px;
-		}
-
-		&--India {
-			background-position-y: -654px;
-		}
-
-		&--Canada {
-			background-position-y: -763px;
-		}
-
-		&--SA {
-			background-position-y: -872px;
-		}
-
-		&--Spain {
-			background-position-y: -981px;
-		}
-	}
-}
-
-.highlite {
-	&--blue{
-		color: $color-4;
-	}
-
-	&--green {
-		color: $color-1;
-	}
-
-	&--white {
-		color: $text-white;
-	}
-}
-
-.format {
-	font-family: 'Montserrat', sans-serif;
-	color: $text-main;
-	line-height: 30px;
-
-	&--align-left {
-		text-align: left;
-	}
-
-	&--regular {
-		font-weight: 400;
-	}
-
-	&--medium {
-		font-weight: 500;
-	}
-
-	&--size-14 {
-		font-size: 14px;
-	}
-
-	&--size-16 {
-		font-size: 16px;
-	}
-}
-
-.align--center {
-	text-align: center;
-}
-
 .section {
 	padding-top: 85px;
 	padding-bottom: 75px;
@@ -488,6 +327,7 @@
 }
 
 .owners {
+
 	&__offset {
 		padding: 0 13px;
 	}
@@ -521,9 +361,6 @@
 	&__text {
 		line-height: 30px;
 		margin-bottom: 15px;
-	}
-
-	&__list {
 	}
 
 	&__item {
@@ -592,7 +429,6 @@
 		font-weight: 500;
 		font-size: 14px;
 		color: $color-1;
-
 	}
 
 	&__information {
@@ -722,4 +558,166 @@
 		margin: 0 15px;
 		line-height: 2;
 	}
+}
+
+
+.block-title {
+	text-transform: uppercase;
+	font-size: 18px;
+
+	&--center {
+		text-align: center;
+		font-weight: 500;
+	}
+
+	&--headline {
+		font-weight: 600;
+		font-size: 32px;
+	}
+
+	&--left {
+		text-align: left;
+	}
+
+	&--lineheight {
+		line-height: 26px;
+	}
+}
+
+.sprite {
+	&__icon {
+		display: inline-block;
+		width: 75px;
+	    height: 68px;
+		background-image: url(../img/icons.png);
+		margin: 30px 89px;
+
+		&--schedule {
+			background-position-y: -17px;
+		}
+
+		&--booking {
+			background-position-y: -94px
+		}
+
+		&--ring {
+			background-position-y: -180px
+		}
+
+		&--tracking {
+			background-position-y: -266px
+		}
+
+		&--tag {
+			background-position-y: -348px
+		}
+
+		&--apple {
+			background-position-y: -434px
+		}
+
+		&--features {
+			background-position-y: -509px
+		}
+
+		&--dialog{
+			background-position-y: -589px
+		}
+
+		&--wand{
+			background-position-y: -671px
+		}
+
+		&--diagram {
+			background-position-y: -749px
+		} 
+	}
+
+	&__countries {
+		display: inline-block;
+		width: 160px;
+	    height: 107px;
+		background-image: url(../img/flags.png);
+		margin: 68px 15px 16px;
+
+		&--UK {
+			background-position-y: -109px;
+		}
+
+		&--NZ {
+			background-position-y: -218px;
+		}
+
+		&--Mexico {
+			background-position-y: -327px;			
+		}
+
+		&--Australia {
+			background-position-y: -436px;
+		}
+
+		&--Argentina {
+			background-position-y: -545px;
+		}
+
+		&--India {
+			background-position-y: -654px;
+		}
+
+		&--Canada {
+			background-position-y: -763px;
+		}
+
+		&--SA {
+			background-position-y: -872px;
+		}
+
+		&--Spain {
+			background-position-y: -981px;
+		}
+	}
+}
+
+.highlite {
+	&--blue{
+		color: $color-4;
+	}
+
+	&--green {
+		color: $color-1;
+	}
+
+	&--white {
+		color: $text-white;
+	}
+}
+
+.format {
+	font-family: 'Montserrat', sans-serif;
+	color: $text-main;
+	line-height: 30px;
+
+	&--align-left {
+		text-align: left;
+	}
+
+	&--regular {
+		font-weight: 400;
+	}
+
+	&--medium {
+		font-weight: 500;
+	}
+
+	&--size-14 {
+		font-size: 14px;
+	}
+
+	&--size-16 {
+		font-size: 16px;
+	}
+}
+
+.align--center {
+	text-align: center;
 }

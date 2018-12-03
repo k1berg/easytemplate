@@ -173,99 +173,6 @@ p {
       text-transform: uppercase;
       color: #000; }
 
-.block-title {
-  text-transform: uppercase;
-  font-size: 18px; }
-  .block-title--center {
-    text-align: center;
-    font-weight: 500; }
-  .block-title--headline {
-    font-weight: 600;
-    font-size: 32px; }
-  .block-title--left {
-    text-align: left; }
-  .block-title--lineheight {
-    line-height: 26px; }
-
-.sprite__icon {
-  display: inline-block;
-  width: 75px;
-  height: 68px;
-  background-image: url(../img/icons.png);
-  margin: 30px 89px; }
-  .sprite__icon--schedule {
-    background-position-y: -17px; }
-  .sprite__icon--booking {
-    background-position-y: -94px; }
-  .sprite__icon--ring {
-    background-position-y: -180px; }
-  .sprite__icon--tracking {
-    background-position-y: -266px; }
-  .sprite__icon--tag {
-    background-position-y: -348px; }
-  .sprite__icon--apple {
-    background-position-y: -434px; }
-  .sprite__icon--features {
-    background-position-y: -509px; }
-  .sprite__icon--dialog {
-    background-position-y: -589px; }
-  .sprite__icon--wand {
-    background-position-y: -671px; }
-  .sprite__icon--diagram {
-    background-position-y: -749px; }
-
-.sprite__countries {
-  display: inline-block;
-  width: 160px;
-  height: 107px;
-  background-image: url(../img/flags.png);
-  margin: 68px 15px 16px; }
-  .sprite__countries--UK {
-    background-position-y: -109px; }
-  .sprite__countries--NZ {
-    background-position-y: -218px; }
-  .sprite__countries--Mexico {
-    background-position-y: -327px; }
-  .sprite__countries--Australia {
-    background-position-y: -436px; }
-  .sprite__countries--Argentina {
-    background-position-y: -545px; }
-  .sprite__countries--India {
-    background-position-y: -654px; }
-  .sprite__countries--Canada {
-    background-position-y: -763px; }
-  .sprite__countries--SA {
-    background-position-y: -872px; }
-  .sprite__countries--Spain {
-    background-position-y: -981px; }
-
-.highlite--blue {
-  color: #37a6c1; }
-
-.highlite--green {
-  color: #56d2ae; }
-
-.highlite--white {
-  color: #fff; }
-
-.format {
-  font-family: 'Montserrat', sans-serif;
-  color: #000;
-  line-height: 30px; }
-  .format--align-left {
-    text-align: left; }
-  .format--regular {
-    font-weight: 400; }
-  .format--medium {
-    font-weight: 500; }
-  .format--size-14 {
-    font-size: 14px; }
-  .format--size-16 {
-    font-size: 16px; }
-
-.align--center {
-  text-align: center; }
-
 .section {
   padding-top: 85px;
   padding-bottom: 75px; }
@@ -584,6 +491,99 @@ p {
   font-size: 14px;
   margin: 0 15px;
   line-height: 2; }
+
+.block-title {
+  text-transform: uppercase;
+  font-size: 18px; }
+  .block-title--center {
+    text-align: center;
+    font-weight: 500; }
+  .block-title--headline {
+    font-weight: 600;
+    font-size: 32px; }
+  .block-title--left {
+    text-align: left; }
+  .block-title--lineheight {
+    line-height: 26px; }
+
+.sprite__icon {
+  display: inline-block;
+  width: 75px;
+  height: 68px;
+  background-image: url(../img/icons.png);
+  margin: 30px 89px; }
+  .sprite__icon--schedule {
+    background-position-y: -17px; }
+  .sprite__icon--booking {
+    background-position-y: -94px; }
+  .sprite__icon--ring {
+    background-position-y: -180px; }
+  .sprite__icon--tracking {
+    background-position-y: -266px; }
+  .sprite__icon--tag {
+    background-position-y: -348px; }
+  .sprite__icon--apple {
+    background-position-y: -434px; }
+  .sprite__icon--features {
+    background-position-y: -509px; }
+  .sprite__icon--dialog {
+    background-position-y: -589px; }
+  .sprite__icon--wand {
+    background-position-y: -671px; }
+  .sprite__icon--diagram {
+    background-position-y: -749px; }
+
+.sprite__countries {
+  display: inline-block;
+  width: 160px;
+  height: 107px;
+  background-image: url(../img/flags.png);
+  margin: 68px 15px 16px; }
+  .sprite__countries--UK {
+    background-position-y: -109px; }
+  .sprite__countries--NZ {
+    background-position-y: -218px; }
+  .sprite__countries--Mexico {
+    background-position-y: -327px; }
+  .sprite__countries--Australia {
+    background-position-y: -436px; }
+  .sprite__countries--Argentina {
+    background-position-y: -545px; }
+  .sprite__countries--India {
+    background-position-y: -654px; }
+  .sprite__countries--Canada {
+    background-position-y: -763px; }
+  .sprite__countries--SA {
+    background-position-y: -872px; }
+  .sprite__countries--Spain {
+    background-position-y: -981px; }
+
+.highlite--blue {
+  color: #37a6c1; }
+
+.highlite--green {
+  color: #56d2ae; }
+
+.highlite--white {
+  color: #fff; }
+
+.format {
+  font-family: 'Montserrat', sans-serif;
+  color: #000;
+  line-height: 30px; }
+  .format--align-left {
+    text-align: left; }
+  .format--regular {
+    font-weight: 400; }
+  .format--medium {
+    font-weight: 500; }
+  .format--size-14 {
+    font-size: 14px; }
+  .format--size-16 {
+    font-size: 16px; }
+
+.align--center {
+  text-align: center; }
 
 header {
   background-color: #37a6c1;
