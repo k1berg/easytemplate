@@ -53,4 +53,10 @@ footer {
 	    margin-top: 48px;
     	margin-bottom: 39px;
 	}
+
+	p {
+		@media (max-width: 1024px) {
+			text-align: center;
+		}
+	}
 }

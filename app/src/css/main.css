@@ -94,9 +94,20 @@ p {
 
 .block-wrapper__countries {
   padding: 0 50px; }
+  @media (max-width: 1024px) {
+    .block-wrapper__countries {
+      padding: 0 20px; } }
+
+.block-wrapper__img {
+  text-align: center;
+  padding-top: 50px;
+  height: 100px; }
 
 .type-block {
   display: block; }
+  @media (max-width: 1024px) {
+    .type-block {
+      display: inline-block; } }
   @media (max-width: 1024px) {
     .type-block--small-screen {
       display: block; } }
@@ -191,17 +202,27 @@ p {
     background-size: cover; }
     .section__partnership--center {
       margin-top: 63px; }
-    .section__partnership img {
-      margin: 14px 0; }
   .section__what-we-believe-in h2 {
     margin-bottom: 60px; }
   .section__features-list {
     background-color: #f3fcf9; }
   .section__global-software img {
     margin: 7px 0; }
+  .section__global-software h4 {
+    text-transform: uppercase;
+    font-weight: 500; }
+    @media (max-width: 1024px) {
+      .section__global-software h4 {
+        font-size: 14px; } }
   .section__our-story img {
     margin-top: 50px;
     max-width: 100%; }
+    @media (max-width: 1024px) {
+      .section__our-story img {
+        width: 63%; } }
+  @media (max-width: 1024px) {
+    .section__our-story {
+      text-align: center; } }
   .section__salon-owners {
     background-color: #37a6c1; }
     .section__salon-owners img {
@@ -216,7 +237,7 @@ p {
       margin-bottom: 50px; }
   .section__questions-about-salon {
     background-color: #f3fcf9; }
-    .section__questions-about-salon span {
+    .section__questions-about-salon h4 {
       text-transform: uppercase;
       font-weight: 500;
       font-size: 14px; }
@@ -281,13 +302,20 @@ p {
   .features-list__block p {
     margin-top: 20px;
     line-height: 2; }
-  .features-list__block--bottom-0 {
-    margin-bottom: 0; }
   .features-list__block--height {
     height: 379px; }
+    @media (max-width: 1024px) {
+      .features-list__block--height {
+        height: auto; } }
+  @media (max-width: 1024px) {
+    .features-list__block {
+      margin-bottom: 0; } }
 
 .countries__list {
   padding: 0; }
+  @media (max-width: 1024px) {
+    .countries__list {
+      padding-top: 50px; } }
 
 .countries__item {
   text-transform: uppercase;
@@ -300,10 +328,16 @@ p {
   text-transform: uppercase;
   font-size: 14px;
   font-weight: 500; }
+  @media (max-width: 1024px) {
+    .countries__headline {
+      font-size: 10px; } }
 
 .our-story__text {
   padding-right: 55px;
   padding-left: 37px; }
+  @media (max-width: 1024px) {
+    .our-story__text {
+      padding: 10px 98px; } }
   .our-story__text p {
     margin-bottom: 24px;
     line-height: 24px;
@@ -311,6 +345,10 @@ p {
 
 .owners__offset {
   padding: 0 13px; }
+  @media (max-width: 1024px) {
+    .owners__offset p {
+      padding: 0 100px;
+      font-size: 14px; } }
 
 .owners__photo {
   width: 134px;
@@ -321,6 +359,11 @@ p {
   background-position: center;
   background-size: 100%;
   margin-bottom: 47px; }
+  @media (max-width: 1024px) {
+    .owners__photo {
+      width: 180px;
+      height: 180px;
+      margin: 16px 0; } }
   .owners__photo--Marcus {
     background-image: url(../img/marcus.png); }
   .owners__photo--Hellen {
@@ -331,24 +374,40 @@ p {
 .software-free__text {
   line-height: 30px;
   margin-bottom: 15px; }
+  @media (max-width: 1024px) {
+    .software-free__text {
+      padding: 0 144px; } }
+
+@media (max-width: 1024px) {
+  .software-free__list {
+    margin-top: 38px;
+    padding-left: 144px;
+    padding-right: 65px;
+    font-size: 14px; } }
 
 .software-free__item {
   margin-bottom: 3px; }
   .software-free__item p {
     margin: 0 63px;
     line-height: 24px; }
+  @media (max-width: 1024px) {
+    .software-free__item {
+      margin-bottom: 6px; } }
 
 .software-free__img {
   padding: 43px 8px;
   height: 100%;
   width: 100%; }
+  @media (max-width: 1024px) {
+    .software-free__img {
+      width: 80%; } }
 
 .software-free__chek {
   display: inline-block;
   margin-bottom: -29px; }
 
 .price-form {
-  padding-top: 20px; }
+  padding-top: 40px; }
   .price-form__header {
     position: relative;
     width: 347px;
@@ -462,6 +521,20 @@ p {
     font-weight: 600;
     margin-top: -5px; }
 
+.questions-about-salon__tab {
+  margin-bottom: 70px;
+  padding: 0 25px; }
+  .questions-about-salon__tab h4 {
+    margin: 18px 0; }
+  .questions-about-salon__tab p {
+    margin-top: 20px;
+    line-height: 2; }
+  @media (max-width: 1024px) {
+    .questions-about-salon__tab {
+      padding-left: 124px;
+      padding-right: 90px;
+      margin-bottom: 35px; } }
+
 .recent-post__img {
   margin: 0 15px;
   height: 240px;
@@ -473,6 +546,11 @@ p {
     background-image: url(../img/recent-2.png); }
   .recent-post__img--3 {
     background-image: url(../img/recent-3.png); }
+  @media (max-width: 1024px) {
+    .recent-post__img {
+      height: 240px;
+      width: 296px;
+      background-size: 100%; } }
 
 .recent-post__header {
   text-transform: uppercase;
@@ -484,17 +562,18 @@ p {
 
 .recent-post__text {
   font-size: 14px;
-  margin: 0 15px;
+  padding: 0 15px;
   line-height: 2; }
+  @media (max-width: 1024px) {
+    .recent-post__text {
+      padding-right: 45px; } }
 
 .block-title {
   text-transform: uppercase;
   font-size: 18px; }
   @media (max-width: 1024px) {
     .block-title {
-      text-align: center; }
-      .block-title span {
-        display: inline-block; } }
+      text-align: center; } }
   .block-title--center {
     text-align: center;
     font-weight: 500; }
@@ -565,24 +644,57 @@ p {
   height: 107px;
   background-image: url(../img/flags.png);
   margin: 68px 15px 16px; }
+  @media (max-width: 1024px) {
+    .sprite__countries {
+      width: 115px;
+      height: 78px;
+      background-size: 100%;
+      margin: 20px 10px; } }
   .sprite__countries--UK {
     background-position-y: -109px; }
+    @media (max-width: 1024px) {
+      .sprite__countries--UK {
+        background-position-y: -78px; } }
   .sprite__countries--NZ {
     background-position-y: -218px; }
+    @media (max-width: 1024px) {
+      .sprite__countries--NZ {
+        background-position-y: -156px; } }
   .sprite__countries--Mexico {
     background-position-y: -327px; }
+    @media (max-width: 1024px) {
+      .sprite__countries--Mexico {
+        background-position-y: -235px; } }
   .sprite__countries--Australia {
     background-position-y: -436px; }
+    @media (max-width: 1024px) {
+      .sprite__countries--Australia {
+        background-position-y: -313px; } }
   .sprite__countries--Argentina {
     background-position-y: -545px; }
+    @media (max-width: 1024px) {
+      .sprite__countries--Argentina {
+        background-position-y: -391px; } }
   .sprite__countries--India {
     background-position-y: -654px; }
+    @media (max-width: 1024px) {
+      .sprite__countries--India {
+        background-position-y: -470px; } }
   .sprite__countries--Canada {
     background-position-y: -763px; }
+    @media (max-width: 1024px) {
+      .sprite__countries--Canada {
+        background-position-y: -548px; } }
   .sprite__countries--SA {
     background-position-y: -872px; }
+    @media (max-width: 1024px) {
+      .sprite__countries--SA {
+        background-position-y: -626px; } }
   .sprite__countries--Spain {
     background-position-y: -981px; }
+    @media (max-width: 1024px) {
+      .sprite__countries--Spain {
+        background-position-y: -704px; } }
 
 .highlite--blue {
   color: #37a6c1; }
@@ -607,6 +719,11 @@ p {
     font-size: 14px; }
   .format--size-16 {
     font-size: 16px; }
+  .format--bottom-0 {
+    margin-bottom: 0; }
+  @media (max-width: 1024px) {
+    .format--ident {
+      padding: 0 150px; } }
 
 .align--center {
   text-align: center; }
@@ -836,6 +953,9 @@ footer {
     border: 0;
     margin-top: 48px;
     margin-bottom: 39px; }
+  @media (max-width: 1024px) {
+    footer p {
+      text-align: center; } }
 
 /*Responsive start*/
 /*UltraLarge screens start*/
