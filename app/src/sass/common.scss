@@ -314,7 +314,6 @@
 	&__block {
 		margin-bottom: 70px;
 		padding: 0 25px;
-		height: 379px;
 		
 		h4 {
 			margin: 18px 0;
@@ -332,6 +331,10 @@
 
 		&--bottom-0 {
 			margin-bottom: 0;
+		}
+
+		&--height {
+			height: 379px;
 		}
 	}
 }

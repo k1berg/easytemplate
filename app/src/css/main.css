@@ -272,8 +272,7 @@ p {
 
 .features-list__block {
   margin-bottom: 70px;
-  padding: 0 25px;
-  height: 379px; }
+  padding: 0 25px; }
   .features-list__block h4 {
     margin: 18px 0; }
   .features-list__block a {
@@ -284,6 +283,8 @@ p {
     line-height: 2; }
   .features-list__block--bottom-0 {
     margin-bottom: 0; }
+  .features-list__block--height {
+    height: 379px; }
 
 .countries__list {
   padding: 0; }
