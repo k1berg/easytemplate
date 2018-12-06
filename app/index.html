@@ -9,34 +9,48 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" href="/favicon.ico">
   <link rel="stylesheet" href="build/css/style.css">
-  <link rel="stylesheet" type="src/css/reset.css" href="">
 </head>
 <body>
   <header>
     <div class="top-bar">
       <div class="grid-container">
 
-        <div class="grid-20">
+        <div class="grid-20 mobile-grid-100 tablet-grid-50">
           <div class="top-bar__logo">
             <a href="https://belliatasalonsoftware.com/"><img src="build/img/logo.png" alt="Logo"></a>
           </div>
         </div>
 
-        <div class="grid-45">
+        <div class="grid-45 hide-on-tablet hide-on-mobile">
           <div class="top-bar__menu">
             <ul class=top-bar__list>
-              <li class=top-bar__item><a href="https://belliatasalonsoftware.com/#product">Pricing</a></li>
-              <li class=top-bar__item><a href="https://belliatasalonsoftware.com/#features">Features</a></li>
-              <li class=top-bar__item><a href=#>Who uses us?</a></li>
+              <li class=top-bar__item><a href="http://localhost:3000/#pricing">Pricing</a></li>
+              <li class=top-bar__item><a href="http://localhost:3000/#features">Features</a></li>
+              <li class=top-bar__item><a href="http://localhost:3000/#who-uses-us">Who uses us?</a></li>
               <li class=top-bar__item><a href="https://belliatasalonsoftware.com/blog">Blog</a></li>
             </ul>
           </div>
         </div>
 
-        <div class="grid-35">
-          <div class="top-bar__schedule">
-            <a href="https://belliata.com/sign-up" class="btn__create btn__create--green">Create Schedule</a>
-            <a href="https://belliata.com/dashboard/login" class="btn__create btn__create--transparent">Log in</a>
+        <div class="grid-35 mobile-grid-100 tablet-grid-50">
+          <div class="top-bar__buttons">
+            <a href="https://belliata.com/sign-up" class="btn__create btn__create--green hide-on-mobile hide-on-tablet">Create Schedule</a>
+            <label class="log-in__btn btn__create" for="log-in__btn">Log in</label>
+            <input type="checkbox" name="Login" id="log-in__btn">
+            <div class="log-in__roll">
+              <ul class="log-in__list">
+                <li class="log-in__item"><a href="http://belliatasalonsoftware.co.uk/">United Kingdom</a></li>
+                <li class="log-in__item"><a href="http://belliatasalonsoftware.co.in/">India</a></li>
+                <li class="log-in__item"><a href="http://belliatafriseursoftware.de/">Friseur Software - Deutschland</a></li>
+                <li class="log-in__item"><a href="https://belliata.at/">Friseur Software - Österreich</a></li>
+                <li class="log-in__item"><a href="https://belliata.pl/">Fryzjer Program - Polska</a></li>
+                <li class="log-in__item"><a href="https://belliata.fr/">Logiciel Salon de Coiffure - France</a></li>
+                <li class="log-in__item"><a href="http://belliataprogramapeluqueria.es/">Programa de Peluqueria - España</a></li>
+              </ul>
+            </div>
+            <div class="top-bar__menu-on-phone">
+              <img src="build/img/menu.png">
+            </div>
           </div>
         </div>
 
@@ -45,7 +59,7 @@
 
     <div class="heading-block">
       <div class="grid-container">
-        <div class="grid-60">
+        <div class="grid-60 tablet-grid-100 mobile-grid-100">
           <h1>Salon Software for your growing business</h1>
           <h2>Scheduling, client management, point of sale you have it all</h2>
             <div class="heading-block__button">
@@ -55,7 +69,7 @@
             <p>No setup costs or contract - start managing your salon today</p>
         </div>
 
-        <div class="grid-40">
+        <div class="grid-40 tablet-grid-100 mobile-grid-100">
           <div class="heading-block__phone">
             <img src="build/img/iPhone-schedule.png">
           </div>
@@ -67,7 +81,7 @@
   <div class="block-navigation">
     <div class="grid-container">
 
-      <div class="block-navigation__chevron align--center">
+      <div class="block-navigation__chevron align--center hide-on-tablet hide-on-mobile">
           <img src="build/img/chevron-down.svg">
       </div>
 
@@ -77,28 +91,28 @@
 
             <li class="block-navigation__item">
               <a href="http://localhost:3000/#features-list">
-                <span class="sprite__icon sprite__icon--schedule"></span> 
+                <span class="sprite__icon sprite__icon--schedule sprite__icon--small" id="schedule"></span> 
                 <h4>Staff scheduling</h4>
               </a>
             </li>
 
             <li class="block-navigation__item">
               <a href="http://localhost:3000/#features-list">
-                <span class="sprite__icon sprite__icon--booking"></span> 
+                <span class="sprite__icon sprite__icon--booking  sprite__icon--small" id="booking"></span> 
                 <h4>Online booking</h4>
               </a>
             </li>
 
             <li class="block-navigation__item">
               <a href="http://localhost:3000/#features-list">
-                <span class="sprite__icon sprite__icon--ring"></span> 
+                <span class="sprite__icon sprite__icon--ring  sprite__icon--small" id="booking"></span> 
                 <h4>Appointment reminders</h4>
               </a>
             </li>
 
             <li class="block-navigation__item">
               <a href="http://localhost:3000/#features-list">
-                <span class="sprite__icon sprite__icon--tracking"></span> 
+                <span class="sprite__icon sprite__icon--tracking  sprite__icon--small" id="tracking"></span> 
                 <h4>Customer tracking</h4>
               </a>
             </li>
@@ -107,21 +121,21 @@
               <ul class="block-navigation__list--attachment">
                 <li class="block-navigation__item">
                   <a href="http://localhost:3000/#features-list">
-                    <span class="sprite__icon sprite__icon--tag"></span> 
+                    <span class="sprite__icon sprite__icon--tag  sprite__icon--small" id="tag"></span> 
                     <h4>Salon Point of Sale</h4>
                   </a>
                 </li>
 
                 <li class="block-navigation__item">
                   <a href="http://localhost:3000/#features-list">
-                    <span class="sprite__icon sprite__icon--apple"></span> 
+                    <span class="sprite__icon sprite__icon--apple  sprite__icon--small" id="apple"></span> 
                     <h4>Works on iPad & Mac</h4>
                   </a>
                 </li>
 
                 <li class="block-navigation__item">
                   <a href="http://localhost:3000/#features-list">
-                    <span class="sprite__icon sprite__icon--features"></span> 
+                    <span class="sprite__icon sprite__icon--features  sprite__icon--small" id="features"></span> 
                     <h4>All features</h4>
                   </a>
                 </li>
@@ -142,7 +156,7 @@
       <div class="grid-50">
         <div class="section__trusted--text">
           <p class="format format--align-left format--medium format--size-16">We know the stresses of running a busy hair salon; staffing, inventory management, salon marketing and not forgetting cutting hair! Using our hair salon software enables you to manage your staff scheduling, appointment booking and salon POS at the touch of a button.</p>
-          <p class="format format--align-left format--medium format--size-16">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+          <p class="format format--align-left format--medium format--size-16 hide-on-tablet hide-on-mobile">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
         </div>
       </div>
 
@@ -155,52 +169,56 @@
   </section>
 
   <section class="section section__how-macbook">
-    <div class="grid-container-fluid">
-    <h2 class="block-title block-title--center block-title--headline">How it works</h2>
-      <div class="grid-50-fluid"> <div class="picture-background picture-background__macbook picture-background--left"></div>
-        <span class="hide-on-desktop">
-          <img src="build/img/macbook.png">
-        </span>
+    <div class="grid-container">
+      <div class="section-header">
+        <h2 class="block-title block-title--center block-title--headline">How it works</h2>
       </div>
-      <div class="grid-50-fluid">
+      <div class="grid-65 hide-on-tablet hide-on-mobile"> 
+          <img src="build/img/macbook.png">
+      </div>
+      <div class="grid-35 tablet-grid-100 mobile-grid-100">
         <div class="text-from-tabs text-from-tabs--right">
-          <h3 class="block-title highlite--blue">Appointment<br>Scheduling</h3> 
+          <h3 class="block-title highlite--blue">Appointment <span class="type-block">Scheduling </span></h3> 
           <p class="format format--size-14">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
           <p class="format format--size-14">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
         </div>
+        <div class="hide-on-desktop tablet-grid-100 mobile-grid-100"> 
+          <img src="build/img/macbook.png">
+      </div>
       </div>
     </div>
   </section>
 
   <section class="section section__how-tablet">
-    <div class="grid-container-fluid">
-      <div class="grid-50-fluid">
+    <div class="grid-container">
+      <div class="grid-35">
         <div class="text-from-tabs text-from-tabs--left">
           <h3 class="block-title highlite--blue">Pos</h3> 
           <p class="format format--size-14">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
           <p class="format format--size-14">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
         </div>
       </div>
-      <div class="grid-50-fluid"><div class="picture-background picture-background__tablet picture-background--right"></div>
-        <span class="hide-on-desktop">
+      <div class="grid-65">
           <img src="build/img/iPad-tablet.png">
-        </span>
       </div>
     </div>  
   </section>
 
-   <section class="section section__how-iPhone">
-    <div class="grid-container-fluid">
-      <div class="grid-50-fluid"><div class="picture-background picture-background__iPhone picture-background--left"></div>
-        <span class="hide-on-desktop">
+  <section class="section section__how-iPhone">
+    <div class="grid-container">
+      <div class="grid-65 hide-on-tablet hide-on-mobile">
+        <div class="align--center">
           <img src="build/img/iPhone-diagramm.png">
-        </span>
+        </div>
       </div>
-      <div class="grid-50-fluid">
-        <div class="text-from-tabs text-from-tabs--right">
-          <h3 class="block-title highlite--blue">Appointment<br>Reminders</h3> 
+      <div class="grid-35">
+        <div class="text-from-tabs text-from-tabs--right tablet-grid-100 mobile-grid-100">
+          <h3 class="block-title highlite--blue">Appointment <span class="type-block">Reminders</span></h3> 
           <p class="format format--size-14">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
           <p class="format format--size-14">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+        </div>
+        <div class="hide-on-desktop align--center tablet-grid-100 mobile-grid-100">
+          <img src="build/img/iPhone-diagramm.png">
         </div>
       </div>
     </div>
@@ -210,20 +228,24 @@
     <div class="grid-container">
       <div class="section-header">
         <p class="block-title block-title--center block-title--headline">Our free salon software works happily with</p>
-        <p class="block-title block-title--center block-title--lineheight">Effortlessly add an online appointment booking page to your<br>own website or Facebook page.</p>
+        <p class="block-title block-title--center block-title--lineheight">Effortlessly add an online appointment booking page to your <span class="type-block">own website or Facebook page.</span></p>
       </div>
       <div class="section__partnership--center">
-        <div class="grid-25">
-          <img src="build/img/weebly.png">
+        <div class="grid-parent grid-50 tablet-grid-50 mobile-grid-50">
+          <div class="grid-50">
+            <img src="build/img/weebly.png">
+          </div>
+          <div class="grid-50">
+            <img src="build/img/wordpress.png">
+          </div>
         </div>
-        <div class="grid-25">
-          <img src="build/img/wordpress.png">
-        </div>
-        <div class="grid-25">
-          <img src="build/img/wix.png">
-        </div>
-        <div class="grid-25">
-          <img src="build/img/facebook.png">
+        <div class="grid-parent grid-50 tablet-grid-50 mobile-grid-50">
+          <div class="grid-50">
+            <img src="build/img/wix.png">
+          </div>
+          <div class="grid-50">
+            <img src="build/img/facebook.png">
+          </div>
         </div>
       </div>
   </section>
@@ -239,9 +261,9 @@
         <p>We believe in saying sorry if we screw up</p>
         <p>We believe in delivering you value (yes, our salon software is free – so try figure that one)</p>
         <p>We believe in helping you deliver a great customer experience for your clients</p>
-        <p>We believe in sharing our business knowledge (including the mistakes) to help you grow your business</p>
-        <p>We DO NOT believe in being boring</p>
-        <p>We believe in our clients being part of a global community</p>
+        <p class="hide-on-tablet hide-on-mobile">We believe in sharing our business knowledge (including the mistakes) to help you grow your business</p>
+        <p class="hide-on-tablet hide-on-mobile">We DO NOT believe in being boring</p>
+        <p class="hide-on-tablet hide-on-mobile">We believe in our clients being part of a global community</p>
       </div>
     </div>
   </section>
@@ -249,104 +271,98 @@
   <section class="section section__features-list">
     <div class="grid-container">
       <div class="section-header">
-        <h2 class="block-title block-title--center block-title--headline">Salon management <span>software features</span></h2>
+        <h2 class="block-title block-title--center block-title--headline" id="features">Salon management <span class="highlite--green">software features</span></h2>
         <h3 class="block-title block-title--center">Deciding what salon software is best?<br>We make it easy for you.</h3>
       </div>
         <div class="features-list__blocks align--center" id="features-list">
 
-          <div class="grid-100 grid-parent">
-            <div class="grid-33">
-              <div class="features-list__block">
-                <a>
-                  <span class="sprite__icon sprite__icon--schedule"></span> 
-                  <h4>Staff scheduling</h4>
-                </a>
-                  <p class="format format--size-14">We aim to simplify how efficiently you can organize your employee scheduling, including time off, add bookings to the appointment calendar and reschedule clients if they need to move their appointment</p>
-              </div>
-            </div>
-
-            <div class="grid-33">
-              <div class="features-list__block">
-                <a>
-                  <span class="sprite__icon sprite__icon--booking"></span> 
-                  <h4>Online booking</h4>
-                </a>
-                <p class="format format--size-14">More and more customers are expecting to be able to book their salon appointments online. With our easy to use online appointment scheduler tool, means your clients booking online 24/7 securely via your website and even your Facebook page</p>
-              </div>
-            </div>
-
-            <div class="grid-33">
-              <div class="features-list__block">
-                <a>
-                  <span class="sprite__icon sprite__icon--ring"></span> 
-                  <h4>Appointment reminders</h4>
-                </a>
-                <p class="format format--size-14">Need to reduce noshows in your salon? With our automated SMS text message appointment reminders you are able send clients a reminder of their booking at a certain time period prior to them coming your Spa and salon</p>
-              </div>
+          <div class="grid-33 tablet-grid-50 mobile-grid-50">
+            <div class="features-list__block">
+              <a>
+                <span class="sprite__icon sprite__icon--schedule"></span> 
+                <h4>Staff scheduling</h4>
+              </a>
+                <p class="format format--size-14">We aim to simplify how efficiently you can organize your employee scheduling, including time off, add bookings to the appointment calendar and reschedule clients if they need to move their appointment</p>
             </div>
           </div>
 
-          <div class="grid-100 grid-parent">
-            <div class="grid-33">
-              <div class="features-list__block">
-                <a>
-                  <span class="sprite__icon sprite__icon--tracking"></span> 
-                  <h4>Customer tracking</h4>
-                </a>
-                <p class="format format--size-14">Need to know your most loyal or highest spending clients in your customer base? Our customer management tools allows you see your customer profiles in a few clicks of a mouse and even see their invoices and no shows. You can even add their birthday to their client record</p>
-              </div>
-            </div>
-
-            <div class="grid-33">
-              <div class="features-list__block">
-                <a>
-                  <span class="sprite__icon sprite__icon--tag"></span> 
-                  <h4>Salon Point of Sale</h4>
-                </a>
-                <p class="format format--size-14">Want to drive more revenue in your salon or spa? Make sure you are selling more products in your salon using our salon POS software. You can also have inventory controlthrough better inventory tracking and commissions for staff. Don’t forget to get your staff to prompt customers regarding retail.</p>
-              </div>
-            </div>
-
-            <div class="grid-33">
-              <div class="features-list__block">
-                <a>
-                  <span class="sprite__icon sprite__icon--apple"></span> 
-                  <h4>Works on iPad & Mac</h4>
-                </a>
-                <p class="format format--size-14">Using an iPad or an Apple Mac in your salon and concerned that your choice of salon management solution isn’t responsive? Don’t worry with our salon software you can access your schedule anytime anywhere & across all devices, including; iPad, Mac, Windows as well iPhone and Android smart phones.</p>
-              </div>
+          <div class="grid-33 tablet-grid-50 mobile-grid-50">
+            <div class="features-list__block">
+              <a>
+                <span class="sprite__icon sprite__icon--booking"></span> 
+                <h4>Online booking</h4>
+              </a>
+              <p class="format format--size-14">More and more customers are expecting to be able to book their salon appointments online. With our easy to use online appointment scheduler tool, means your clients booking online 24/7 securely via your website and even your Facebook page</p>
             </div>
           </div>
 
-          <div class="grid-100 grid-parent">
-            <div class="grid-33">
-              <div class="features-list__block--bottom-0">
-                <a>
-                  <span class="sprite__icon sprite__icon--dialog"></span> 
-                  <h4>Reviews & Feedback</h4>
-                </a>
-                <p class="format format--size-14">Looking to improve your product and service, whilst increasing customer loyalty and retention? Use our client feedback and reviews tool to ensure you get valuable feedback by sending a short survey after every clients booking. Say goodbye to not knowing your clients really think</p>
-              </div>
+          <div class="grid-33 tablet-grid-50 mobile-grid-50">
+            <div class="features-list__block">
+              <a>
+                <span class="sprite__icon sprite__icon--ring"></span> 
+                <h4>Appointment reminders</h4>
+              </a>
+              <p class="format format--size-14">Need to reduce noshows in your salon? With our automated SMS text message appointment reminders you are able send clients a reminder of their booking at a certain time period prior to them coming your Spa and salon</p>
             </div>
-
-            <div class="grid-33">
-              <div class="features-list__block--bottom-0">
-                <a>
-                  <span class="sprite__icon sprite__icon--wand"></span> 
-                  <h4>Easy set up</h4>
-                </a>
-                <p class="format format--size-14">Scared of computer software? Don’t worry our salon booking software is for you, in just ten minutes, you could be up and running to start booking and scheduling appointments. We have added the most popular salon services so you do have to start from scratch</p>
-              </div>
+          </div>
+      
+          <div class="grid-33 tablet-grid-50 mobile-grid-50">
+            <div class="features-list__block">
+              <a>
+                <span class="sprite__icon sprite__icon--tracking"></span> 
+                <h4>Customer tracking</h4>
+              </a>
+              <p class="format format--size-14">Need to know your most loyal or highest spending clients in your customer base? Our customer management tools allows you see your customer profiles in a few clicks of a mouse and even see their invoices and no shows. You can even add their birthday to their client record</p>
             </div>
+          </div>
 
-            <div class="grid-33">
-              <div class="features-list__block--bottom-0">
-                <a>
-                  <span class="sprite__icon sprite__icon--diagram"></span> 
-                  <h4>Reporting</h4>
-                </a>
-                <p class="format format--size-14">Need to improve your salon and spa management reporting? Find out the profitability of your salon or day spa, which member of staff has the most bookings? We have created a range of simple reports, including sales reports, to keep you up to date with your salon business.</p>
-              </div>
+          <div class="grid-33 tablet-grid-50 mobile-grid-50">
+            <div class="features-list__block">
+              <a>
+                <span class="sprite__icon sprite__icon--tag"></span> 
+                <h4>Salon Point of Sale</h4>
+              </a>
+              <p class="format format--size-14">Want to drive more revenue in your salon or spa? Make sure you are selling more products in your salon using our salon POS software. You can also have inventory controlthrough better inventory tracking and commissions for staff. Don’t forget to get your staff to prompt customers regarding retail.</p>
+            </div>
+          </div>
+
+          <div class="grid-33 tablet-grid-50 mobile-grid-50">
+            <div class="features-list__block">
+              <a>
+                <span class="sprite__icon sprite__icon--apple"></span> 
+                <h4>Works on iPad & Mac</h4>
+              </a>
+              <p class="format format--size-14">Using an iPad or an Apple Mac in your salon and concerned that your choice of salon management solution isn’t responsive? Don’t worry with our salon software you can access your schedule anytime anywhere & across all devices, including; iPad, Mac, Windows as well iPhone and Android smart phones.</p>
+            </div>
+          </div>
+       
+          <div class="grid-33 tablet-grid-50 mobile-grid-50">
+            <div class="features-list__block features-list__block--bottom-0">
+              <a>
+                <span class="sprite__icon sprite__icon--dialog"></span> 
+                <h4>Reviews & Feedback</h4>
+              </a>
+              <p class="format format--size-14">Looking to improve your product and service, whilst increasing customer loyalty and retention? Use our client feedback and reviews tool to ensure you get valuable feedback by sending a short survey after every clients booking. Say goodbye to not knowing your clients really think</p>
+            </div>
+          </div>
+
+          <div class="grid-33 tablet-grid-50 mobile-grid-50">
+            <div class="features-list__block features-list__block--bottom-0">
+              <a>
+                <span class="sprite__icon sprite__icon--wand"></span> 
+                <h4>Easy set up</h4>
+              </a>
+              <p class="format format--size-14">Scared of computer software? Don’t worry our salon booking software is for you, in just ten minutes, you could be up and running to start booking and scheduling appointments. We have added the most popular salon services so you do have to start from scratch</p>
+            </div>
+          </div>
+
+          <div class="grid-33 tablet-grid-100 mobile-grid-100">
+            <div class="features-list__block features-list__block--bottom-0">
+              <a>
+                <span class="sprite__icon sprite__icon--diagram"></span> 
+                <h4>Reporting</h4>
+              </a>
+              <p class="format format--size-14">Need to improve your salon and spa management reporting? Find out the profitability of your salon or day spa, which member of staff has the most bookings? We have created a range of simple reports, including sales reports, to keep you up to date with your salon business.</p>
             </div>
           </div>
 
@@ -356,7 +372,7 @@
 
   <section class="section section__global-software align--center">
     <div class="grid-container">
-      <h2 class="block-title block-title--center block-title--headline">Global software - <span class="highlite--green">local presence</span></h2>
+      <h2 class="block-title block-title--center block-title--headline">Global software <span class="hide-on-tablet hide-on-mobile">- </span><span class="highlite--green type-block--small-screen">local presence</span></h2>
       <img src="build/img/earth.svg">
       <p>Global</p>
       <div class="block-wrapper__countries">
@@ -430,7 +446,7 @@
   <section class="section section__salon-owners highlite--white align--center">
     <div class="grid-container">
       <div class="section-header">
-        <h2 class="block-title block-title--center block-title--headline">Salon owners  <div class="picture-from-headline"><img src="build/img/heart.svg"></div>  Belliata</h2>
+        <h2 class="block-title block-title--center block-title--headline" id="who-uses-us">Salon owners  <div class="picture-from-headline"><img src="build/img/heart.svg"></div>  Belliata</h2>
       </div>
       <div class="grid-33">
         <div class="owners__offset">
@@ -516,7 +532,7 @@
         <h2 class="block-title block-title--center block-title--headline">How Much Does Salon Software Cost By Belliata?</h2>
         <h3 class="block-title block-title--center">No credit card needed to create your schedule & no contract.<br>You can upgrade or cancel at anytime.</h3>
       </div>
-      <div class="block-wrapper__forms">
+      <div class="block-wrapper__forms"  id="pricing">
 
       <div class="grid-33">
         <div class="price-form">
@@ -542,22 +558,24 @@
         <div class="price-form">
           <div class="price-form__header">
             <h3 class="block-title block-title--center highlite--white">Grow</h3>
-            <img class="price-form__header--left" src="build/img/minus.png">
-            <img class="price-form__header--right" src="build/img/plus.png">
+            <img class="price-form__header--minus" src="build/img/minus.png">
+            <img class="price-form__header--plus" src="build/img/plus.png">
             <div class="price-form__circle">
-              <span class="circle-label__num">10</span><br>
-              <span class="circle-label">team member</span>
-              <span class="circle-label plural" style="display: none;"> ‘s </span></div>
+              <span class="circle-label__num">1</span><br>
+              <div  class="circle-label"> <span>team member</span>
+              <span class="plural" style="display: none;">‘s </span> </div>
+            </div>
           </div>
           <div class="price-form__information align--center">
             <p>ll MANAGE Features +</p>
             <p>Unlimited SMS Text Message Reminders</p>
             <p>Unlimited Business Reporting</p>
-              <ul class="price-form__list">
-                <li class="price-form__item price-form__item--active"><a href="#">Annual<br><span>save 20%</span></a></li>
-                <li class="price-form__item price-form__item--presentation"><a href="#">Monthly</a></li>
-              </ul>
-            <p class="price-form__label">Total: $4</p>
+              <div class="price-form__list">
+                <span class="price-form__item price-form__item--active price-form__item--annual">Annual <small>save 20%</small></span>
+                <span class="price-form__item price-form__item--mounthly">Mounthly</span>
+              </div>
+            <div class="price" style='display: none'>4</div>
+            <div class="price-form__total">Total: <span class="total__currency">$</span><span class="total__price--annual total__price--active total__price">4</span><span class="total__price total__price--mounthly">4</span></div>
             <a href="#" class="price-form__button">Get started</a>
           </div>
         </div>
@@ -567,22 +585,24 @@
         <div class="price-form">
           <div class="price-form__header">
             <h3 class="block-title block-title--center highlite--white">New plan</h3>
-            <img class="price-form__header--left" src="build/img/minus.png">
-            <img class="price-form__header--right" src="build/img/plus.png">
+            <img class="price-form__header--minus" src="build/img/minus.png">
+            <img class="price-form__header--plus" src="build/img/plus.png">
             <div class="price-form__circle">
-              <span class="circle-label__num">10</span><br>
-              <span class="circle-label">team member</span>
-              <span class="circle-label plural" style="display: none;"> ‘s </span></div>
+              <span class="circle-label__num">1</span><br>
+              <div  class="circle-label"> <span>team member</span>
+              <span class="plural" style="display: none;">‘s </span></div>
+            </div>
           </div>
           <div class="price-form__information align--center">
             <p>ll MANAGE Features +</p>
             <p>Unlimited SMS Text Message Reminders</p>
             <p>Unlimited Business Reporting</p>
-            <ul class="price-form__list">
-                <li class="price-form__item price-form__item--active"><a href="#">Annual<br><span>save 20%</span></a></li>
-                <li class="price-form__item price-form__item--presentation"><a href="#">Monthly</a></li>
-              </ul>
-            <p class="price-form__label">Total: $4</p>
+            <div class="price-form__list">
+                <span class="price-form__item price-form__item--active price-form__item--annual">Annual <small>save 20%</small></span>
+                <span class="price-form__item price-form__item--mounthly">Mounthly</span>
+              </div>
+            <div class="price" style='display: none'>5</div>
+            <div class="price-form__total">Total: <span class="total__currency">$</span><span class="total__price--annual total__price--active total__price">4</span><span class="total__price total__price--mounthly">4</span></div>
             <a href="#" class="price-form__button">Get started</a>
           </div>
         </div>
@@ -656,17 +676,17 @@
       <div class="section-header">
         <h2 class="block-title block-title--center block-title--headline">Recent posts</h2>
       </div>
-      <div class="grid-33">
+      <div class="grid-33 tablet-grid-50 mobile-grid-50">
         <div class="recent-post__img recent-post__img--1"></div>
         <div class="recent-post__header">Halloween Salon Specials: Get Easy To Use Spooky Ideas For Salon</div>
         <div class="recent-post__text">The average consumer spends $86.13 each and more importantly 38% of consumers will go to a specialist for part of their halloween costum</div>
       </div>
-      <div class="grid-33">
+      <div class="grid-33  tablet-grid-50 mobile-grid-50">
         <div class="recent-post__img recent-post__img--2"></div>
         <div class="recent-post__header">Salon Receptionist Job Description Sample </div>
         <div class="recent-post__text">Are you looking for a new role as a salon receptionist? Or are you a Salon Manager or Owner looking to recruit this highly important role for your salon?</div>
       </div>
-      <div class="grid-33">
+      <div class="grid-33 hide-on-tablet hide-on-mobile">
         <div class="recent-post__img recent-post__img--3"></div>
         <div class="recent-post__header">25 Salon Christmas Marketing Ideas Which Could Make Santa Happy</div>
         <div class="recent-post__text">Well December is upon us once again, your appointment book should be pretty busy and you’re looking some salon Christmas marketing ideas for those last minute ideas to fill those gaps. </div>
@@ -679,47 +699,46 @@
       <div class="grid-25">
         <h4>Global sites</h4>
         <ul class="footer__list">
-          <li class="footer__item"><a href="">United Kingdom</a></li>
-          <li class="footer__item"><a href="">India</a></li>
-          <li class="footer__item"><a href="">Friseur Software - Deutschland</a></li>
-          <li class="footer__item"><a href="">Friseur Software - Österreich</a></li>
-          <li class="footer__item"><a href="">Fryzjer Program - Polska</a></li>
-          <li class="footer__item"><a href="">Logiciel Salon de Coiffure - France</a></li>
-          <li class="footer__item"><a href="">Programa de Peluqueria - España</a></li>
+          <li class="footer__item"><a href="http://belliatasalonsoftware.co.uk/">United Kingdom</a></li>
+          <li class="footer__item"><a href="http://belliatasalonsoftware.co.in/">India</a></li>
+          <li class="footer__item"><a href="http://belliatafriseursoftware.de/">Friseur Software - Deutschland</a></li>
+          <li class="footer__item"><a href="https://belliata.at/">Friseur Software - Österreich</a></li>
+          <li class="footer__item"><a href="https://belliata.pl/">Fryzjer Program - Polska</a></li>
+          <li class="footer__item"><a href="https://belliata.fr/">Logiciel Salon de Coiffure - France</a></li>
+          <li class="footer__item"><a href="http://belliataprogramapeluqueria.es/">Programa de Peluqueria - España</a></li>
         </ul>
       </div>
       <div class="grid-25">
         <h4>Bussines types</h4>
         <ul class="footer__list">
-          <li class="footer__item"><a href="">Nail Salons</a></li>
-          <li class="footer__item"><a href="">Barbershop Software</a></li>
-          <li class="footer__item"><a href="">Spa Software</a></li>
-          <li class="footer__item"><a href="">Beauty Salons</a></li>
-          <li class="footer__item"><a href="">Free Salon Software</a></li>
-          <li class="footer__item"><a href="">Massage Therapy</a></li>
-          <li class="footer__item"><a href=""><a href="">Software</a></li>
-          <li class="footer__item"><a href="">Salon POS System</a></li>
+          <li class="footer__item"><a href="https://belliatasalonsoftware.com/nail-salon-software">Nail Salons</a></li>
+          <li class="footer__item"><a href="https://belliatasalonsoftware.com/barber-shop">Barbershop Software</a></li>
+          <li class="footer__item"><a href="https://belliatasalonsoftware.com/spa">Spa Software</a></li>
+          <li class="footer__item"><a href="https://belliatasalonsoftware.com/beauty">Beauty Salons</a></li>
+          <li class="footer__item"><a href="https://belliatasalonsoftware.com/free">Free Salon Software</a></li>
+          <li class="footer__item"><a href="https://belliatasalonsoftware.com/massage-therapy">Massage Therapy Software</a></li>
+          <li class="footer__item"><a href="https://belliatasalonsoftware.com/salon-pos-system">Salon POS System</a></li>
         </ul>
       </div>
       <div class="grid-25">
         <h4>Social media</h4>
         <ul class="footer__list">
-          <li class="footer__item"><a href="">Facebook</a></li>
-          <li class="footer__item"><a href="">Pinterest</a></li>
-          <li class="footer__item"><a href="">Twitter</a></li>
-          <li class="footer__item"><a href="">Google+</a></li>
-          <li class="footer__item"><a href="">YouTube</a></li>
+          <li class="footer__item"><a href="https://www.facebook.com/belliatasalonsoftware">Facebook</a></li>
+          <li class="footer__item"><a href="https://www.pinterest.com/getbelliata/">Pinterest</a></li>
+          <li class="footer__item"><a href="https://twitter.com/getbelliata">Twitter</a></li>
+          <li class="footer__item"><a href="https://plus.google.com/u/0/b/107722570018831694129/+Belliatasalonsoftware">Google+</a></li>
+          <li class="footer__item"><a href="https://www.youtube.com/c/belliatasalonsoftware">YouTube</a></li>
         </ul>
       </div>
       <div class="grid-25">
         <h4>Company information</h4>
         <ul class="footer__list">
-          <li class="footer__item"><a href="">About Us</a></li>
-          <li class="footer__item"><a href="">Product Updates</a></li>
-          <li class="footer__item"><a href="">Privacy Policy</a></li>
-          <li class="footer__item"><a href="">Terms & Conditions</a></li>
-          <li class="footer__item"><a href="">Contact Us</a></li>
-          <li class="footer__item"><a href="">Sitemap</a></li>
+          <li class="footer__item"><a href="https://belliatasalonsoftware.com/about-us">About Us</a></li>
+          <li class="footer__item"><a href="https://belliatasalonsoftware.com/product-updates">Product Updates</a></li>
+          <li class="footer__item"><a href="https://belliatasalonsoftware.com/privacy-policy">Privacy Policy</a></li>
+          <li class="footer__item"><a href="https://belliatasalonsoftware.com/terms-conditions">Terms & Conditions</a></li>
+          <li class="footer__item"><a href="https://belliatasalonsoftware.com/contact-us">Contact Us</a></li>
+          <li class="footer__item"><a href="https://belliatasalonsoftware.com/sitemap">Sitemap</a></li>
         </ul>
       </div>
     </div>
@@ -735,4 +754,6 @@
   </footer>
 
 </body>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+<script src="build/js/main.js"></script>
 </html>

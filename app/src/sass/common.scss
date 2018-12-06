@@ -2,6 +2,18 @@
 	padding: 0 50px;
 }
 
+.type-block {
+	display: block;
+
+	&--small-screen {
+		@media (max-width: 1024px) {
+			display: block;
+		}
+	}
+}
+
+
+
 .block-navigation {
 	padding-top: 50px;
 
@@ -21,6 +33,20 @@
 		border: 3px solid $color-3;	
 		background-color: $color-2; 
 		margin: 0 35px;
+
+		@media (max-width: 1024px) {
+			padding: 40px 10px 47px;
+			margin: 0 45px;
+
+			h3 {
+				font-size: 14px;
+				margin-bottom: 30px;
+			}
+
+			h4 {
+				font-size: 9px;
+			}
+		}
 	}
 
 	&__list {
@@ -31,9 +57,17 @@
 		list-style-type: none;
 		display: inline-block;
 
+		@media (max-width: 1024px) {
+			margin: 0 10px;
+		}
+
 		&--attachment {
 			list-style-type: none;
     		margin-top: 33px;
+
+    		@media (max-width: 1024px) {
+    			margin-top: 23px;
+    		}
 		}
 
 		h4 {
@@ -47,14 +81,27 @@
 	padding-top: 85px;
 	padding-bottom: 75px;
 
+	@media (max-width: 1024px) {
+		padding-top: 60px;
+		padding-bottom: 30px;
+	}
+
 	&__trusted {
 
 		&--text {
 			padding: 0 29px;
 
+			@media (max-width: 1024px) {
+				padding: 0 84px;
+			}
+
 			p {
 				margin-bottom: 30px;		
-				letter-spacing: 1.2px;	
+				letter-spacing: 1.2px;
+
+				@media (max-width: 1024px) {
+					text-align: center;
+				}	
 			}
 		}
 	}
@@ -65,8 +112,14 @@
 
 			img {
 				float: right;
-				margin-top: 64px;
-				margin-right: -138px;
+				width: 100%;
+				height: 100%;
+				margin-top: 20px;
+
+				@media (max-width: 1024px) {
+					text-align: center;
+					margin-top: 35px;
+				}
 			}
 		}
 
@@ -74,17 +127,23 @@
 
 			img {
 				float: left;
-				margin-top: 51px;
-				margin-left: -4px;
+				width: 100%;
+				height: 100%;
+				margin-top: 15px;
+
+				@media (max-width: 1024px) {
+					text-align: center;
+				}
 			}
 		}
 
 		&-iPhone {
 
 			img {
-				float: right;
-				margin-top: 33px;
-				margin-right: 222px;
+				width: 345px;
+				max-width: 100%;
+				height: 100%;
+				margin-top: 70px;
 			}
 		}
 	}
@@ -170,38 +229,14 @@
 
 	&-header {
 		margin-bottom: 80px;
+
+		@media (max-width: 1024px) {
+			margin-bottom: 0;
+		}
 	}
 }
 
 .picture {
-	&-background {
-		background-repeat: no-repeat;
-	    width: 100%;
-		
-		&__macbook {
-			background-image: url(../img/macbook.png);
-	    	height: 639px;
-		}
-
-		&__tablet {
-			background-image: url(../img/iPad-tablet.png);
-			height: 598px;
-		}
-
-		&__iPhone {
-			background-image: url(../img/iPhone-diagramm.png);
-			height: 694px;
-		}
-
-
-		&--left {
-		    background-position: right bottom;
-		}
-
-		&--right {
-			background-position: left bottom;
-		}
-	}
 
 	&-from-headline {
 		display: inline-block;
@@ -209,12 +244,16 @@
 }
 
 .text-from-tabs {
-		margin: 173px 0;
-		width: 420px;
+		margin-top: 70px;
+
+		@media (max-width: 1024px) {
+			text-align: center;
+			margin:0;
+			padding: 0 110px;
+		}
 
 	&--right {
 		float: left;
-		padding-left: 220px;
 
 
     	h3 {
@@ -231,7 +270,6 @@
 
 	&--left {
 		float: right;
-		padding-right: 157px;
 
 
     	h3 {
@@ -262,6 +300,12 @@
 			position: static;
 			margin: 21px auto;
 		}
+		
+		@media (max-width: 1024px) {
+			p {
+				padding: 0 100px;
+			}
+		}
 	}
 }
 
@@ -270,6 +314,7 @@
 	&__block {
 		margin-bottom: 70px;
 		padding: 0 25px;
+		height: 379px;
 		
 		h4 {
 			margin: 18px 0;
@@ -374,6 +419,8 @@
 
 	&__img {
 		padding: 43px 8px;
+		height: 100%;
+		width: 100%;
 	}
 
 	&__chek {
@@ -397,16 +444,18 @@
 			font-weight: 600;
 		}
 
-		&--left {
+		&--minus {
 			position: absolute;
 			left: 16px;
 			bottom: 13px;
+			cursor: pointer;
 		}
 
-		&--right {
+		&--plus {
 			position: absolute;
 			right: 17px;
 			bottom: 13px;
+			cursor: pointer;
 		}
 	}
 
@@ -463,44 +512,40 @@
 		text-transform: uppercase;
 		position: relative;
 		list-style-type: none;
-		padding-top: 18px;
+		padding: 18px 60px;
+		overflow: hidden;
 	}
 
 
 	&__item {
-		display: inline-block;
-		height: 44px;
+		display: flex;
+	    align-items: center;
+	    justify-content: center;
+	    flex-direction: column;
+	    width: 50%;
+	    height: 60px;
+	    border: 2px solid $color-4;
+	    color: $color-4;
+	    background-color: #FFF;
+	    box-sizing: border-box;
+	    transition: all ease-in-out .3s;
+	    float: left;
+	    cursor: pointer;
 
-		span {
+		small {
+			margin-top: 5px;
 			font-size: 10px;
 		}
 
 		&--active {
-			a {
-				display: inline-block;
-				color: #fff;
-				background-color: $color-4;
-				padding: 18px 24px 15px;
-			    left: 61px;
-			    position: absolute;
-			}
+			color: $text-white;
+			background-color: $color-4;
 		}
 
-		&--presentation {
-			a {
-				display: inline-block;
-				color: $color-4;
-				background-color: #FFF;
-				padding: 23px 17px 20px;
-			    position: absolute;
-			    right: 66px;
-				border: 2px solid $color-4;
-			}
-		}
 	}
 
-	&__label {
-		margin-top: 38px;
+	&__total {
+		margin-top: 6px;
 	    font-size: 16px;
 	    text-transform: uppercase;
 	    font-weight: 500;
@@ -508,19 +553,31 @@
 	}
 }
 
+.total {
+	&__price {
+		display: none;
+		&--active {
+			display: inline-block;
+		}
+	}
+}
+
 .circle-label {
 	display: block;
+	text-align: center;
 
 	&__free {
 		display: block;
 		font-size: 36px;
 		font-weight: 600;
+		margin-top: -5px;
 	}
 
 	&__num {
 		display: block;
 		font-size: 48px;
 		font-weight: 600;
+		margin-top: -5px;
 	}
 }
 
@@ -563,11 +620,23 @@
 
 .block-title {
 	text-transform: uppercase;
-	font-size: 18px;
+	font-size: 18px; 
+
+	@media (max-width: 1024px) {
+		text-align: center;
+
+		span {
+			display: inline-block;
+		}
+	}
 
 	&--center {
 		text-align: center;
 		font-weight: 500;
+
+		@media (max-width: 1024px) {
+			padding: 0 30px;
+		}
 	}
 
 	&--headline {
@@ -584,6 +653,36 @@
 	}
 }
 
+@media (max-width: 1024px) {
+	#schedule {
+		background-position-y:-11px
+	}
+
+	#booking {
+		background-position-y:-58px 
+	}
+
+	#ring {
+		background-position-y:-113px 
+	}
+
+	#tracking {
+		background-position-y:-166px 
+	}
+
+	#tag {
+		background-position-y:-214px
+	}
+
+	#apple {
+		background-position-y:-267px 
+	}
+
+	#features {
+		background-position-y:-318px 
+	}
+}
+
 .sprite {
 	&__icon {
 		display: inline-block;
@@ -592,8 +691,18 @@
 		background-image: url(../img/icons.png);
 		margin: 30px 89px;
 
+		&--small {
+			@media (max-width: 1024px) {
+				width: 48px;
+				height: 43px;
+				margin: 0;
+				background-size: 98%;
+				margin: 15px;	
+			}
+		}
+
 		&--schedule {
-			background-position-y: -17px;
+			background-position-y: -17px
 		}
 
 		&--booking {
