@@ -15,7 +15,7 @@
     <div class="top-bar">
       <div class="grid-container">
 
-        <div class="grid-20 mobile-grid-100 tablet-grid-50">
+        <div class="grid-20 tablet-grid-50 mobile-grid-50">
           <div class="top-bar__logo">
             <a href="https://belliatasalonsoftware.com/"><img src="build/img/logo.png" alt="Logo"></a>
           </div>
@@ -23,31 +23,33 @@
 
         <div class="grid-45 hide-on-tablet hide-on-mobile">
           <div class="top-bar__menu">
-            <ul class=top-bar__list>
-              <li class=top-bar__item><a href="http://localhost:3000/#pricing">Pricing</a></li>
-              <li class=top-bar__item><a href="http://localhost:3000/#features">Features</a></li>
-              <li class=top-bar__item><a href="http://localhost:3000/#who-uses-us">Who uses us?</a></li>
-              <li class=top-bar__item><a href="https://belliatasalonsoftware.com/blog">Blog</a></li>
+            <ul class="top-bar__list">
+              <li class="top-bar__item"><a href="http://localhost:3000/#pricing">Pricing</a></li>
+              <li class="top-bar__item"><a href="http://localhost:3000/#features">Features</a></li>
+              <li class="top-bar__item top-bar__who-uses">
+                <label for="top-bar__who-uses">Who uses us?</label>
+                <input type="checkbox" name="Who uses us?" id="top-bar__who-uses">
+                <div class="top-bar__who-uses--roll">
+                  <ul>
+                    <li><a href="https://belliatasalonsoftware.com/nail-salon-software">Nail Salons</a></li>
+                    <li><a href="https://belliatasalonsoftware.com/barber-shop">Barbershop Software</a></li>
+                    <li><a href="https://belliatasalonsoftware.com/spa">Spa Software</a></li>
+                    <li><a href="https://belliatasalonsoftware.com/beauty">Beauty Salons</a></li>
+                    <li><a href="https://belliatasalonsoftware.com/free">Free Salon Software</a></li>
+                    <li><a href="https://belliatasalonsoftware.com/massage-therapy">Massage Therapy Software</a></li>
+                    <li><a href="https://belliatasalonsoftware.com/salon-pos-system">Salon POS System</a></li>
+                  </ul>
+                </div>
+            </li>
+              <li class="top-bar__item"><a href="https://belliatasalonsoftware.com/blog">Blog</a></li>
             </ul>
           </div>
         </div>
 
-        <div class="grid-35 mobile-grid-100 tablet-grid-50">
+        <div class="grid-35 mobile-grid-50 tablet-grid-50">
           <div class="top-bar__buttons">
             <a href="https://belliata.com/sign-up" class="btn__create btn__create--green hide-on-mobile hide-on-tablet">Create Schedule</a>
-            <label class="log-in__btn btn__create" for="log-in__btn">Log in</label>
-            <input type="checkbox" name="Login" id="log-in__btn">
-            <div class="log-in__roll">
-              <ul class="log-in__list">
-                <li class="log-in__item"><a href="http://belliatasalonsoftware.co.uk/">United Kingdom</a></li>
-                <li class="log-in__item"><a href="http://belliatasalonsoftware.co.in/">India</a></li>
-                <li class="log-in__item"><a href="http://belliatafriseursoftware.de/">Friseur Software - Deutschland</a></li>
-                <li class="log-in__item"><a href="https://belliata.at/">Friseur Software - Österreich</a></li>
-                <li class="log-in__item"><a href="https://belliata.pl/">Fryzjer Program - Polska</a></li>
-                <li class="log-in__item"><a href="https://belliata.fr/">Logiciel Salon de Coiffure - France</a></li>
-                <li class="log-in__item"><a href="http://belliataprogramapeluqueria.es/">Programa de Peluqueria - España</a></li>
-              </ul>
-            </div>
+            <a href="https://belliata.com/dashboard/login" class="btn__create btn__create--transparent">Log in</a>
             <div class="top-bar__menu-on-phone">
               <img src="build/img/menu.png">
             </div>
@@ -135,7 +137,7 @@
 
                 <li class="block-navigation__item">
                   <a href="http://localhost:3000/#features-list">
-                    <span class="sprite__icon sprite__icon--features  sprite__icon--small" id="features"></span> 
+                    <span class="sprite__icon sprite__icon--features  sprite__icon--small" id="featuresall"></span> 
                     <h4>All features</h4>
                   </a>
                 </li>
@@ -284,7 +286,7 @@
       </div>
         <div class="features-list__blocks align--center" id="features-list">
 
-          <div class="grid-33 tablet-grid-50 mobile-grid-50">
+          <div class="grid-33 tablet-grid-50 mobile-grid-100">
             <div class="features-list__block features-list__block--height">
               <a>
                 <span class="sprite__icon sprite__icon--schedule"></span> 
@@ -294,7 +296,7 @@
             </div>
           </div>
 
-          <div class="grid-33 tablet-grid-50 mobile-grid-50">
+          <div class="grid-33 tablet-grid-50 mobile-grid-100">
             <div class="features-list__block features-list__block--height">
               <a>
                 <span class="sprite__icon sprite__icon--booking"></span> 
@@ -304,7 +306,7 @@
             </div>
           </div>
 
-          <div class="grid-33 tablet-grid-50 mobile-grid-50">
+          <div class="grid-33 tablet-grid-50 mobile-grid-100">
             <div class="features-list__block features-list__block--height">
               <a>
                 <span class="sprite__icon sprite__icon--ring"></span> 
@@ -314,7 +316,7 @@
             </div>
           </div>
       
-          <div class="grid-33 tablet-grid-50 mobile-grid-50">
+          <div class="grid-33 tablet-grid-50 mobile-grid-100">
             <div class="features-list__block features-list__block--height">
               <a>
                 <span class="sprite__icon sprite__icon--tracking"></span> 
@@ -324,7 +326,7 @@
             </div>
           </div>
 
-          <div class="grid-33 tablet-grid-50 mobile-grid-50">
+          <div class="grid-33 tablet-grid-50 mobile-grid-100">
             <div class="features-list__block features-list__block--height">
               <a>
                 <span class="sprite__icon sprite__icon--tag"></span> 
@@ -334,7 +336,7 @@
             </div>
           </div>
 
-          <div class="grid-33 tablet-grid-50 mobile-grid-50">
+          <div class="grid-33 tablet-grid-50 mobile-grid-100">
             <div class="features-list__block features-list__block--height">
               <a>
                 <span class="sprite__icon sprite__icon--apple"></span> 
@@ -344,7 +346,7 @@
             </div>
           </div>
        
-          <div class="grid-33 tablet-grid-50 mobile-grid-50">
+          <div class="grid-33 tablet-grid-50 mobile-grid-100">
             <div class="features-list__block  features-list__block--height format--bottom-0">
               <a>
                 <span class="sprite__icon sprite__icon--dialog"></span> 
@@ -354,7 +356,7 @@
             </div>
           </div>
 
-          <div class="grid-33 tablet-grid-50 mobile-grid-50">
+          <div class="grid-33 tablet-grid-50 mobile-grid-100">
             <div class="features-list__block features-list__block--height format--bottom-0">
               <a>
                 <span class="sprite__icon sprite__icon--wand"></span> 
@@ -562,7 +564,7 @@
       </div>
       <div id="pricing">
 
-        <div class="grid-33">
+        <div class="grid-33 tablet-grid-50 mobile-grid-100">
           <div class="price-form">
             <div class="price-form__header">
               <h3 class="block-title block-title--center highlite--white">Manage</h3>
@@ -572,17 +574,19 @@
               </div>
             </div>
             <div class="price-form__information align--center">
-              <p>Unlimited Bookings</p>
-              <p>Unlimited Customers</p>
-              <p>Unlimited Staff</p>
-              <p>Unlimited Email Reminders</p>
-              <p>Unlimited Customer Satisfaction Surveys</p>
+              <div class="price-form__text">
+                <p>Unlimited Bookings</p>
+                <p>Unlimited Customers</p>
+                <p>Unlimited Staff</p>
+                <p>Unlimited Email Reminders</p>
+                <p>Unlimited Customer Satisfaction Surveys</p>
+              </div>
               <a href="#" class="price-form__button">Get started</a>
             </div>
           </div>
         </div>
 
-        <div class="grid-33">
+        <div class="grid-33 tablet-grid-50 mobile-grid-100">
           <div class="price-form">
             <div class="price-form__header">
               <h3 class="block-title block-title--center highlite--white">Grow</h3>
@@ -609,7 +613,7 @@
           </div>
         </div>
 
-        <div class="grid-33">
+        <div class="grid-33 tablet-grid-100 mobile-grid-100">
           <div class="price-form">
             <div class="price-form__header">
               <h3 class="block-title block-title--center highlite--white">New plan</h3>
@@ -705,19 +709,19 @@
       <div class="section-header">
         <h2 class="block-title block-title--center block-title--headline">Recent posts</h2>
       </div>
-      <div class="grid-33 tablet-grid-50 mobile-grid-50">
-        <div class="recent-post__img recent-post__img--1"></div>
+      <div class="grid-33 tablet-grid-100 mobile-grid-100">
+        <div class="recent-post__img align--center"><img src="build/img/recent-1.png"></div>
         <div class="recent-post__header">Halloween Salon Specials: <span class="type-block--small-screen"> Get Easy To Use Spooky Ideas For Salon</span></div>
         <div class="recent-post__text">The average consumer spends $86.13 each and more importantly 38% of consumers will go to a specialist for part of their halloween costum</div>
       </div>
-      <div class="grid-33  tablet-grid-50 mobile-grid-50">
-        <div class="recent-post__img recent-post__img--2"></div>
+      <div class="grid-33  tablet-grid-100 mobile-grid-100">
+        <div class="recent-post__img align--center"><img src="build/img/recent-2.png"></div>
         <div class="recent-post__header">Salon Receptionist Job <span class="type-block--small-screen"> Description Sample </span></div>
         <div class="recent-post__text">Are you looking for a new role as a salon receptionist? Or are you a Salon Manager or Owner looking to recruit this highly important role for your salon?</div>
       </div>
-      <div class="grid-33 hide-on-tablet hide-on-mobile">
-        <div class="recent-post__img recent-post__img--3"></div>
-        <div class="recent-post__header">25 Salon Christmas Marketing Ideas Which Could Make Santa Happy</div>
+      <div class="grid-33 tablet-grid-100 mobile-grid-100">
+        <div class="recent-post__img align--center"><img src="build/img/recent-3.png"></div>
+        <div class="recent-post__header">25 Salon Christmas Marketing Ideas <span class="type-block--small-screen"> Which Could Make Santa Happy</span></div>
         <div class="recent-post__text">Well December is upon us once again, your appointment book should be pretty busy and you’re looking some salon Christmas marketing ideas for those last minute ideas to fill those gaps. </div>
       </div>
     </div>

@@ -9,8 +9,16 @@
 
 	&__img {
 		text-align: center;
-	    padding-top: 50px;
-	    height: 100px;
+    margin-top: 50px;
+    height: 100px;
+
+    img {
+    	max-width: 100%;
+    }
+
+    @media (max-width: 768px) {
+    	margin-top: 20px;
+    }
 	}
 }
 
@@ -38,6 +46,10 @@
 		img{
 			padding: 14px 8px;
 			background-color: $color-2;
+
+			&:hover {
+				background-color: darken($color-2, 10%); 
+			}
 		}
 	}
 
@@ -56,6 +68,7 @@
 			h3 {
 				font-size: 14px;
 				margin-bottom: 30px;
+				display: inline-block;
 			}
 
 			h4 {
@@ -66,6 +79,7 @@
 
 	&__list {
 		padding: 0;
+		display: inline-block;
 	}
 
 	&__item{
@@ -73,7 +87,7 @@
 		display: inline-block;
 
 		@media (max-width: 1024px) {
-			margin: 0 10px;
+			margin: 5px 15px;
 		}
 
 		&--attachment {
@@ -81,7 +95,7 @@
     		margin-top: 33px;
 
     		@media (max-width: 1024px) {
-    			margin-top: 23px;
+    			margin-top: 0;
     		}
 		}
 
@@ -101,6 +115,10 @@
 		padding-bottom: 30px;
 	}
 
+	@media (max-width: 768px) {
+		padding-top: 40px;
+	}
+
 	&__trusted {
 
 		&--text {
@@ -108,6 +126,10 @@
 
 			@media (max-width: 1024px) {
 				padding: 0 84px;
+			}
+
+			@media (max-width: 768px) {
+				padding: 0 20px;
 			}
 
 			p {
@@ -118,6 +140,10 @@
 					text-align: center;
 				}	
 			}
+		}
+
+		img {
+			max-width: 100%;
 		}
 	}
 
@@ -134,6 +160,10 @@
 				@media (max-width: 1024px) {
 					text-align: center;
 					margin-top: 35px;
+				}
+
+				@media (max-width: 768px){
+					margin-top: 20px
 				}
 			}
 		}
@@ -155,10 +185,14 @@
 		&-iPhone {
 
 			img {
-				width: 345px;
+				max-width: 345px;
 				max-width: 100%;
 				height: 100%;
 				margin-top: 70px;
+
+				@media (max-width: 768px){
+					margin-top: 20px;
+				}
 			}
 		}
 	}
@@ -207,10 +241,6 @@
 		img {
 			margin-top: 50px;
 			max-width: 100%;
-
-			@media (max-width: 1024px) {
-				width: 63%;
-			}
 		}
 
 		@media (max-width: 1024px) {
@@ -255,13 +285,13 @@
 		}
 	}
 
-	&-header {
-		margin-bottom: 80px;
-
-		@media (max-width: 1024px) {
-			margin-bottom: 0;
+	&__recent-posts {
+		img {
+			max-width: 100%;
+			height: 200px;
 		}
 	}
+
 }
 
 .picture {
@@ -280,37 +310,53 @@
 			padding: 0 110px;
 		}
 
+		@media (max-width: 768px) {
+			padding: 0 20px;
+		}
+
 	&--right {
 		float: left;
-
 
     	h3 {
     		line-height: 24px;
     		margin-bottom: 39px;
     		font-weight: 500;
+
+    		@media (max-width: 768px) {
+    			margin-bottom: 20px;
+    		}
     	}
 
     	p {
     		line-height: 24px;
     		margin-bottom: 24px;
+
+    		@media (max-width: 768px) {
+    			margin-bottom: 20px;
+    		}
     	}
     }
 
 	&--left {
 		float: right;
 
+  	h3 {
+  		margin-bottom: 22px;
+  		font-weight: 500;
+  		@media (max-width: 768px){
+  			margin-bottom: 20px;
+  		}
+  	}
 
-    	h3 {
-    		margin-bottom: 22px;
-    		font-weight: 500;
-    	}
-
-    	p {
-    		margin-bottom: 24px;
+  	p {
+  		margin-bottom: 24px;
 			line-height: 24px;
-    	}
-	}
 
+			@media (max-width: 768px) {
+				margin-bottom: 20px;
+			}
+  	}
+	}
 }
 
 .what-we-believe-in {
@@ -332,6 +378,12 @@
 		@media (max-width: 1024px) {
 			p {
 				padding: 0 100px;
+			}
+		}
+
+		@media (max-width: 768px) {
+			p {
+				padding: 0 20px;
 			}
 		}
 	}
@@ -367,6 +419,7 @@
 
 		@media (max-width: 1024px) {
 			margin-bottom: 0;
+			padding: 0;
 		}
 	}
 }
@@ -390,13 +443,17 @@
 
 	&__headline {
 		margin: 8px 0;
-	    text-transform: uppercase;
-	    font-size: 14px;
-	    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 500;
 
-	    @media (max-width: 1024px) {
-	    	font-size: 10px;
-	    }
+    @media (max-width: 1024px) {
+    	font-size: 10px;
+    }
+
+    @media (max-width: 768px) {
+    	margin: 0;
+    }
 	}
 }
 
@@ -408,6 +465,10 @@
 
     	@media (max-width: 1024px) {
     		padding: 10px 98px;
+    	}
+
+    	@media (max-width: 768px) {
+    		padding: 0 20px;
     	}
 
 		p {
@@ -427,6 +488,12 @@
 			p {
 				padding: 0 100px;
 				font-size: 14px;
+			}
+		}
+
+		@media (max-width: 768px) {
+			p {
+				padding: 0 20px;
 			}
 		}
 	}
@@ -470,6 +537,10 @@
 		@media (max-width: 1024px) {
 			padding: 0 144px
 		}
+
+		@media (max-width: 768px) {
+			padding: 0 20px;
+		}
 	}
 
 	&__list {
@@ -479,6 +550,10 @@
 			padding-right: 65px;
 			font-size: 14px;
 		}
+
+		@media (max-width: 768px) {
+			padding: 0 10px;
+		}
 	}
 
 	&__item {
@@ -486,7 +561,11 @@
 	
 		p {
 			margin: 0 63px;
-    		line-height: 24px;
+    	line-height: 24px;
+
+    	@media (max-width: 768px) {
+    		margin: 0 10px 0 35px;
+    	}
 		}
 
 		@media (max-width: 1024px) {
@@ -496,7 +575,7 @@
 
 	&__img {
 		padding: 43px 8px;
-		height: 100%;
+		height: auto;
 		width: 100%;
 
 		@media (max-width: 1024px) {
@@ -512,31 +591,37 @@
 
 .price-form {
 	padding-top: 40px;
+	max-width: 380px;
+	margin: 0 auto;
+
 	&__header {
 		position: relative;
-	    width: 347px;
-	    height: 153px;
-	    padding: 52px 16px 0;
-	    background-color: $color-1;
+    width: auto;
+    padding: 52px 17px 37px;
+    background-color: $color-1;
 
 		h3 {
-			margin-bottom: 85px;
+			margin-bottom: 81px;
 			font-size: 24px;
 			font-weight: 600;
 		}
 
 		&--minus {
-			position: absolute;
-			left: 16px;
-			bottom: 13px;
-			cursor: pointer;
+			float: left;
+			cursor: pointer;	
+
+			&:hover {
+				filter: drop-shadow(0 0 3px #FFF);
+			}
 		}
 
 		&--plus {
-			position: absolute;
-			right: 17px;
-			bottom: 13px;
+			float: right;
 			cursor: pointer;
+
+			&:hover {
+				filter: drop-shadow(0 0 3px #FFF);
+			}
 		}
 	}
 
@@ -546,11 +631,11 @@
 		height: $circle-size;
 		width: $circle-size;
 		left: 50%;
-  		bottom: -$circle-size/2;
-  		transform: translateX(-50%);
+		bottom: -$circle-size/2;
+		transform: translateX(-50%);
 		border-radius: 50%;
 		background-color: #FFF;
-		box-shadow: 0 0 0px 11px rgba(255,255,255,0.3);
+		box-shadow: 0 0 0 11px rgba(255,255,255,0.3);
 		text-transform: uppercase;
 		display: flex;
 		flex-direction: column;
@@ -563,30 +648,34 @@
 
 	&__information {
 		position: relative;
-	    width: 347px;
-	    height: 308px;
-	    padding: 116px 16px 30px;
-	    background-color: $color-2;
-	    text-align: center;
-	    font-size: 14px;
+    width: auto;
+    padding: 116px 16px 32px;
+    background-color: $color-2;
+    text-align: center;
+    font-size: 14px;
 
 		p {
 			margin-bottom: 13px;
 		}
 	}
 
+	&__text {
+		margin-bottom: 88px
+	}
+
 	&__button {
 		display: inline-block;
-		position: absolute;
-	    bottom: 33px;
-	    left: 77px;
-	    text-transform: uppercase;
-	    text-decoration: none;
-	    color: #fff;
-	    background-color: #37a6c1;
-	    padding-top: 24px;
-	    width: 220px;
-	    height: 36px;
+	  text-transform: uppercase;
+	  text-decoration: none;
+	  color: #fff;
+	  background-color: #37a6c1;
+	  padding-top: 24px;
+	  width: 220px;
+	  height: 36px;
+
+	  &:hover {
+	   background-color: darken($color-4, 10%);
+	 	}
 	}
 
 	&__list {
@@ -600,18 +689,23 @@
 
 	&__item {
 		display: flex;
-	    align-items: center;
-	    justify-content: center;
-	    flex-direction: column;
-	    width: 50%;
-	    height: 60px;
-	    border: 2px solid $color-4;
-	    color: $color-4;
-	    background-color: #FFF;
-	    box-sizing: border-box;
-	    transition: all ease-in-out .3s;
-	    float: left;
-	    cursor: pointer;
+	  align-items: center;
+	  justify-content: center;
+	  flex-direction: column;
+	  width: 50%;
+	  height: 60px;
+	  border: 2px solid $color-4;
+	  color: $color-4;
+	  background-color: #FFF;
+	  box-sizing: border-box;
+	  transition: all ease-in-out .3s;
+	  float: left;
+	  cursor: pointer;
+	  padding: 2px;
+
+		&:hover {
+		  background-color: darken($text-white, 10%);
+		}
 
 		small {
 			margin-top: 5px;
@@ -621,16 +715,28 @@
 		&--active {
 			color: $text-white;
 			background-color: $color-4;
+
+		  &:hover {
+		   background-color: darken($color-4, 10%);
+		 	}
 		}
 
+	 	&--annual {
+	 		border-right: none;
+	 	}
+
+	 	&--mounthly {
+	 		border-left: none;
+	 	}
 	}
 
 	&__total {
-		margin-top: 6px;
-	    font-size: 16px;
-	    text-transform: uppercase;
-	    font-weight: 500;
-	    color: $color-4;
+		margin-top: 10px;
+		margin-bottom: 22px;
+	  font-size: 16px;
+	  text-transform: uppercase;
+	  font-weight: 500;
+	  color: $color-4;
 	}
 }
 
@@ -669,6 +775,7 @@
 		
 		h4 {
 			margin: 18px 0;
+			line-height: 20px;
 		}
 
 		p {
@@ -679,53 +786,43 @@
 		@media (max-width: 1024px) {
 			padding-left:124px;
 			padding-right: 90px;
-    		margin-bottom: 35px;
+ 			margin-bottom: 35px;
+		}
+
+		@media (max-width: 768px) {
+			padding: 0 0 0 10px;
 		}
 	}
 }
 
 .recent-post {
-	&__img {
-		margin: 0 15px;
-		height: 240px;
-    	width: 350px;
-    	background-size: cover;
-
-		&--1 {
-			background-image: url(../img/recent-1.png);
-		}
-
-		&--2 {
-			background-image: url(../img/recent-2.png);
-		}
-
-		&--3 {
-			background-image: url(../img/recent-3.png);
-		}
-
-		@media (max-width: 1024px) {
-			height: 240px;
-    		width: 296px;
-    		background-size: 100%;
-		}
-	}
-
 	&__header {
 		text-transform: uppercase;
 		color: $color-4;
 		font-size: 14px;
 		margin: 28px 15px 17px;
-	    font-weight: 500;
-	    line-height: 24px;
+    font-weight: 500;
+    line-height: 24px;
+
+		@media (max-width: 1024px) {
+			margin-bottom: 0;
+			text-align: center;
+		}
 	}
 
 	&__text {
 		font-size: 14px;
 		padding: 0 15px;
 		line-height: 2;
+		margin: 10px 0 50px;
 
 		@media (max-width: 1024px) {
-			padding-right: 45px;
+			padding: 0 145px;
+			text-align: center;
+		}
+
+		@media (max-width: 768px) {
+			padding: 0 20px;
 		}
 	}
 }
@@ -737,7 +834,6 @@
 
 	@media (max-width: 1024px) {
 		text-align: center;
-
 	}
 
 	&--center {
@@ -746,6 +842,10 @@
 
 		@media (max-width: 1024px) {
 			padding: 0 30px;
+		}
+
+		@media (max-width: 768px) {
+			padding: 0 20px;
 		}
 	}
 
@@ -788,7 +888,7 @@
 		background-position-y:-267px 
 	}
 
-	#features {
+	#featuresall {
 		background-position-y:-318px 
 	}
 }
@@ -855,15 +955,20 @@
 	&__countries {
 		display: inline-block;
 		width: 160px;
-	    height: 107px;
+	  height: 107px;
 		background-image: url(../img/flags.png);
 		margin: 68px 15px 16px; 
-			@media (max-width: 1024px) {
-				width: 115px;
-				height: 78px;
-				background-size: 100%;
-				margin: 20px 10px;
-			}
+
+		@media (max-width: 1024px) {
+			width: 115px;
+			height: 78px;
+			background-size: 100%;
+			margin: 20px 10px;
+		}
+
+		@media (max-width: 768px) {
+			margin: 10px;
+		}
 
 		&--UK {
 			background-position-y: -109px;
@@ -976,6 +1081,10 @@
 	&--ident {
 		@media (max-width: 1024px) {
 			padding: 0 150px;
+		}
+
+		@media (max-width: 768px) {
+			padding: 0;
 		}
 	}
 }
