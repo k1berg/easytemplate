@@ -93,6 +93,10 @@ header {
     display: none;
   }
 
+  label {
+    cursor: pointer;
+  }
+
   &__who-uses {
     cursor: pointer;
     position: relative;
