@@ -8,11 +8,11 @@ footer {
 		text-transform: uppercase;
 		color: $color-4;
 		font-weight: 500;
-		margin-bottom: 35px;
-		margin-top: 20px;
+		margin: 20px 0 35px 25px;
 
 		@media (max-width: 768px){
 			margin-bottom: 15px;
+			margin-left: 0;
 		}
 	}
 

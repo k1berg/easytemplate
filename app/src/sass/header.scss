@@ -82,6 +82,10 @@ header {
       float: right;
       margin-right: 10px;
     }
+    
+    &:hover {
+      text-decoration: underline;
+    }
   }
 
   a {
@@ -103,7 +107,6 @@ header {
 
     &--roll {
       z-index: 1;
-      transition: all ease .8s;
       overflow: hidden;
       display: block;
       text-align: center;
