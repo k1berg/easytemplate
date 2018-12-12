@@ -7,11 +7,88 @@ header {
   background-size: contain;
 }
 
+.menu {
+  &__phone {
+    position: fixed;
+    height: 120%;
+    right: 0;
+    top: 0;
+    transform: translateX(100%);
+    background-color: $color-6;
+    overflow: scroll;
+    transition: all .4s;
+    z-index: 2;
+
+    &--collapsed {
+      transform: none;
+    }
+
+    a, label {
+      color: $text-white;
+      margin-left: 20px;
+    }
+
+    input {
+      display: none;
+    }
+  }
+
+  &__list {
+  }
+
+  &__item {
+    padding: 20px 0;
+    border-bottom: 2px solid $color-5;
+    width: $width-menu;
+
+    &--hide {
+      @media (max-width: 1024px) {
+        display: none;
+      }
+
+      @media (max-width: 768px) {
+        display: inline-block;
+      }
+    }
+  }
+  
+  &__who-uses {
+    &--roll {
+      height: 0;
+      overflow: hidden;
+     
+      ul {
+        padding: 20px 10px;
+        font-size: 14px;
+      }
+
+      li {
+      }
+
+      & li + li:before {
+          content: "";
+          display: block;
+          width: 100%;
+          height: 2px;
+          margin: 7px 0;
+          background: rgba(100, 100, 100, 0.15);
+          left: 0;
+          top: 0;
+        }
+    }
+  }
+}
+
+input:checked + .menu__who-uses--roll {
+  height: min-content;
+}
+
 .top-bar {
   text-transform: uppercase;
   padding-top: 49px;
   font-size: 15px;
   font-weight: 400;
+  transition: .4s ease;
 
   @media (max-width: 1024px) {
     padding: 55px 16px;
@@ -45,6 +122,10 @@ header {
     }
   }
 
+  &--collapsed {
+    transform: translateX(-240px);
+  }
+
   &__menu {
   	margin-top: 23px;
     margin-left: -7px;
@@ -71,6 +152,16 @@ header {
         background-color: darken($color-4, 10%);
       }  
     }
+
+    @media (max-width: 768px) {
+      position: absolute;
+    }
+  }
+
+  &__list {
+    @media (max-width: 768px) {
+      display: block;
+    }
   }
 
   &__item {
@@ -81,6 +172,11 @@ header {
     &:last-child {
       float: right;
       margin-right: 10px;
+
+      @media (max-width: 768px) {
+        float: none;
+        display: block;
+      }
     }
     
     &:hover {
@@ -129,10 +225,6 @@ header {
 
   &__buttons {
     float: right;
-
-    @media (max-width: 1024px) {
-      padding-right: 18px;
-    }
   }
 }
 

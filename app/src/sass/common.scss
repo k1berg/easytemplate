@@ -7,17 +7,17 @@
 		}
 	}
 
-	&__img {
-		text-align: center;
-    height: 100px;
+		&__img {
+			text-align: center;
+	    height: 100px;
 
-    img {
-    	max-width: 100%;
-    }
+	    img {
+	    	max-width: 100%;
+	    }
 
-    @media (max-width: 768px) {
-    	margin-top: 20px;
-    }
+	    @media (max-width: 768px) {
+	    	margin-top: 20px;
+	    }
 	}
 }
 
@@ -392,6 +392,10 @@
 			padding: 0 50px;
 		}
 
+		@media (max-width: 768px) {
+			padding: 0;
+		}
+
 		& p + p:before {
 			content: "";
 			display: block;
@@ -406,13 +410,7 @@
 			@media (max-width: 1024px){
 				margin: 10px auto;
 			}
-		}
-
-		@media (max-width: 768px) {
-			p {
-				padding: 0 20px;
-			}
-		}
+		}		
 	}
 }
 
@@ -831,8 +829,8 @@
 		text-transform: uppercase;
 		font-size: 14px;
 		margin: 28px 15px 17px;
-    font-weight: 500;
-    line-height: 24px;
+	    font-weight: 500;
+	    line-height: 24px;
 
 		@media (max-width: 1024px) {
 			margin-bottom: 0;
@@ -890,6 +888,10 @@
 	&--headline {
 		font-weight: 600;
 		font-size: 32px;
+
+		@media (max-width: 768px) {
+			font-size: 27px;
+		}
 	}
 
 	&--left {
@@ -993,7 +995,7 @@
 	&__countries {
 		display: inline-block;
 		width: 160px;
-	  height: 107px;
+	  	height: 107px;
 		background-image: url(../img/flags.png);
 		margin: 68px 15px 16px; 
 
@@ -1130,4 +1132,7 @@
 
 .align--center {
 	text-align: center;
+}
+
+.open-menu {
 }

@@ -84,6 +84,33 @@ $(document).ready(function () {
 		});
 	});
 
+	var $this = $(this);
+	var $button = $('.top-bar__menu-on-phone');
+	var $menu = $('.menu__phone');
+	var $body = $('body');
+	var $bar = $('.top-bar');
+
+	function openMenu () {
+		$menu.addClass('menu__phone--collapsed');
+		$bar.addClass('top-bar--collapsed');
+		$body.addClass('open-menu');	
+	};
+
+	function closeMenu () {
+		$menu.removeClass('menu__phone--collapsed');
+		$bar.removeClass('top-bar--collapsed');
+		$body.removeClass('open-menu');
+	};
+
+	$button.click(function () {
+		if($body.hasClass('open-menu')) {
+			closeMenu();
+		}
+		else {
+			openMenu();
+		}
+	});
+
 
 	
     /*switch (country) {

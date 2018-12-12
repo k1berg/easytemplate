@@ -9,8 +9,32 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="icon" href="/favicon.ico">
   <link rel="stylesheet" href="build/css/style.css">
+  <link rel="icon" type="image/png" href="data:image/webp;base64,UklGRgQDAABXRUJQVlA4TPgCAAAvD8ADEHflMJJs09qLZ7/3beT907JtW6d+FhBr2zZdnXMd27ZbyEgX6StdpIuUYNvWt7/jSLZV5d73BbdnuK/Ii7gIhTRYufP9f1wv3EaSHMnRyOp9TsQXfxEAoAZTEhgGExLGcmRuyoYUo0EoJiVWNmIoiRtfJDvRF+dbO9YWYwdHQwdH4uPZiTeAEQ9PODAHfU1Mhr7k7yVqdOK7kTIJjKYNSWVjiM5YpOqRTi+4Mmj2OogLldg+0qK6ge3iburJ43nj6qx8eQTwqF7ZZ/s+rFLDqXGI33OdW/dz8uRejxLSspimU4XBDcT2k0KhJ7YaF44hifuu9wOa+P202Yl7v/6if2Mpf2g+L5ZMJebtwugbSkX8FgueUFjcFWCMxenfD4x275U87lrPePnix6hmvYAZItOh2YiXy0UkN+73Ca3O4u3z+h9n7CXpdcMf/OKXGg8rh38MDJcLuZvMZPl0cPT1/x91xUc+5d2wyccErpgKQGf4Xd/HKG44lAFBMe41nqspJvTY/v4I8LWUctEPHSE17KpPIGASK4TO41pTv84rZbzhn2KI12vJQOEpxd1jSPoDvXLSuf5IjX6xStaJ/uHp91TllHMgGDHDoCkCUFIL3i9w5dS5fldXKbjwB+v19Sppt15XHf3BWzXn6LbVqnlXt62rZp0I6Ok09BgAIPirZs4A6P+AINu26eglbdu2bdu2bds207aZG90/xvsxiIj+J+N9/epSnX1SGiODmMSqdGtQbtm7U+7IRLfoSc1RYd4+zsZ5Mz7MuPsNNGOj//jeYx3OyD5tRQXKh1sd0lqmKwvUH/gEUi9OcUg/IybBNlmbwN8111wiv5fjYtj/DaSej9Ab55D+hswSloH/6DK163hFfjWp8gr4w2wHr/RtJN11fdMj8BuJnv7x68g/teSfAq8osHXPPdYhnRWxCTXQ77DMvO8LiZuJsijbVYPyvLP9RKvDg2qnEKOKOcXz/dL0zcvFQpVBKCOPmOLWhozk2raS2ABG" sizes="16x16">
 </head>
 <body>
+  <div class="menu__phone">
+    <ul class="menu__list">
+      <li class="menu__item"><a href="http://localhost:3000/#pricing">Pricing</a></li>
+      <li class="menu__item"><a href="http://localhost:3000/#features">Features</a></li>
+      <li class="menu__item top-bar__who-uses">
+        <label for="menu__who-uses">Who uses us?</label>
+        <input type="checkbox" name="Who uses us?" id="menu__who-uses">
+        <div class="menu__who-uses--roll">
+          <ul>
+            <li><a href="https://belliatasalonsoftware.com/nail-salon-software">Nail Salons</a></li>
+            <li><a href="https://belliatasalonsoftware.com/barber-shop">Barbershop Software</a></li>
+            <li><a href="https://belliatasalonsoftware.com/spa">Spa Software</a></li>
+            <li><a href="https://belliatasalonsoftware.com/beauty">Beauty Salons</a></li>
+            <li><a href="https://belliatasalonsoftware.com/free">Free Salon Software</a></li>
+            <li><a href="https://belliatasalonsoftware.com/massage-therapy">Massage Therapy Software</a></li>
+            <li><a href="https://belliatasalonsoftware.com/salon-pos-system">Salon POS System</a></li>
+          </ul>
+        </div>
+    </li>
+      <li class="menu__item"><a href="https://belliatasalonsoftware.com/blog">Blog</a></li>
+      <li class="menu__item menu__item--hide"><a href="">Log in</a></li>
+    </ul>
+  </div>
   <header>
     <div class="top-bar">
       <div class="grid-container">
@@ -52,6 +76,7 @@
             <a href="https://belliata.com/dashboard/login" class="btn__create btn__create--transparent">Log in</a>
             <div class="top-bar__menu-on-phone">
               <img src="build/img/menu.png">
+              
             </div>
           </div>
         </div>
@@ -83,8 +108,8 @@
   <div class="block-navigation">
     <div class="grid-container">
 
-      <div class="block-navigation__chevron align--center hide-on-tablet hide-on-mobile">
-          <img src="build/img/chevron-down.svg">
+      <div class="block-navigation__chevron align--center hide-on-tablet hide-on-mobile" id="chevron">
+          <a href="#"><img src="build/img/chevron-down.svg"></a>
       </div>
 
       <div class="block-navigation__tabs align--center">
@@ -789,6 +814,7 @@
       </div>
     </div>
   </footer>
+
 
 </body>
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
