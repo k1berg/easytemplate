@@ -80,23 +80,21 @@ $(document).ready(function() {
     var $menu = $('.menu__phone');
     var $body = $('body');
     var $bar = $('.top-bar');
-    var $open = $('.open');
-    var $openMenu = $('.open-menu');
-    var $expand = $('.menu-expand');
+    var $overlay = $('.overlay');
     var $play = $('.btn__play')
-    var $video = $('.wistia_embed')
+    var $modal =$('.modal')
 
     function openMenu() {
         $menu.addClass('menu__phone--collapsed');
         $bar.addClass('top-bar--collapsed');
-        $open.addClass('open-menu');
+        $overlay.addClass('overlay--show');
         $body.addClass('fixed');
     };
 
     function closeMenu() {
         $menu.removeClass('menu__phone--collapsed');
         $bar.removeClass('top-bar--collapsed');
-        $open.removeClass('open-menu');
+       	$overlay.removeClass('overlay--show');
         $body.removeClass('fixed');
     };
 
@@ -105,24 +103,39 @@ $(document).ready(function() {
         openMenu();
     });
 
-    $open.click(function(e) {
+    $overlay.click(function(e) {
         if(e.target.classList.contains('menu-expand')) {
         	e.stopPropagation();
         }
         else {
-        	console.log(e);
         	closeMenu();
-        	$video.pause();
-        	$video.hide();
+        	$body.trigger('close-modal');
+        	$modal.hide();
         }
-    })
+    });
 
     $play.click(function(e){
     	e.preventDefault();
-    	$open.addClass('open-menu');
+    	$overlay.addClass('overlay--show');
     	$body.addClass('fixed');
-    	$video.show();
-    })
+		$body.trigger('open-modal');
+		$modal.show();
+    });
+	
+	window._wq = window._wq || [];
+
+	_wq.push({
+	  id: '3ran4wpgnw',
+	  onReady: function(video) {
+		$body.on('open-modal', function(){
+		  	video.play();
+		});
+		$body.on('close-modal', function(){
+		  	video.pause();
+		});
+	  }
+	});
+
     /*switch (country) {
     case "GB":
         var currency = $(".total-currency").text($(".uk-currency").text());
