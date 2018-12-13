@@ -831,6 +831,28 @@ p {
 .align--center {
   text-align: center; }
 
+.open-menu {
+  overflow: hidden;
+  content: "";
+  width: 100%;
+  height: 120%;
+  background: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2; }
+
+.wistia_embed {
+  display: none;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%);
+  position: absolute; }
+
+.fixed {
+  height: 100%;
+  overflow: hidden; }
+
 header {
   background-color: #37a6c1;
   color: #fff;
@@ -841,24 +863,26 @@ header {
 
 .menu__phone {
   position: fixed;
-  height: 120%;
+  height: 100%;
   right: 0;
   top: 0;
   transform: translateX(100%);
   background-color: #262626;
   overflow: scroll;
   transition: all .4s;
-  z-index: 2; }
+  z-index: 3; }
   .menu__phone--collapsed {
     transform: none; }
   .menu__phone a, .menu__phone label {
     color: #fff;
-    margin-left: 20px; }
+    font-weight: 500;
+    margin-left: 20px;
+    padding: 20px 0;
+    display: block; }
   .menu__phone input {
     display: none; }
 
 .menu__item {
-  padding: 20px 0;
   border-bottom: 2px solid #6b6b6b;
   width: 240px; }
   @media (max-width: 1024px) {
@@ -870,10 +894,12 @@ header {
 
 .menu__who-uses--roll {
   height: 0;
-  overflow: hidden; }
+  overflow: scroll; }
   .menu__who-uses--roll ul {
-    padding: 20px 10px;
     font-size: 14px; }
+  .menu__who-uses--roll a {
+    padding: 10px 0;
+    margin-left: 40px; }
   .menu__who-uses--roll li + li:before {
     content: "";
     display: block;
@@ -975,7 +1001,7 @@ input:checked + .menu__who-uses--roll {
       position: absolute;
       width: 210px;
       top: 25px;
-      right: -41px;
+      right: -46px;
       background-color: #37a6c1; }
       .top-bar__who-uses--roll ul {
         padding: 5px 10px; }

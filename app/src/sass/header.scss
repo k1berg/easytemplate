@@ -10,14 +10,14 @@ header {
 .menu {
   &__phone {
     position: fixed;
-    height: 120%;
+    height: 100%;
     right: 0;
     top: 0;
     transform: translateX(100%);
     background-color: $color-6;
     overflow: scroll;
     transition: all .4s;
-    z-index: 2;
+    z-index: 3;
 
     &--collapsed {
       transform: none;
@@ -25,7 +25,10 @@ header {
 
     a, label {
       color: $text-white;
+      font-weight: 500;
       margin-left: 20px;
+      padding: 20px 0;
+      display: block;
     }
 
     input {
@@ -37,7 +40,6 @@ header {
   }
 
   &__item {
-    padding: 20px 0;
     border-bottom: 2px solid $color-5;
     width: $width-menu;
 
@@ -55,14 +57,15 @@ header {
   &__who-uses {
     &--roll {
       height: 0;
-      overflow: hidden;
+      overflow: scroll;
      
       ul {
-        padding: 20px 10px;
         font-size: 14px;
       }
 
-      li {
+      a {
+        padding: 10px 0;
+        margin-left: 40px;
       }
 
       & li + li:before {
@@ -210,7 +213,7 @@ input:checked + .menu__who-uses--roll {
       position: absolute;
       width: 210px;
       top: 25px;
-      right: -41px;
+      right: -46px;
       background-color: #37a6c1;
 
       ul {
