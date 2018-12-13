@@ -37,6 +37,7 @@ $(document).ready(function() {
         var $mounthly = $(this).find('.price-form__item--mounthly');
         $totalPrice_monthly.text($totalCounter * $price);
         $totalPrice_annual.text(($totalCounter * $price) - ($totalCounter * $price * $discount));
+
         $plusButton.click(function() {
             if ($totalCounter < $limit) {
                 $totalCounter++;
@@ -48,6 +49,7 @@ $(document).ready(function() {
                 return false;
             }
         });
+
         $minusButton.click(function() {
             if ($totalCounter > 1) {
                 $totalCounter--;
@@ -62,12 +64,14 @@ $(document).ready(function() {
                 return false;
             }
         })
+
         $annual.click(function() {
             $(this).addClass('price-form__item--active');
             $mounthly.removeClass('price-form__item--active');
             $totalPrice_monthly.removeClass('total__price--active');
             $totalPrice_annual.addClass('total__price--active');
         });
+
         $mounthly.click(function() {
             $(this).addClass('price-form__item--active');
             $annual.removeClass('price-form__item--active');
@@ -75,6 +79,7 @@ $(document).ready(function() {
             $totalPrice_monthly.addClass('total__price--active');
         });
     });
+
     var $this = $(this);
     var $button = $('.top-bar__menu-on-phone');
     var $menu = $('.menu__phone');
@@ -115,7 +120,6 @@ $(document).ready(function() {
     });
 
     $play.click(function(e){
-    	e.preventDefault();
     	$overlay.addClass('overlay--show');
     	$body.addClass('fixed');
 		$body.trigger('open-modal');
@@ -126,14 +130,14 @@ $(document).ready(function() {
 
 	_wq.push({
 	  id: '3ran4wpgnw',
-	  onReady: function(video) {
-		$body.on('open-modal', function(){
-		  	video.play();
-		});
-		$body.on('close-modal', function(){
-		  	video.pause();
-		});
-	  }
+		onReady: function(video) {
+			$body.on('open-modal', function(){
+			  	video.play();
+			})
+			$body.on('close-modal', function(){
+			  	video.pause();
+			})
+		}
 	});
 
     /*switch (country) {

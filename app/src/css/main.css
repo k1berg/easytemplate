@@ -855,6 +855,9 @@ p {
   transform: translateX(-50%);
   z-index: 5;
   filter: drop-shadow(0 0 15px #000); }
+  @media (max-width: 768px) {
+    .modal {
+      width: 90%; } }
 
 .fixed {
   height: 100%;
