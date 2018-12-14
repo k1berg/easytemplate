@@ -87,7 +87,8 @@ $(document).ready(function() {
     var $bar = $('.top-bar');
     var $overlay = $('.overlay');
     var $play = $('.btn__play')
-    var $modal =$('.modal')
+    var $modal = $('.modal')
+    var $close = $('.icon--close')
 
     function openMenu() {
         $menu.addClass('menu__phone--collapsed');
@@ -125,6 +126,12 @@ $(document).ready(function() {
 		$body.trigger('open-modal');
 		$modal.show();
     });
+
+    $close.click(function (){
+    	$body.trigger('close-modal');
+        $modal.hide();
+        closeMenu();
+    })
 	
 	window._wq = window._wq || [];
 
