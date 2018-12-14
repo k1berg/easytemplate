@@ -86,9 +86,9 @@ $(document).ready(function() {
     var $body = $('body');
     var $bar = $('.top-bar');
     var $overlay = $('.overlay');
-    var $play = $('.btn__play')
-    var $modal = $('.modal')
-    var $close = $('.icon--close')
+    var $play = $('.btn__play');
+    var $modal = $('.modal');
+    var $close = $('.icon--close');
 
     function openMenu() {
         $menu.addClass('menu__phone--collapsed');
@@ -132,6 +132,7 @@ $(document).ready(function() {
         $modal.hide();
         closeMenu();
     })
+
 	
 	window._wq = window._wq || [];
 
@@ -146,6 +147,45 @@ $(document).ready(function() {
 			})
 		}
 	});
+
+
+    var $chevron = $('.chevron--scroll');
+    var $pricing = $('.pricing--scroll');
+    var $features = $('.features--scroll');
+    var $staff = $('staff--scroll')
+
+	$chevron.click(function() {
+        $("html, body").animate({
+            scrollTop: $('#chevron--scroll').offset().top
+        }, 500);
+        return false;
+    });
+
+    $pricing.click(function() {
+        closeMenu();
+        $("html, body").animate({
+            scrollTop: $('#pricing').offset().top
+        }, 500);
+        return false;
+    });
+
+    $features.click(function() {
+    	closeMenu();
+        $("html, body").animate({
+            scrollTop: $('#features').offset().top
+        }, 500);
+        return false; 	
+    });
+
+    $staff.click(function() {
+        $("html, body").animate({
+            scrollTop: $('#features-list').offset().top
+        }, 500);
+        return false;
+    });
+
+
+	
 
     /*switch (country) {
     case "GB":
@@ -168,9 +208,9 @@ $(document).ready(function() {
         var currency = $(".total-currency").text("$");
         var price = parseFloat($(".us-price").text());
         break;
-    }*/
+    }
     var continent = $(".continent").text().trim();
     if (continent == "EU") {
         $(".vat").show();
-    }
+    }*/
 });

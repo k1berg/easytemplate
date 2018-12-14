@@ -89,6 +89,7 @@
 	&__item{
 		list-style-type: none;
 		display: inline-block;
+		cursor: pointer;
 
 		@media (max-width: 1024px) {
 			margin: 5px 15px;
@@ -1177,6 +1178,7 @@
     transform: rotate(45deg);
     top: -50px;
     right: -55px;
+    cursor: pointer;
 
     &:hover {
     	color: rgba(255, 255, 255, 0.8);

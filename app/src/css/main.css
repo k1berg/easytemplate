@@ -151,7 +151,8 @@ p {
     display: inline-block; }
   .block-navigation__item {
     list-style-type: none;
-    display: inline-block; }
+    display: inline-block;
+    cursor: pointer; }
     @media (max-width: 1024px) {
       .block-navigation__item {
         margin: 5px 15px; } }
@@ -868,7 +869,8 @@ p {
   line-height: 0.6;
   transform: rotate(45deg);
   top: -50px;
-  right: -55px; }
+  right: -55px;
+  cursor: pointer; }
   .icon--close:hover {
     color: rgba(255, 255, 255, 0.8); }
   @media (max-width: 1024px) {
