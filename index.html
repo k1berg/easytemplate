@@ -14,8 +14,8 @@
 <body>
   <div class="menu__phone">
     <ul class="menu__list">
-      <li class="menu__item"><a href="http://localhost:3000/#pricing">Pricing</a></li>
-      <li class="menu__item"><a href="http://localhost:3000/#features">Features</a></li>
+      <li class="menu__item"><a class="pricing--scroll" href="http://localhost:3000/#pricing">Pricing</a></li>
+      <li class="menu__item"><a class="features--scroll" href="http://localhost:3000/#features">Features</a></li>
       <li class="menu__item menu__who-uses">
         <label for="menu__who-uses" class="menu-expand">Who uses us?</label>
         <input type="checkbox" name="Who uses us?" id="menu__who-uses">
@@ -48,8 +48,8 @@
         <div class="grid-45 hide-on-tablet hide-on-mobile">
           <div class="top-bar__menu">
             <ul class="top-bar__list">
-              <li class="top-bar__item"><a href="http://localhost:3000/#pricing">Pricing</a></li>
-              <li class="top-bar__item"><a href="http://localhost:3000/#features">Features</a></li>
+              <li class="top-bar__item"><a class="pricing--scroll" href="http://localhost:3000/#pricing">Pricing</a></li>
+              <li class="top-bar__item"><a class="features--scroll" href="http://localhost:3000/#features">Features</a></li>
               <li class="top-bar__item top-bar__who-uses">
                 <label for="top-bar__who-uses">Who uses us?</label>
                 <input type="checkbox" name="Who uses us?" id="top-bar__who-uses">
@@ -109,36 +109,36 @@
     <div class="grid-container">
 
       <div class="block-navigation__chevron align--center hide-on-tablet hide-on-mobile" id="chevron">
-          <a href="#"><img src="build/img/chevron-down.svg"></a>
+          <a><img class="chevron--scroll" src="build/img/chevron-down.svg"></a>
       </div>
 
-      <div class="block-navigation__tabs align--center">
+      <div class="block-navigation__tabs align--center"  id="chevron--scroll">
         <h3 class="block-title block-title--center">Scheduling, client management, pos of sales you have it all</h3> 
           <ul class="block-navigation__list">
 
-            <li class="block-navigation__item">
-              <a href="http://localhost:3000/#features-list">
+            <li class="block-navigation__item features--scroll">
+              <a href="http://localhost:3000/#features">
                 <span class="sprite__icon sprite__icon--schedule sprite__icon--small" id="schedule"></span> 
                 <h4>Staff scheduling</h4>
               </a>
             </li>
 
-            <li class="block-navigation__item">
-              <a href="http://localhost:3000/#features-list">
+            <li class="block-navigation__item features--scroll">
+              <a href="http://localhost:3000/#features">
                 <span class="sprite__icon sprite__icon--booking  sprite__icon--small" id="booking"></span> 
                 <h4>Online booking</h4>
               </a>
             </li>
 
-            <li class="block-navigation__item">
-              <a href="http://localhost:3000/#features-list">
+            <li class="block-navigation__item features--scroll">
+              <a href="http://localhost:3000/#features">
                 <span class="sprite__icon sprite__icon--ring  sprite__icon--small" id="booking"></span> 
                 <h4>Appointment reminders</h4>
               </a>
             </li>
 
-            <li class="block-navigation__item">
-              <a href="http://localhost:3000/#features-list">
+            <li class="block-navigation__item features--scroll">
+              <a href="http://localhost:3000/#features">
                 <span class="sprite__icon sprite__icon--tracking  sprite__icon--small" id="tracking"></span> 
                 <h4>Customer tracking</h4>
               </a>
@@ -146,22 +146,22 @@
 
             <li class="block-navigation__item--attachment">
               <ul class="block-navigation__list--attachment">
-                <li class="block-navigation__item">
-                  <a href="http://localhost:3000/#features-list">
+                <li class="block-navigation__item features--scroll">
+                  <a href="http://localhost:3000/#features">
                     <span class="sprite__icon sprite__icon--tag  sprite__icon--small" id="tag"></span> 
                     <h4>Salon Point of Sale</h4>
                   </a>
                 </li>
 
-                <li class="block-navigation__item">
-                  <a href="http://localhost:3000/#features-list">
+                <li class="block-navigation__item features--scroll">
+                  <a href="http://localhost:3000/#features">
                     <span class="sprite__icon sprite__icon--apple  sprite__icon--small" id="apple"></span> 
                     <h4>Works on iPad & Mac</h4>
                   </a>
                 </li>
 
-                <li class="block-navigation__item">
-                  <a href="http://localhost:3000/#features-list">
+                <li class="block-navigation__item features--scroll">
+                  <a href="http://localhost:3000/#features">
                     <span class="sprite__icon sprite__icon--features  sprite__icon--small" id="featuresall"></span> 
                     <h4>All features</h4>
                   </a>
@@ -309,7 +309,7 @@
         <h2 class="block-title block-title--center block-title--headline" id="features">Salon management <span class="highlite--green type-block--small-screen">software features</span></h2>
         <h3 class="block-title block-title--center">Deciding what salon software is best?<br>We make it easy for you.</h3>
       </div>
-        <div class="features-list__blocks align--center" id="features-list">
+        <div class="features-list__blocks align--center">
 
           <div class="grid-33 tablet-grid-50 mobile-grid-100">
             <div class="features-list__block features-list__block--height">
