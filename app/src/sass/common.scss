@@ -483,17 +483,14 @@
 
 	&__headline {
 		margin: 8px 0;
-    text-transform: uppercase;
-    font-size: 14px;
-    font-weight: 500;
+	    text-transform: uppercase;
+	    font-size: 14px;
+	    font-weight: 500;
 
-    @media (max-width: 1024px) {
-    	font-size: 10px;
-    }
-
-    @media (max-width: 768px) {
-    	margin: 0;
-    }
+	    @media (max-width: 768px) {
+	    	font-size: 10px;
+	    	margin: 0;
+	    }
 	}
 }
 
@@ -531,6 +528,7 @@
 
 			@media (max-width: 768px) {
 				padding: 0;
+				font-size: 13px;
 			}
 
 			@media (max-width: 425px) {
@@ -646,6 +644,9 @@
 			margin-bottom: 81px;
 			font-size: 24px;
 			font-weight: 600;
+			text-align: center;
+			text-transform: uppercase;
+			color: $text-white;
 		}
 
 		&--minus {
@@ -728,26 +729,26 @@
 		overflow: hidden;
 
 		@media (max-width: 1024px) {
-			padding: 18px 20px;
+			padding: 18px 14px;
 		}
 	}
 
 
 	&__item {
 		display: flex;
-	  align-items: center;
-	  justify-content: center;
-	  flex-direction: column;
-	  width: 50%;
-	  height: 60px;
-	  border: 2px solid $color-4;
-	  color: $color-4;
-	  background-color: #FFF;
-	  box-sizing: border-box;
-	  transition: all ease-in-out .3s;
-	  float: left;
-	  cursor: pointer;
-	  padding: 2px;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+		width: 50%;
+		height: 60px;
+		border: 2px solid $color-4;
+		color: $color-4;
+		background-color: #FFF;
+		box-sizing: border-box;
+		transition: all ease-in-out .3s;
+		float: left;
+		cursor: pointer;
+		padding: 2px;
 
 		&:hover {
 		  background-color: darken($text-white, 10%);
@@ -830,9 +831,7 @@
 		}
 
 		@media (max-width: 1024px) {
-			padding-left:124px;
-			padding-right: 90px;
- 			margin-bottom: 35px;
+ 			margin-bottom: 25px;
 		}
 
 		@media (max-width: 768px) {
@@ -870,12 +869,7 @@
 		margin: 10px 0 50px;
 
 		@media (max-width: 1024px) {
-			padding: 0 145px;
 			text-align: center;
-		}
-
-		@media (max-width: 768px) {
-			padding: 0 20px;
 		}
 
 		@media (max-width: 425px) {
@@ -941,6 +935,10 @@
 		margin: 30px 89px;
 
 		@media (max-width: 1024px) {
+			margin: 22px;
+		}
+
+		@media (max-width: 768px) {
 			width: 48px;
 			height: 43px;
 			margin: 0;
@@ -951,42 +949,42 @@
 		&--schedule {
 			background-position-y: -17px;
 
-			@media (max-width: 1024px) {
+			@media (max-width: 768px) {
 				background-position-y: -11px; 
 			}
 		}
 
 		&--booking {
 			background-position-y: -94px;
-			@media (max-width: 1024px) {
+			@media (max-width: 768px) {
 				background-position-y: -58px;
 			}
 		}
 
 		&--ring {
 			background-position-y: -180px;
-			@media (max-width: 1024px) {
+			@media (max-width: 768px) {
 				background-position-y: -113px; 
 			}
 		}
 
 		&--tracking {
 			background-position-y: -266px;
-			@media (max-width: 1024px) {
+			@media (max-width: 768px) {
 				background-position-y: -166px;
 			}
 		}
 
 		&--tag {
 			background-position-y: -348px;
-			@media (max-width: 1024px) {
+			@media (max-width: 768px) {
 				background-position-y: -214px;
 			}
 		}
 
 		&--apple {
 			background-position-y: -434px;
-			@media (max-width: 1024px) {
+			@media (max-width: 768px) {
 				background-position-y: -267px; 
 			}
 		}
@@ -994,28 +992,28 @@
 		&--features {
 			background-position-y: -509px;
 
-			@media (max-width: 1024px) {
+			@media (max-width: 768px) {
 				background-position-y: -318px;
 			}
 		}
 
 		&--dialog{
 			background-position-y: -589px;
-			@media (max-width: 1024px) { 
+			@media (max-width: 768px) { 
 				background-position-y: -364px;
 			}
 		}
 
 		&--wand{
 			background-position-y: -671px;
-			@media (max-width: 1024px) { 
+			@media (max-width: 768px) { 
 				background-position-y: -413px;
 			}
 		}
 
 		&--diagram {
 			background-position-y: -749px;
-			@media (max-width: 1024px) { 
+			@media (max-width: 768px) { 
 				background-position-y: -463px;
 			}
 		} 
@@ -1170,6 +1168,10 @@
 	&--size-14 {
 		font-size: 14px;
 
+		@media (max-width: 768px) {
+			font-size: 13px;
+		}
+
 		@media (max-width: 425px){
 			font-size: 12px;
 		}
@@ -1177,6 +1179,10 @@
 
 	&--size-16 {
 		font-size: 16px;
+
+		@media (max-width: 768px) {
+			font-size: 14px;
+		}
 
 		@media (max-width: 425px){
 			font-size: 13px;
@@ -1195,7 +1201,7 @@
 
 		@media (max-width: 768px) {
 			padding: 0;
-			max-width: none;
+			max-width: 354px;
 		}
 	}
 }
