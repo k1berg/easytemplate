@@ -1100,6 +1100,7 @@ input:checked + .menu__who-uses--roll {
           padding: 11px 8px; } }
       @media (max-width: 425px) {
         .top-bar__menu-on-phone {
+          padding: 10.5px 8px;
           border: 2px solid #fff; } }
       .top-bar__menu-on-phone:hover {
         background-color: #2c8499; }
