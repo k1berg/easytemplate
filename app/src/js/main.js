@@ -152,7 +152,7 @@ $(document).ready(function() {
     var $chevron = $('.chevron--scroll');
     var $pricing = $('.pricing--scroll');
     var $features = $('.features--scroll');
-    var $staff = $('staff--scroll')
+    var $staff = $('staff--scroll');
 
 	$chevron.click(function() {
         $("html, body").animate({
@@ -184,7 +184,7 @@ $(document).ready(function() {
         return false;
     });
 
-
+   
 	
 
     /*switch (country) {

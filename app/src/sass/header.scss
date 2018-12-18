@@ -43,16 +43,6 @@ header {
     border-bottom: 2px solid $color-5;
     width: $width-menu;
 
-    &--hide {
-      @media (max-width: 1024px) {
-        display: none;
-      }
-
-      @media (max-width: 768px) {
-        display: inline-block;
-      }
-    }
-
     @media (max-width: 1024px) {
       padding: 20px 0;
 
@@ -165,8 +155,8 @@ input:checked + .menu__who-uses--roll {
       } 
 
       @media (max-width: 768px) {
-        padding: 10px 8px;
-        margin: 0;
+        padding: 10.5px 8px;
+        border: 2px solid #fff;
       }
 
       &:hover {
@@ -281,6 +271,17 @@ input:checked + .top-bar__who-uses--roll {
     margin-top: 5px;
     margin-right: 26px;
 
+    @media (max-width: 768px) {
+      font-size: 14px;
+      margin-right: 10px;
+      margin-top: 6px;
+      border: 2px solid #FFF;
+    }
+
+    @media (max-width: 425px) {
+      font-size: 12px;
+    }
+
     &--green{
       background-color: $color-1;
       margin-bottom: 5px;
@@ -310,7 +311,11 @@ input:checked + .top-bar__who-uses--roll {
       }
 
       @media (max-width: 768px) {
-        display: none;
+        padding: 18px 40px;
+      }
+
+      @media (max-width: 425px){
+        padding: 18px 20px;
       }
     }
   }
@@ -324,6 +329,11 @@ input:checked + .top-bar__who-uses--roll {
     margin: 5px;
     position: relative;
     margin-left: 48px;
+
+    @media (max-width: 768px) {
+      margin: 0;
+      border: 2px solid #fff;
+    }
       
     &::after {
       content: ' ';
@@ -332,10 +342,20 @@ input:checked + .top-bar__who-uses--roll {
       right: 28px;
       border: 8px solid transparent;
       border-left: 12px solid #fff;
+
+      @media (max-width: 425px) {
+        top: 24px;
+        right: 15px;
+      }
     }
 
     &:hover {
       background-color: darken($color-4, 10%);
+    }
+
+    @media (max-width: 425px) {
+      width: 63px;
+      height: 63px;
     }
   }
 }
@@ -355,7 +375,7 @@ input:checked + .top-bar__who-uses--roll {
     margin-left: 45px;
 
     @media (max-width: 1024px) {
-      margin: 38px;
+      margin: 38px 0 0;
     }
 	}
 
@@ -371,10 +391,10 @@ input:checked + .top-bar__who-uses--roll {
       @media (max-width: 768px) {
         font-size: 14px;
         line-height: 20px;
-        float: none;
-        margin: 25px auto;
-        display: flex;
-        flex-direction: column;
+      }
+
+      @media (max-width: 425px) {
+        font-size: 12px;
       }
     }
 
@@ -382,13 +402,18 @@ input:checked + .top-bar__who-uses--roll {
       margin-left: 43px;
       padding: 17px 12px 20px 14px;
 
-       @media (max-width: 1024px) {
+      @media (max-width: 1024px) {
         padding: 20px 25px;
         margin-right: 21px;
       }
 
-      @media (max-width: 320px) {
-        padding: 5px 25px;
+      @media (max-width: 768px) {
+        margin: 3px 20px 0 0;
+      }
+
+      @media (max-width: 425px) {
+        padding: 10px 5px;
+        margin-right: 7px;
       }
     }
         
@@ -397,9 +422,8 @@ input:checked + .top-bar__who-uses--roll {
       display: inline-block;
     }
 
-    @media (max-width: 768px) {
-      padding: 0 20px;
-      text-align: center;
+    @media (max-width: 425px) {
+      padding-top: 40px;
     }
 	}
 
