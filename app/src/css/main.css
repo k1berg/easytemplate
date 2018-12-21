@@ -1003,7 +1003,7 @@ header {
   top: 0;
   transform: translateX(100%);
   background-color: #262626;
-  overflow: scroll;
+  overflow: overlay;
   transition: all .4s;
   z-index: 3; }
   .menu__phone--collapsed {
@@ -1028,7 +1028,8 @@ header {
 
 .menu__who-uses--roll {
   height: 0;
-  overflow: scroll; }
+  overflow: hidden;
+  padding-left: 10px; }
   .menu__who-uses--roll ul {
     font-size: 14px;
     padding-bottom: 10px; }

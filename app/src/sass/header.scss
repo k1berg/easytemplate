@@ -15,7 +15,7 @@ header {
     top: 0;
     transform: translateX(100%);
     background-color: $color-6;
-    overflow: scroll;
+    overflow: overlay;
     transition: all .4s;
     z-index: 3;
 
@@ -52,7 +52,8 @@ header {
   &__who-uses {
     &--roll {
       height: 0;
-      overflow: scroll;
+      overflow: hidden;
+      padding-left: 10px;
      
       ul {
         font-size: 14px;
