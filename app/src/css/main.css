@@ -1079,6 +1079,12 @@ input:checked + .menu__who-uses--roll {
         padding: 10px 0; }
         .top-bar__logo img {
           max-width: 100%; } }
+    @media (max-width: 375px) {
+      .top-bar__logo {
+        padding: 15px 0; } }
+    @media (max-width: 320px) {
+      .top-bar__logo {
+        padding: 18px 0; } }
     .top-bar__logo--color {
       display: none; }
   .top-bar--collapsed {
@@ -1153,6 +1159,12 @@ input:checked + .menu__who-uses--roll {
         text-decoration: underline; }
   .top-bar__buttons {
     float: right; }
+    @media (max-width: 768px) {
+      .top-bar__buttons {
+        padding-top: 10px; } }
+    @media (max-width: 425px) {
+      .top-bar__buttons {
+        padding-top: 2px; } }
   .top-bar--fixed {
     background-color: #FFF;
     position: fixed;
@@ -1162,12 +1174,6 @@ input:checked + .menu__who-uses--roll {
     z-index: 10;
     filter: drop-shadow(0 0 3px #000);
     padding-top: 0; }
-    @media (max-width: 1024px) {
-      .top-bar--fixed {
-        padding-top: 15px; } }
-    @media (max-width: 768px) {
-      .top-bar--fixed {
-        padding-top: 10px; } }
     @media (max-width: 425px) {
       .top-bar--fixed {
         padding-top: 0px; } }
@@ -1184,9 +1190,21 @@ input:checked + .menu__who-uses--roll {
         display: none; }
       .top-bar--fixed .top-bar__logo--color {
         display: block; }
+      @media (max-width: 1024px) {
+        .top-bar--fixed .top-bar__logo {
+          padding-top: 5px; } }
       @media (max-width: 768px) {
         .top-bar--fixed .top-bar__logo {
-          padding: 15px 0; } }
+          padding: 10px 0; } }
+      @media (max-width: 425px) {
+        .top-bar--fixed .top-bar__logo {
+          padding-top: 15px; } }
+      @media (max-width: 375px) {
+        .top-bar--fixed .top-bar__logo {
+          padding-top: 18px; } }
+      @media (max-width: 320px) {
+        .top-bar--fixed .top-bar__logo {
+          padding-top: 20px; } }
     .top-bar--fixed .top-bar__who-uses--roll {
       filter: drop-shadow(0 0 3px #000);
       background-color: #FFF; }
@@ -1195,6 +1213,9 @@ input:checked + .menu__who-uses--roll {
     .top-bar--fixed .btn__create {
       filter: drop-shadow(0 0 1px #000);
       margin: 5px 26px 5px 0; }
+      @media (max-width: 768px) {
+        .top-bar--fixed .btn__create {
+          margin-right: 10px; } }
       .top-bar--fixed .btn__create--transparent {
         background-color: #37a6c1; }
 

@@ -123,6 +123,13 @@ input:checked + .menu__who-uses--roll {
         max-width: 100%;
       }
     }
+    @media (max-width: 375px) {
+      padding: 15px 0;
+    }
+
+    @media (max-width: 320px) {
+      padding: 18px 0;
+    }
 
     &--color {
       display: none;
@@ -239,6 +246,12 @@ input:checked + .menu__who-uses--roll {
 
   &__buttons {
     float: right;
+    @media (max-width: 768px) {
+      padding-top: 10px;
+    }
+    @media (max-width: 425px) {
+      padding-top: 2px;
+    }
   }
 
   &--fixed {
@@ -250,14 +263,6 @@ input:checked + .menu__who-uses--roll {
     z-index: 10;
     filter: drop-shadow(0 0 3px #000);
     padding-top: 0;
-
-    @media (max-width: 1024px) {
-      padding-top: 15px;
-    }
-
-    @media (max-width: 768px) {
-      padding-top: 10px;
-    }
 
     @media (max-width: 425px) {
       padding-top: 0px;
@@ -286,8 +291,20 @@ input:checked + .menu__who-uses--roll {
         &--color {
           display: block;
         }
+        @media (max-width: 1024px) {
+          padding-top: 5px; 
+        }
         @media (max-width: 768px) {
-          padding: 15px 0;
+          padding: 10px 0;
+        }
+        @media (max-width: 425px) {
+          padding-top: 15px;
+        }
+        @media (max-width: 375px) {
+          padding-top: 18px;
+        }
+        @media (max-width: 320px) {
+          padding-top: 20px;
         }
       }
 
@@ -304,6 +321,10 @@ input:checked + .menu__who-uses--roll {
     .btn__create {
       filter: drop-shadow(0 0 1px #000);
       margin: 5px 26px 5px 0;
+
+      @media (max-width: 768px) {
+        margin-right: 10px;
+      }
 
       &--transparent {
         background-color: $color-4;
