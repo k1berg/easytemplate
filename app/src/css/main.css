@@ -1160,7 +1160,8 @@ input:checked + .menu__who-uses--roll {
     left: 0;
     right: 0;
     z-index: 10;
-    filter: drop-shadow(0 0 3px #000); }
+    filter: drop-shadow(0 0 3px #000);
+    padding-top: 0; }
     @media (max-width: 1024px) {
       .top-bar--fixed {
         padding-top: 15px; } }
@@ -1192,7 +1193,8 @@ input:checked + .menu__who-uses--roll {
       .top-bar--fixed .top-bar__who-uses--roll li:before {
         background-color: #000; }
     .top-bar--fixed .btn__create {
-      filter: drop-shadow(0 0 1px #000); }
+      filter: drop-shadow(0 0 1px #000);
+      margin: 5px 26px 5px 0; }
       .top-bar--fixed .btn__create--transparent {
         background-color: #37a6c1; }
 

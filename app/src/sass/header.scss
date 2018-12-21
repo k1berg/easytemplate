@@ -1,5 +1,5 @@
 header {
-	background-color: $color-4;
+	background-color: #37a6c1;
 	color: $text-white;
   background-image: url(../img/background-img-header.png);
   background-repeat: no-repeat;
@@ -34,9 +34,6 @@ header {
     input {
       display: none;
     }
-  }
-
-  &__list {
   }
 
   &__item {
@@ -252,6 +249,7 @@ input:checked + .menu__who-uses--roll {
     right: 0;
     z-index: 10;
     filter: drop-shadow(0 0 3px #000);
+    padding-top: 0;
 
     @media (max-width: 1024px) {
       padding-top: 15px;
@@ -305,6 +303,7 @@ input:checked + .menu__who-uses--roll {
 
     .btn__create {
       filter: drop-shadow(0 0 1px #000);
+      margin: 5px 26px 5px 0;
 
       &--transparent {
         background-color: $color-4;
