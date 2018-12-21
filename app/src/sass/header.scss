@@ -97,11 +97,11 @@ input:checked + .menu__who-uses--roll {
   transition: .4s ease;
 
   @media (max-width: 1024px) {
-    padding: 55px 16px;
+    padding: 55px 16px 0;
   }
 
   @media (max-width: 768px) {
-    padding: 20px 0;
+    padding: 20px 0 0;
   }
 
   &__logo {
@@ -125,6 +125,10 @@ input:checked + .menu__who-uses--roll {
       img {
         max-width: 100%;
       }
+    }
+
+    &--color {
+      display: none;
     }
   }
 
@@ -239,6 +243,74 @@ input:checked + .menu__who-uses--roll {
   &__buttons {
     float: right;
   }
+
+  &--fixed {
+    background-color: #FFF;
+    position: fixed;
+    top:0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+    filter: drop-shadow(0 0 3px #000);
+
+    @media (max-width: 1024px) {
+      padding-top: 15px;
+    }
+
+    @media (max-width: 768px) {
+      padding-top: 10px;
+    }
+
+    @media (max-width: 425px) {
+      padding-top: 0px;
+    }
+
+    .top-bar {
+      &__menu {
+        a, label {
+          color: $text-main;
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+
+        &-on-phone {
+          background-color: $color-4;
+          filter: drop-shadow(0 0 1px #000);
+        }
+      }
+
+      &__logo {
+        padding: 0;
+        &--white {
+          display: none
+        }
+        &--color {
+          display: block;
+        }
+        @media (max-width: 768px) {
+          padding: 15px 0;
+        }
+      }
+
+      &__who-uses--roll {
+        filter: drop-shadow(0 0 3px #000);
+        background-color: #FFF;
+
+        li:before {
+          background-color: $text-main;
+        }
+      }
+    }
+
+    .btn__create {
+      filter: drop-shadow(0 0 1px #000);
+
+      &--transparent {
+        background-color: $color-4;
+      }
+    }
+  }
 }
 
 input:checked + .top-bar__who-uses--roll {
@@ -272,6 +344,7 @@ input:checked + .top-bar__who-uses--roll {
     text-decoration: none;
     margin-top: 5px;
     margin-right: 26px;
+    margin-bottom: 15px;
 
     @media (max-width: 768px) {
       font-size: 14px;
@@ -282,6 +355,7 @@ input:checked + .top-bar__who-uses--roll {
     @media (max-width: 425px) {
       font-size: 12px;
       border: 2px solid #FFF;
+      margin-bottom: 5px;
     }
 
     &--green{
@@ -366,10 +440,10 @@ input:checked + .top-bar__who-uses--roll {
 }
 
 .heading-block {
-	padding-top: 160px;
+	padding-top: 145px;
 	
 	h1 {
-    margin: 2px 40px;
+    margin: 40px;
     @media (max-width: 768px) {
       margin: 0 10px;
     }

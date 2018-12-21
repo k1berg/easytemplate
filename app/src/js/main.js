@@ -184,8 +184,15 @@ $(document).ready(function() {
         return false;
     });
 
-   
-	
+    $(window).scroll(function(){
+       if($(this).scrollTop()>600){
+           $bar.addClass('top-bar--fixed');
+       }
+       else if ($(this).scrollTop()<600){
+           $bar.removeClass('top-bar--fixed');
+       }
+   });
+
 
     /*switch (country) {
     case "GB":
