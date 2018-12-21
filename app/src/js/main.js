@@ -185,10 +185,10 @@ $(document).ready(function() {
     });
 
     $(window).scroll(function(){
-       if($(this).scrollTop()>600){
+       if($(this).scrollTop()>1300){
            $bar.addClass('top-bar--fixed');
        }
-       else if ($(this).scrollTop()<600){
+       else if ($(this).scrollTop()<1300){
            $bar.removeClass('top-bar--fixed');
        }
    });

@@ -1197,7 +1197,7 @@ input:checked + .menu__who-uses--roll {
         background-color: #37a6c1; }
 
 input:checked + .top-bar__who-uses--roll {
-  height: min-content;
+  height: 301px;
   border: 2px solid #fff;
   border-radius: 3px; }
 
