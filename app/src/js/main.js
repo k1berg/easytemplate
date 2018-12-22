@@ -186,11 +186,14 @@ $(document).ready(function() {
     });
 
     $(window).scroll(function(){
-       if($(this).scrollTop()>1300){
-           $bar.addClass('top-bar--fixed');
+       if($(this).scrollTop()>500){
+       	$bar.addClass('top-bar--fixed');
+        $('body').addClass('top-padding');
+           
        }
-       else if ($(this).scrollTop()<1300){
-           $bar.removeClass('top-bar--fixed');
+       else if ($(this).scrollTop()<450){        
+        $bar.removeClass('top-bar--fixed');
+        $('body').removeClass('top-padding');
        }
    });
 

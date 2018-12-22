@@ -68,7 +68,7 @@ gulp.task('compresCss', ['sass'], function () {
   return gulp.src(path.css + '/*.css')
     .pipe(concat('style.css'))
     .pipe(autoprefixer({
-      browsers: ['>1%', 'ie 9'],
+      browsers: ['>0.01%'],
       cascade: false
     }))
     .pipe(csso())

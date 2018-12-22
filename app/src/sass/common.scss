@@ -1281,3 +1281,16 @@
 	height: 100%;
 	overflow: hidden;
 }
+
+.top-padding {
+	padding-top: 93px;
+	@media (max-width: 1024px) {
+		padding-top: 142px;
+	}
+	@media (max-width: 768px) {
+		padding-top: 109px;
+	}
+	@media (max-width: 425px) {
+		padding-top: 85px;
+	}
+}
