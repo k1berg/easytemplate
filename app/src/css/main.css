@@ -1050,7 +1050,7 @@ header {
     top: 0; }
 
 input:checked + .menu__who-uses--roll {
-  height: min-content; }
+  height: 465px; }
 
 .top-bar {
   text-transform: uppercase;
@@ -1184,7 +1184,8 @@ input:checked + .menu__who-uses--roll {
         text-decoration: underline; }
     .top-bar--fixed .top-bar__menu-on-phone {
       background-color: #37a6c1;
-      filter: drop-shadow(0 0 1px #000); }
+      filter: drop-shadow(0 0 1px #000);
+      margin-top: 5px; }
     .top-bar--fixed .top-bar__logo {
       padding: 0; }
       .top-bar--fixed .top-bar__logo--white {

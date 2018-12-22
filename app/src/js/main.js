@@ -89,6 +89,7 @@ $(document).ready(function() {
     var $play = $('.btn__play');
     var $modal = $('.modal');
     var $close = $('.icon--close');
+    var $roll = $('.menu__who-uses--roll')
 
     function openMenu() {
         $menu.addClass('menu__phone--collapsed');

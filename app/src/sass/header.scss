@@ -84,7 +84,7 @@ header {
 }
 
 input:checked + .menu__who-uses--roll {
-  height: min-content;
+  height: 465px;
 }
 
 .top-bar {
@@ -281,6 +281,7 @@ input:checked + .menu__who-uses--roll {
         &-on-phone {
           background-color: $color-4;
           filter: drop-shadow(0 0 1px #000);
+          margin-top: 5px;
         }
       }
 
