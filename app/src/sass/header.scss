@@ -210,7 +210,7 @@ input:checked + .menu__who-uses--roll {
       margin-right: 10px;
 
       a {
-        padding: 19px 0;
+        padding: 19px 10px;
       }
 
       @media (max-width: 768px) {
@@ -245,9 +245,9 @@ input:checked + .menu__who-uses--roll {
       position: absolute;
       border: 2px solid #FFF;
       border-radius: 3px;
-      width: 180px;
+      width: 190px;
       top: 20px;
-      right: -12px;
+      right: -17px;
       background-color: #37a6c1;
 
       &:hover {
@@ -274,9 +274,6 @@ input:checked + .menu__who-uses--roll {
 
   &__buttons {
     float: right;
-    @media (max-width: 768px) {
-      padding-top: 10px;
-    }
     @media (max-width: 425px) {
       padding-top: 2px;
     }
@@ -297,6 +294,11 @@ input:checked + .menu__who-uses--roll {
     }
 
     .top-bar {
+      &__item{
+          &:last-child {
+            display: none;
+          }
+        }
       &__menu {
         a, label {
           color: $text-main;
@@ -308,16 +310,17 @@ input:checked + .menu__who-uses--roll {
         &-on-phone {
           background-color: $color-4;
           filter: drop-shadow(0 0 1px #000);
-          margin-top: 5px;
+          margin: 5px 0;
+          padding: 9.5px;
+
+          @media (max-width: 375px) {
+            padding: 7px;
+          }
         }
       }
-      @media (max-width: 425px) {
-        &__create-schedule {
-          display: block;
-          position: absolute;
-          right: 70px;
-          padding: 18px;
-        }
+
+      &__buttons {
+        padding: 0;
       }
 
       &__logo {
@@ -327,23 +330,39 @@ input:checked + .menu__who-uses--roll {
         }
         &--color {
           display: block;
-          @media (max-width: 425px) {
+          @media (max-width: 1024px) {
+            width: 210px;
+          }
+          @media (max-width: 768px) {
+            width: 180px;
+          }
+          @media (max-width: 767px) {
             display: none;
           }
         }
 
         &--small {
           display: none;
-          @media (max-width: 425px) {
+          @media (max-width: 767px){
             display: block;
-            width: 50px;
+            position: absolute;
+            top: 5px;
+            width: 60px;
+          }
+          @media (max-width: 375px){
+            left: 10px;
+            top: 11px;
+            width: 40px;
           }
         }
         @media (max-width: 1024px) {
           padding-top: 5px; 
         }
         @media (max-width: 768px) {
-          padding: 10px 0;
+          padding-top: 9px;
+        }
+        @media (max-width: 767px) {
+          padding-top: 0;
         }
       }
 
@@ -356,25 +375,30 @@ input:checked + .menu__who-uses--roll {
         }
       }
     }
+    .grid-35.mobile-grid-60.tablet-grid-50{
+      @media (max-width: 767px) {
+        width: 100%;
+      }
+    }
 
     .btn__create {
       filter: drop-shadow(0 0 1px #000);
-      margin: 5px 26px 5px 0;
-
-
-      @media (max-width: 768px) {
-        margin-right: 10px;
-      }
+      margin: 5px 10px 5px 0;
+      padding: 16px;
 
       @media (max-width: 425px) {
-        padding: 18px 10px;
+        padding: 17px;
+      }
+      @media (max-width: 375px) {
+        padding: 14.5px;
       }
 
       &--transparent {
-        background-color: $color-4;
-        @media (max-width: 425px){
-          display: none;
-        }
+        display: none;
+      }
+
+      &--green {
+        display: inline-block;
       }
     }
   }
@@ -507,7 +531,7 @@ input:checked + .top-bar__who-uses--roll {
 }
 
 .heading-block {
-	padding-top: 145px;
+	padding-top: 45px;
 	
 	h1 {
     margin: 40px;

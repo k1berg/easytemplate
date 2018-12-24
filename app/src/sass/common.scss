@@ -666,6 +666,10 @@
 				filter: drop-shadow(0 0 3px #FFF);
 			}
 		}
+
+		&--violet {
+			background-color: $color-7;
+		}
 	}
 
 	&__circle {
@@ -687,15 +691,19 @@
 		font-weight: 500;
 		font-size: 14px;
 		color: $color-1;
+
+		&--violet {
+			color: $color-7;
+		}
 	}
 
 	&__information {
 		position: relative;
-    width: auto;
-    padding: 116px 16px 32px;
-    background-color: $color-2;
-    text-align: center;
-    font-size: 14px;
+	    width: auto;
+	    padding: 90px 16px 32px;
+	    background-color: $color-2;
+	    text-align: center;
+	    font-size: 14px;
 
 		p {
 			margin-bottom: 13px;
