@@ -47,6 +47,14 @@ header {
         padding: 20px 0;
       }
     }
+
+    &--transparent {
+      display: none;
+      @media (max-width: 425px) {
+        display: block;
+        padding: 20px 0;
+      }
+    }
   }
   
   &__who-uses {
@@ -58,6 +66,7 @@ header {
       ul {
         font-size: 14px;
         padding-bottom: 10px;
+
         @media (max-width: 1024px) {
           padding: 0;
         }
@@ -84,7 +93,7 @@ header {
 }
 
 input:checked + .menu__who-uses--roll {
-  height: 465px;
+  height: 325px;
 }
 
 .top-bar {
@@ -135,6 +144,10 @@ input:checked + .menu__who-uses--roll {
     &--color {
       display: none;
     }
+
+    &--small {
+      display: none;
+    }
   }
 
   &--collapsed {
@@ -178,6 +191,7 @@ input:checked + .menu__who-uses--roll {
   }
 
   &__list {
+    margin-left: 38px;
     @media (max-width: 768px) {
       display: block;
     }
@@ -186,11 +200,18 @@ input:checked + .menu__who-uses--roll {
   &__item {
   	list-style-type: none;
   	display: inline-block;
-    margin-right: 37px;
+
+    a {
+      padding: 19px;
+    }
 
     &:last-child {
       float: right;
       margin-right: 10px;
+
+      a {
+        padding: 19px 0;
+      }
 
       @media (max-width: 768px) {
         float: none;
@@ -207,29 +228,31 @@ input:checked + .menu__who-uses--roll {
   	color: $text-white;
   }
 
-  input {
-    display: none;
-  }
-
-  label {
-    cursor: pointer;
-  }
-
   &__who-uses {
     cursor: pointer;
     position: relative;
 
+    &:hover {
+      .top-bar__who-uses--roll {
+        display: block;
+      }
+    }
+
     &--roll {
       z-index: 1;
-      overflow: hidden;
-      display: block;
+      display: none;
       text-align: center;
-      height: 0;
       position: absolute;
-      width: 210px;
-      top: 25px;
-      right: -46px;
+      border: 2px solid #FFF;
+      border-radius: 3px;
+      width: 180px;
+      top: 20px;
+      right: -12px;
       background-color: #37a6c1;
+
+      &:hover {
+        display: block;
+      }
 
       ul {
         padding: 5px 10px;
@@ -237,6 +260,10 @@ input:checked + .menu__who-uses--roll {
 
       li{
         line-height: 25px;
+      }
+
+      a {
+        padding: 0;
       }
 
       a:hover {
@@ -284,6 +311,14 @@ input:checked + .menu__who-uses--roll {
           margin-top: 5px;
         }
       }
+      @media (max-width: 425px) {
+        &__create-schedule {
+          display: block;
+          position: absolute;
+          right: 70px;
+          padding: 18px;
+        }
+      }
 
       &__logo {
         padding: 0;
@@ -292,21 +327,23 @@ input:checked + .menu__who-uses--roll {
         }
         &--color {
           display: block;
+          @media (max-width: 425px) {
+            display: none;
+          }
+        }
+
+        &--small {
+          display: none;
+          @media (max-width: 425px) {
+            display: block;
+            width: 50px;
+          }
         }
         @media (max-width: 1024px) {
           padding-top: 5px; 
         }
         @media (max-width: 768px) {
           padding: 10px 0;
-        }
-        @media (max-width: 425px) {
-          padding-top: 15px;
-        }
-        @media (max-width: 375px) {
-          padding-top: 18px;
-        }
-        @media (max-width: 320px) {
-          padding-top: 20px;
         }
       }
 
@@ -324,12 +361,20 @@ input:checked + .menu__who-uses--roll {
       filter: drop-shadow(0 0 1px #000);
       margin: 5px 26px 5px 0;
 
+
       @media (max-width: 768px) {
         margin-right: 10px;
       }
 
+      @media (max-width: 425px) {
+        padding: 18px 10px;
+      }
+
       &--transparent {
         background-color: $color-4;
+        @media (max-width: 425px){
+          display: none;
+        }
       }
     }
   }
@@ -565,6 +610,12 @@ input:checked + .top-bar__who-uses--roll {
   @media (max-width: 1024px) {
     padding-top: 46px;
     text-align: center;
+  }
+}
+
+.top-bar__create-schedule {
+  @media (max-width: 1024px){
+    display: none;
   }
 }
 
