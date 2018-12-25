@@ -1184,9 +1184,13 @@ input:checked + .menu__who-uses--roll {
       .top-bar__who-uses--roll ul {
         padding: 5px 10px; }
       .top-bar__who-uses--roll li {
-        line-height: 25px; }
+        line-height: 25px;
+        display: block;
+        width: 100%; }
       .top-bar__who-uses--roll a {
-        padding: 0; }
+        padding: 0;
+        width: 100%;
+        display: block; }
       .top-bar__who-uses--roll a:hover {
         text-decoration: underline; }
   .top-bar__buttons {

@@ -260,10 +260,14 @@ input:checked + .menu__who-uses--roll {
 
       li{
         line-height: 25px;
+        display: block;
+        width: 100%;
       }
 
       a {
         padding: 0;
+        width: 100%;
+        display: block;
       }
 
       a:hover {
