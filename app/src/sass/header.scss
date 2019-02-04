@@ -370,13 +370,8 @@ input:checked + .menu__who-uses--roll {
         }
       }
 
-      &__who-uses--roll {
-        filter: drop-shadow(0 0 3px #000);
-        background-color: #FFF;
-
-        li:before {
-          background-color: $text-main;
-        }
+      &__who-uses {
+        display: none;
       }
     }
     .grid-35.mobile-grid-60.tablet-grid-50{
@@ -497,9 +492,8 @@ input:checked + .top-bar__who-uses--roll {
     border: 3px solid #fff;
     border-radius: 50%;
     display: inline-block;
-    margin: 5px;
+    margin: 5px 48px;
     position: relative;
-    margin-left: 48px;
 
     @media (max-width: 768px) {
       margin: 0;
@@ -612,7 +606,7 @@ input:checked + .top-bar__who-uses--roll {
     }
     
     @media (max-width: 768px) {
-      margin: 10px 5px;
+      margin: 10px;
     }
 	}
     
