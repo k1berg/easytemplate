@@ -308,6 +308,9 @@ p {
       .section-header {
         margin-bottom: 20px; } }
 
+.tablet--hide-on-desktop img {
+  margin-top: 20px; }
+
 .picture-from-headline {
   display: inline-block; }
 
