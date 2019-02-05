@@ -165,6 +165,10 @@
 		&-macbook {
 			padding-bottom: 85px;
 
+			@media (max-width: 768px) {
+				padding-bottom: 40px;
+			}
+
 			img {
 				float: right;
 				width: 100%;
@@ -177,13 +181,17 @@
 				}
 
 				@media (max-width: 768px){
-					margin-top: 20px
+					margin-top: 50px
 				}
 			}
 		}
 
 		&-tablet {
 			padding-bottom: 85px;
+
+			@media (max-width: 768px) {
+				padding-bottom: 40px;
+			}
 
 			img {
 				float: left;
@@ -195,11 +203,19 @@
 					text-align: center;
 					margin-top: 0;
 				}
+
+				@media (max-width: 768px) {
+					margin-top: 50px;
+				}
 			}
 		}
 
 		&-iPhone {
 			padding-bottom: 85px;
+
+			@media (max-width: 768px) {
+				padding-bottom: 40px;
+			}
 
 			img {
 				max-width: 345px;
@@ -208,12 +224,16 @@
 				margin-top: 100px;
 				
 				@media (max-width: 1024px) {
-					margin-top: 0;
-					max-width: 230px;
+					margin-top: 20px;
+					max-width: 350px;
 				}
 
 				@media (max-width: 768px){
-					margin-top: 20px;
+					margin-top: 50px;
+				}
+
+				@media (max-width: 425px) {
+					max-width: 230px;
 				}
 			}
 		}
@@ -348,7 +368,7 @@
 		}
 
 		@media (max-width: 768px) {
-			padding: 0 20px;
+			padding: 0;
 		}
 
 	&--right {
