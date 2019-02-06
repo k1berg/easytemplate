@@ -1138,7 +1138,10 @@ input:checked + .menu__who-uses--roll {
       display: none; }
   .top-bar--collapsed {
     transform: translateX(-240px); }
+  .top-bar__fixed {
+    display: none; }
   .top-bar__menu {
+    position: relative;
     margin-top: 23px;
     margin-left: -7px; }
     .top-bar__menu-on-phone {
@@ -1248,6 +1251,13 @@ input:checked + .menu__who-uses--roll {
       @media (max-width: 375px) {
         .top-bar--fixed .top-bar__menu-on-phone {
           padding: 7px; } }
+    .top-bar--fixed .top-bar__fixed {
+      display: block;
+      color: #5671d2;
+      text-shadow: #D1D9F0 2px 1px 3px;
+      position: absolute;
+      right: -135px;
+      top: -2px; }
     .top-bar--fixed .top-bar__buttons {
       padding: 0; }
     .top-bar--fixed .top-bar__logo {

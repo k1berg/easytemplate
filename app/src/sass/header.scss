@@ -154,7 +154,12 @@ input:checked + .menu__who-uses--roll {
     transform: translateX(-240px);
   }
 
+  &__fixed {
+    display: none;
+  }
+
   &__menu {
+    position: relative;
   	margin-top: 23px;
     margin-left: -7px;
 
@@ -321,6 +326,15 @@ input:checked + .menu__who-uses--roll {
             padding: 7px;
           }
         }
+      }
+
+      &__fixed {
+        display: block;
+        color: $color-7;
+        text-shadow: #D1D9F0 2px 1px 3px;
+        position: absolute;
+        right: -135px;
+        top: -2px;
       }
 
       &__buttons {
