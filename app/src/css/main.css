@@ -432,6 +432,8 @@ p {
   list-style-type: none;
   display: inline-block;
   font-weight: 500; }
+  .countries__item a {
+    color: #000; }
 
 .countries__headline {
   margin: 8px 0;
@@ -971,8 +973,6 @@ p {
     display: block; }
 
 .modal {
-  width: 640;
-  height: 360;
   position: absolute;
   display: none;
   top: 50%;
@@ -991,7 +991,6 @@ p {
   transform: rotate(45deg);
   font-size: 85px;
   line-height: 0.6;
-  transform: rotate(45deg);
   top: -50px;
   right: -55px;
   cursor: pointer; }
@@ -1027,6 +1026,11 @@ p {
   @media (max-width: 425px) {
     .top-padding {
       padding-top: 85px; } }
+
+.geolocation {
+  border: 1px solid black;
+  margin-top: 20px;
+  padding: 10px 0; }
 
 header {
   background-color: #37a6c1;
