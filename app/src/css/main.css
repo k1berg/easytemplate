@@ -285,6 +285,7 @@ p {
     margin: 7px 0; }
   .section__global-software h4 {
     text-transform: uppercase;
+    color: #000;
     font-weight: 500; }
     @media (max-width: 1024px) {
       .section__global-software h4 {

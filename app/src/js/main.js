@@ -202,18 +202,17 @@ $(document).ready(function() {
   (function geolocation_links() {
     var country = "";
     var countryLinks = {
-      UK: "https://belliata.co.uk/",
-      DE: "https://belliata.de/",
-      IN: "https://belliata.co.in/",
-      AT: "https://belliata.at/",
-      ES: "https://belliata.es/",
-      US: "https://belliata.com/",
-      MX: "https://belliata.mx/",
-      NZ: "https://belliata.co.nz/",
-      AR: "https://belliata.com.ar/",
-      CA: "https://belliata.ca/",
-      ZA: "https://belliata.co.za/",
-      default: "https://belliata.com/"
+      UK: "https://belliata.co.uk/sign-up?utm_source=bss&utm_medium=link&utm_campaign=detect",
+      IN: "https://belliata.co.in/sign-up?utm_source=bss&utm_medium=link&utm_campaign=detect",
+      ES: "https://belliata.es/sign-up?utm_source=bss&utm_medium=link&utm_campaign=detect",
+      US: "https://belliata.com/sign-up?utm_source=bss&utm_medium=link&utm_campaign=detect",
+      MX: "https://belliata.mx/sign-up?utm_source=bss&utm_medium=link&utm_campaign=detect",
+      NZ: "https://belliata.co.nz/sign-up?utm_source=bss&utm_medium=link&utm_campaign=detect",
+      AR: "https://belliata.com.ar/sign-up?utm_source=bss&utm_medium=link&utm_campaign=detect",
+      CA: "https://belliata.ca/sign-up?utm_source=bss&utm_medium=link&utm_campaign=detect",
+      ZA: "https://belliata.co.za/sign-up?utm_source=bss&utm_medium=link&utm_campaign=detect",
+      CO: "https://belliata.co/sign-up?utm_source=bss&utm_medium=link&utm_campaign=detect",
+      default: "https://belliata.co/sign-up?utm_source=bss&utm_medium=link&utm_campaign=detect-global"
     };
 
     var countrySpan = $(".geolocation__country");
@@ -226,11 +225,15 @@ $(document).ready(function() {
 
       if (countryLinks[country]) {
         countryLink.attr("href", countryLinks[country]);
+        countrySpan.eq(0).text(result.country);
+        countrySpan.eq(1).text(country);
       } else {
         countryLink.attr("href", countryLinks["default"]);
+        countrySpan.eq(0).text(result.country);
+        countrySpan.eq(1).text("Global");
       }
 
-      countrySpan.text(country);
+
 
     }).fail(function(err) {
       error = true;
