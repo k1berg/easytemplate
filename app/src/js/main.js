@@ -212,12 +212,27 @@ $(document).ready(function() {
       CA: "https://belliata.ca/sign-up?utm_source=bss&utm_medium=link&utm_campaign=detect",
       ZA: "https://belliata.co.za/sign-up?utm_source=bss&utm_medium=link&utm_campaign=detect",
       CO: "https://belliata.co/sign-up?utm_source=bss&utm_medium=link&utm_campaign=detect",
-      default: "https://belliata.co/sign-up?utm_source=bss&utm_medium=link&utm_campaign=detect-global"
+      default: "https://belliata.com/sign-up?utm_source=bss&utm_medium=link&utm_campaign=detect-global"
+    };
+
+    var loginLinks = {
+      UK: "https://belliata.co.uk/sign-up?utm_source=bss&utm_medium=link&utm_campaign=login-lp",
+      IN: "https://belliata.co.in/sign-up?utm_source=bss&utm_medium=link&utm_campaign=login-lp",
+      ES: "https://belliata.es/sign-up?utm_source=bss&utm_medium=link&utm_campaign=login-lp",
+      US: "https://belliata.com/sign-up?utm_source=bss&utm_medium=link&utm_campaign=login-lp",
+      MX: "https://belliata.mx/sign-up?utm_source=bss&utm_medium=link&utm_campaign=login-lp",
+      NZ: "https://belliata.co.nz/sign-up?utm_source=bss&utm_medium=link&utm_campaign=login-lp",
+      AR: "https://belliata.com.ar/sign-up?utm_source=bss&utm_medium=link&utm_campaign=login-lp",
+      CA: "https://belliata.ca/sign-up?utm_source=bss&utm_medium=link&utm_campaign=login-lp",
+      ZA: "https://belliata.co.za/sign-up?utm_source=bss&utm_medium=link&utm_campaign=login-lp",
+      CO: "https://belliata.co/sign-up?utm_source=bss&utm_medium=link&utm_campaign=login-lp",
+      default: "https://belliata.com/sign-up?utm_source=bss&utm_medium=link&utm_campaign=login-lp"
     };
 
     var countrySpan = $(".geolocation__country");
     var countryLink = $(".geolocation__link");
     var error = false;
+    var loginButton = $(".btn__create--transparent");
 
     $.get('https://extreme-ip-lookup.com/json/', function(result) {
 
@@ -225,20 +240,31 @@ $(document).ready(function() {
 
       if (countryLinks[country]) {
         countryLink.attr("href", countryLinks[country]);
+        loginButton.attr("href", loginLinks[country]);
         countrySpan.eq(0).text(result.country);
         countrySpan.eq(1).text(country);
       } else {
         countryLink.attr("href", countryLinks["default"]);
+        loginButton.attr("href", loginLinks["default"]);
         countrySpan.eq(0).text(result.country);
         countrySpan.eq(1).text("Global");
       }
-
 
 
     }).fail(function(err) {
       error = true;
     });
   })();
+
+  $(".top-bar__create-schedule").click(function(e) {
+    e.preventDefault();
+    $.scrollTo(".section__global-software", 300);
+  });
+
+  $(".heading-block__button--ident.btn__create").click(function(e) {
+    e.preventDefault();
+    $.scrollTo(".section__global-software", 300);
+  });
 
   /*switch (country) {
   case "GB":
