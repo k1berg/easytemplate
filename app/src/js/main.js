@@ -220,9 +220,9 @@ $(document).ready(function() {
     var countryLink = $(".geolocation__link");
     var error = false;
 
-    $.get('http://api.ipstack.com/87.117.55.180?access_key=7433c76ba36316571cd9b3d580f5b692&format=1', function(result) {
+    $.get('https://extreme-ip-lookup.com/json/', function(result) {
 
-      country = result.country_code;
+      country = result.countryCode;
 
       if (countryLinks[country]) {
         countryLink.attr("href", countryLinks[country]);
