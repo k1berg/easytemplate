@@ -216,17 +216,17 @@ $(document).ready(function() {
     };
 
     var loginLinks = {
-      UK: "https://belliata.co.uk/sign-up?utm_source=bss&utm_medium=link&utm_campaign=login-lp",
-      IN: "https://belliata.co.in/sign-up?utm_source=bss&utm_medium=link&utm_campaign=login-lp",
-      ES: "https://belliata.es/sign-up?utm_source=bss&utm_medium=link&utm_campaign=login-lp",
-      US: "https://belliata.com/sign-up?utm_source=bss&utm_medium=link&utm_campaign=login-lp",
-      MX: "https://belliata.mx/sign-up?utm_source=bss&utm_medium=link&utm_campaign=login-lp",
-      NZ: "https://belliata.co.nz/sign-up?utm_source=bss&utm_medium=link&utm_campaign=login-lp",
-      AR: "https://belliata.com.ar/sign-up?utm_source=bss&utm_medium=link&utm_campaign=login-lp",
-      CA: "https://belliata.ca/sign-up?utm_source=bss&utm_medium=link&utm_campaign=login-lp",
-      ZA: "https://belliata.co.za/sign-up?utm_source=bss&utm_medium=link&utm_campaign=login-lp",
-      CO: "https://belliata.co/sign-up?utm_source=bss&utm_medium=link&utm_campaign=login-lp",
-      default: "https://belliata.com/sign-up?utm_source=bss&utm_medium=link&utm_campaign=login-lp"
+      UK: "https://belliata.co.uk/dashboard/login?utm_source=bss&utm_medium=link&utm_campaign=login-lp",
+      IN: "https://belliata.co.in/dashboard/login?utm_source=bss&utm_medium=link&utm_campaign=login-lp",
+      ES: "https://belliata.es/dashboard/login?utm_source=bss&utm_medium=link&utm_campaign=login-lp",
+      US: "https://belliata.com/dashboard/login?utm_source=bss&utm_medium=link&utm_campaign=login-lp",
+      MX: "https://belliata.mx/dashboard/login?utm_source=bss&utm_medium=link&utm_campaign=login-lp",
+      NZ: "https://belliata.co.nz/dashboard/login?utm_source=bss&utm_medium=link&utm_campaign=login-lp",
+      AR: "https://belliata.com.ar/dashboard/login?utm_source=bss&utm_medium=link&utm_campaign=login-lp",
+      CA: "https://belliata.ca/dashboard/login?utm_source=bss&utm_medium=link&utm_campaign=login-lp",
+      ZA: "https://belliata.co.za/dashboard/login?utm_source=bss&utm_medium=link&utm_campaign=login-lp",
+      CO: "https://belliata.co/dashboard/login?utm_source=bss&utm_medium=link&utm_campaign=login-lp",
+      default: "https://belliata.com/dashboard/login?utm_source=bss&utm_medium=link&utm_campaign=login-lp"
     };
 
     var countrySpan = $(".geolocation__country");
