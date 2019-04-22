@@ -256,11 +256,6 @@ $(document).ready(function() {
     });
   })();
 
-  $(".heading-block__button--ident.btn__create").click(function(e) {
-    e.preventDefault();
-    $.scrollTo(".section__global-software", 300);
-  });
-
   /*switch (country) {
   case "GB":
       var currency = $(".total-currency").text($(".uk-currency").text());
