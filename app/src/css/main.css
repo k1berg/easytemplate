@@ -1033,6 +1033,10 @@ p {
   margin-top: 20px;
   padding: 10px 0; }
 
+.schedule-logo {
+  display: block;
+  margin: 40px auto 0 auto; }
+
 header {
   background-color: #37a6c1;
   color: #fff;

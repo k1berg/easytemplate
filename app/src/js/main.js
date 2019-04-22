@@ -256,11 +256,6 @@ $(document).ready(function() {
     });
   })();
 
-  $(".top-bar__create-schedule").click(function(e) {
-    e.preventDefault();
-    $.scrollTo(".section__global-software", 300);
-  });
-
   $(".heading-block__button--ident.btn__create").click(function(e) {
     e.preventDefault();
     $.scrollTo(".section__global-software", 300);
