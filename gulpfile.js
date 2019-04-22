@@ -134,7 +134,7 @@ gulp.task('serve', ['compresCss', 'compressJs'], function () {
 //GitHub pages publish
 gulp.task('publish', ['full'], function () {
   gh_pages.publish('app', {
-    src: ['index.html', 'build/**'],
+    src: ['*.html', 'build/**'],
     message: 'GH Page updated'
   }, function (err) {
     console.log(err);
