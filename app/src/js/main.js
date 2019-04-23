@@ -26,25 +26,67 @@ $(document).ready(function() {
     var $this = $(this);
     var $limit = 20;
     var $price = parseFloat($this.find(".price").text());
-    var $discount = .2;
     var $totalCounter = 1;
     var $totalCounterPlaceholder = $this.find(".circle-label__num");
     var $pluralSign = $this.find(".plural");
     var $plusButton = $this.find(".price-form__header--plus");
     var $minusButton = $this.find(".price-form__header--minus");
-    var $totalPrice_annual = $this.find(".total__price--annual");
     var $totalPrice_monthly = $this.find(".total__price--mounthly");
-    var $annual = $(this).find('.price-form__item--annual');
-    var $mounthly = $(this).find('.price-form__item--mounthly');
-    $totalPrice_monthly.text($totalCounter * $price);
-    $totalPrice_annual.text(($totalCounter * $price) - ($totalCounter * $price * $discount));
+    var plan = $this.data("plan");
+
+    var pricingTable = {
+      grow: [
+        "9.00",
+        "18.00",
+        "27.00",
+        "36.00",
+        "45.00",
+        "52.50",
+        "61.25",
+        "70.00",
+        "78.75",
+        "87.50",
+        "93.50",
+        "102.00",
+        "110.50",
+        "119.00",
+        "127.50",
+        "132.00",
+        "140.25",
+        "148.50",
+        "156.75",
+        "165.00",
+      ],
+      boost: [
+        "23.50",
+        "47.00",
+        "70.50",
+        "94.00",
+        "117.50",
+        "135.00",
+        "157.50",
+        "180.00",
+        "202.50",
+        "225.00",
+        "236.50",
+        "258.00",
+        "279.50",
+        "301.00",
+        "322.50",
+        "328.00",
+        "348.50",
+        "369.00",
+        "389.50",
+        "410.00"
+      ]
+    };
+
 
     $plusButton.click(function() {
       if ($totalCounter < $limit) {
         $totalCounter++;
         $totalCounterPlaceholder.text($totalCounter);
-        $totalPrice_monthly.text($totalCounter * $price);
-        $totalPrice_annual.text(($totalCounter * $price) - ($totalCounter * $price * $discount));
+        $totalPrice_monthly.text(pricingTable[plan][$totalCounter - 1]);
         $pluralSign.show();
       } else {
         return false;
@@ -55,8 +97,7 @@ $(document).ready(function() {
       if ($totalCounter > 1) {
         $totalCounter--;
         $totalCounterPlaceholder.text($totalCounter);
-        $totalPrice_monthly.text($totalCounter * $price);
-        $totalPrice_annual.text(($totalCounter * $price) - ($totalCounter * $price * $discount));
+        $totalPrice_monthly.text(pricingTable[plan][$totalCounter - 1]);
         if ($totalCounter === 1) {
           $pluralSign.hide();
         }
@@ -64,20 +105,6 @@ $(document).ready(function() {
         $pluralSign.hide();
         return false;
       }
-    });
-
-    $annual.click(function() {
-      $(this).addClass('price-form__item--active');
-      $mounthly.removeClass('price-form__item--active');
-      $totalPrice_monthly.removeClass('total__price--active');
-      $totalPrice_annual.addClass('total__price--active');
-    });
-
-    $mounthly.click(function() {
-      $(this).addClass('price-form__item--active');
-      $annual.removeClass('price-form__item--active');
-      $totalPrice_annual.removeClass('total__price--active');
-      $totalPrice_monthly.addClass('total__price--active');
     });
   });
 
@@ -260,12 +287,7 @@ $(document).ready(function() {
     });
   })();
 
-  $(".top-bar__create-schedule").click(function(e) {
-    e.preventDefault();
-    $.scrollTo(".section__global-software", 300);
-  });
-
-  $(".heading-block__button--ident.btn__create").click(function(e) {
+  $(".top-bar__create-schedule, .price-form__button, .heading-block__button--ident.btn__create, .btn__create.btn__create--blue").click(function(e) {
     e.preventDefault();
     $.scrollTo(".section__global-software", 300);
   });

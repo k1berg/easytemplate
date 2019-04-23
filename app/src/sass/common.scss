@@ -781,20 +781,16 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    width: 50%;
+    width: 60%;
     height: 60px;
+    margin: 0 auto;
     border: 2px solid $color-4;
     color: $color-4;
     background-color: #FFF;
     box-sizing: border-box;
     transition: all ease-in-out .3s;
-    float: left;
     cursor: pointer;
     padding: 2px;
-
-    &:hover {
-      background-color: darken($text-white, 10%);
-    }
 
     small {
       margin-top: 5px;
@@ -804,19 +800,8 @@
     &--active {
       color: $text-white;
       background-color: $color-4;
-
-      &:hover {
-        background-color: darken($color-4, 10%);
-      }
     }
 
-    &--annual {
-      border-right: none;
-    }
-
-    &--mounthly {
-      border-left: none;
-    }
   }
 
   &__total {
@@ -831,8 +816,6 @@
 
 .total {
   &__price {
-    display: none;
-
     &--active {
       display: inline-block;
     }

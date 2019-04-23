@@ -109,6 +109,9 @@ p {
     p {
       font-size: 13px; } }
 
+b {
+  font-weight: 600; }
+
 .block-wrapper__countries {
   padding: 0 50px; }
   @media (max-width: 1024px) {
@@ -625,30 +628,22 @@ p {
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    width: 50%;
+    width: 60%;
     height: 60px;
+    margin: 0 auto;
     border: 2px solid #37a6c1;
     color: #37a6c1;
     background-color: #FFF;
     box-sizing: border-box;
     transition: all ease-in-out .3s;
-    float: left;
     cursor: pointer;
     padding: 2px; }
-    .price-form__item:hover {
-      background-color: #e6e6e6; }
     .price-form__item small {
       margin-top: 5px;
       font-size: 10px; }
     .price-form__item--active {
       color: #fff;
       background-color: #37a6c1; }
-      .price-form__item--active:hover {
-        background-color: #2c8499; }
-    .price-form__item--annual {
-      border-right: none; }
-    .price-form__item--mounthly {
-      border-left: none; }
   .price-form__total {
     margin-top: 10px;
     margin-bottom: 22px;
@@ -657,10 +652,8 @@ p {
     font-weight: 500;
     color: #37a6c1; }
 
-.total__price {
-  display: none; }
-  .total__price--active {
-    display: inline-block; }
+.total__price--active {
+  display: inline-block; }
 
 .circle-label {
   display: block;
