@@ -599,7 +599,7 @@ p {
     .price-form__information p {
       margin-bottom: 13px; }
   .price-form__text {
-    margin-bottom: 88px; }
+    margin-top: 40px; }
   .price-form__button {
     display: inline-block;
     text-transform: uppercase;
@@ -615,7 +615,7 @@ p {
     text-transform: uppercase;
     position: relative;
     list-style-type: none;
-    padding: 18px 50px;
+    padding: 10px 50px 18px;
     overflow: hidden; }
     @media (max-width: 1024px) {
       .price-form__list {
