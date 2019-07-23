@@ -4,7 +4,8 @@
   "description": "Quick start template based on simple BoilerPlate + Bootstrap + Scss + Gulp",
   "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "eslint": "./node_modules/.bin/eslint app/src/js"
   },
   "repository": {
     "type": "git",
@@ -35,5 +36,15 @@
     "imagemin-optipng": ">=4.3.0",
     "imagemin-pngquant": ">=4.2.0"
   },
-  "private": true
+  "private": true,
+  "devDependencies": {
+    "eslint": "^6.1.0",
+    "eslint-plugin-vue": "^5.2.3",
+    "husky": "^3.0.1"
+  },
+  "husky":{
+    "hooks": {
+      "pre-commit": "eslint"
+    }
+  }
 }
