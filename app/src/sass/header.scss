@@ -1,5 +1,7 @@
+$header-bg: #37a6c1;
+
 header {
-	background-color: #37a6c1;
+	background-color: $header-bg;
 	color: $text-white;
   background-image: url(../img/background-img-header.png);
   background-repeat: no-repeat;
@@ -15,7 +17,7 @@ header {
     top: 0;
     transform: translateX(100%);
     background-color: $color-6;
-    overflow: overlay;
+    overflow: hidden;
     transition: all .4s;
     z-index: 3;
 
@@ -56,13 +58,13 @@ header {
       }
     }
   }
-  
+
   &__who-uses {
     &--roll {
       height: 0;
       overflow: hidden;
       padding-left: 10px;
-     
+
       ul {
         font-size: 14px;
         padding-bottom: 10px;
@@ -101,6 +103,7 @@ input:checked + .menu__who-uses--roll {
   padding-top: 20px;
   font-size: 15px;
   font-weight: 400;
+  background-color: $header-bg;
   transition: .4s ease;
 
   @media (max-width: 1024px) {
@@ -124,7 +127,7 @@ input:checked + .menu__who-uses--roll {
       padding-left: 9px;
       img {
         width: 255px;
-      } 
+      }
     }
 
     @media (max-width: 768px) {
@@ -165,7 +168,7 @@ input:checked + .menu__who-uses--roll {
 
     &-on-phone {
       display: none;
-        
+
       @media (max-width: 1024px) {
         display: inline-block;
         border-radius: 3px;
@@ -174,7 +177,7 @@ input:checked + .menu__who-uses--roll {
         padding: 16px 14px;
         margin-top: 6px;
         float: right;
-      } 
+      }
 
       @media (max-width: 768px) {
         padding: 11px 8px;
@@ -187,7 +190,7 @@ input:checked + .menu__who-uses--roll {
 
       &:hover {
         background-color: darken($color-4, 10%);
-      }  
+      }
     }
 
     @media (max-width: 768px) {
@@ -223,7 +226,7 @@ input:checked + .menu__who-uses--roll {
         display: block;
       }
     }
-    
+
     &:hover {
       text-decoration: underline;
     }
@@ -374,7 +377,7 @@ input:checked + .menu__who-uses--roll {
           }
         }
         @media (max-width: 1024px) {
-          padding-top: 5px; 
+          padding-top: 5px;
         }
         @media (max-width: 768px) {
           padding-top: 9px;
@@ -516,7 +519,7 @@ input:checked + .top-bar__who-uses--roll {
     @media (max-width: 425px) {
       border: 2px solid #fff;
     }
-      
+
     &::after {
       content: ' ';
       position: absolute;
@@ -544,7 +547,7 @@ input:checked + .top-bar__who-uses--roll {
 
 .heading-block {
 	padding-top: 45px;
-	
+
 	h1 {
     margin: 40px;
     @media (max-width: 768px) {
@@ -566,7 +569,7 @@ input:checked + .top-bar__who-uses--roll {
 
     a {
       font-size: 18px;
-      line-height: 26px; 
+      line-height: 26px;
       float: left;
       font-weight: 400;
 
@@ -598,7 +601,7 @@ input:checked + .top-bar__who-uses--roll {
         margin-right: 7px;
       }
     }
-        
+
     @media (max-width: 1024px) {
       padding-top: 78px;
       display: inline-block;
@@ -618,12 +621,12 @@ input:checked + .top-bar__who-uses--roll {
     @media (max-width: 1024px) {
       margin-top: 13px;
     }
-    
+
     @media (max-width: 768px) {
       margin: 10px;
     }
 	}
-    
+
   &__phone {
     float: right;
 
