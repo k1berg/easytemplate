@@ -238,6 +238,8 @@ $(document).ready(function() {
       AR: "https://belliata.com.ar/sign-up?utm_source=bss&utm_medium=link&utm_campaign=detect",
       CA: "https://belliata.ca/sign-up?utm_source=bss&utm_medium=link&utm_campaign=detect",
       ZA: "https://belliata.co.za/sign-up?utm_source=bss&utm_medium=link&utm_campaign=detect",
+      PL: "https://belliata.pl/sign-up?utm_source=bss&utm_medium=link&utm_campaign=detect",
+      AU: "https://belliata.com.au/sign-up?utm_source=bss&utm_medium=link&utm_campaign=detect",
       CO: "https://belliata.co/sign-up?utm_source=bss&utm_medium=link&utm_campaign=detect",
       default: "https://belliata.com/sign-up?utm_source=bss&utm_medium=link&utm_campaign=detect-global"
     };
@@ -252,6 +254,8 @@ $(document).ready(function() {
       AR: "https://belliata.com.ar/sign-up?utm_source=bss&utm_medium=link&utm_campaign=login-lp",
       CA: "https://belliata.ca/sign-up?utm_source=bss&utm_medium=link&utm_campaign=login-lp",
       ZA: "https://belliata.co.za/sign-up?utm_source=bss&utm_medium=link&utm_campaign=login-lp",
+      PL: "https://belliata.pl/sign-up?utm_source=bss&utm_medium=link&utm_campaign=detect",
+      AU: "https://belliata.com.au/sign-up?utm_source=bss&utm_medium=link&utm_campaign=detect",
       CO: "https://belliata.co/sign-up?utm_source=bss&utm_medium=link&utm_campaign=login-lp",
       default: "https://belliata.com/sign-up?utm_source=bss&utm_medium=link&utm_campaign=login-lp"
     };
